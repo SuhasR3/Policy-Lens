@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const navItems = [
   { path: "/", icon: "search", label: "Drug Lookup" },
   { path: "/comparison", icon: "compare_arrows", label: "Comparison View" },
+  { path: "/heatmap", icon: "local_fire_department", label: "PA Friction Heatmap" },
   { path: "/ask-ai", icon: "psychology", label: "Ask AI" },
   { path: "/changes", icon: "history_edu", label: "Policy Changes" },
   { path: "/ingest", icon: "upload_file", label: "Ingest Policies" },

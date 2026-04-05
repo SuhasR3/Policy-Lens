@@ -8,6 +8,7 @@ import AskAIPage from "./pages/AskAIPage";
 import PolicyChangesPage from "./pages/PolicyChangesPage";
 import IngestPage from "./pages/IngestPage";
 import LibraryPage from "./pages/LibraryPage";
+import PAFrictionHeatmapPage from "./pages/PAFrictionHeatmapPage";
 
 function AppLayout({
   children,
@@ -46,6 +47,14 @@ export default function App() {
               element={
                 <AppLayout showSearch>
                   <ComparisonPage />
+                </AppLayout>
+              }
+            />
+            <Route
+              path="/heatmap"
+              element={
+                <AppLayout title="PA Friction Heatmap" showSearch={false}>
+                  <PAFrictionHeatmapPage />
                 </AppLayout>
               }
             />

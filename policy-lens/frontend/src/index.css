@@ -85,3 +85,13 @@ body {
   background: #e1e2e4;
   border-radius: 10px;
 }
+
+.heatmap-cell {
+  width: 80px;
+  height: 52px;
+  transition: transform 0.2s ease;
+}
+.heatmap-cell:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
