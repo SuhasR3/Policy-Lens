@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Policy Lens | Clinical Analytics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#bfebe8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#406a67",
+                        "inverse-primary": "#5ed9d3",
+                        "on-primary-container": "#003331",
+                        "surface-bright": "#f8f9fb",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f3",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-dim": "#d9dadc",
+                        "on-background": "#191c1e",
+                        "outline-variant": "#bcc9c8",
+                        "on-error": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "primary-container": "#0ea5a0",
+                        "surface-variant": "#e1e2e4",
+                        "primary": "#006a66",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-primary-fixed": "#00201f",
+                        "on-primary-fixed-variant": "#00504d",
+                        "secondary-container": "#bce8e5",
+                        "tertiary-container": "#d97b51",
+                        "surface-container-high": "#e7e8ea",
+                        "secondary-fixed-dim": "#a3cfcb",
+                        "outline": "#6d7a78",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#7df6ef",
+                        "on-tertiary-container": "#521b00",
+                        "on-tertiary-fixed": "#360f00",
+                        "background": "#f8f9fb",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#974822",
+                        "on-secondary-fixed-variant": "#234d4b",
+                        "on-secondary-fixed": "#00201f",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#3d4948",
+                        "on-tertiary-fixed-variant": "#78310c",
+                        "secondary": "#3c6563",
+                        "error": "#ba1a1a",
+                        "surface-container": "#edeef0",
+                        "surface": "#f8f9fb",
+                        "inverse-surface": "#2e3132",
+                        "surface-tint": "#006a66",
+                        "surface-container-highest": "#e1e2e4",
+                        "primary-fixed-dim": "#5ed9d3",
+                        "tertiary-fixed-dim": "#ffb597"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["DM Sans", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "mono": ["IBM Plex Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mono-text { font-family: 'IBM Plex Mono', monospace; }
+        .whisper-shadow { box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+        .ghost-border { border: 1px solid rgba(228, 231, 236, 0.5); }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e1e2e4; border-radius: 10px; }
+        .sidebar-active {
+            background-color: #ffffff;
+            color: #0EA5A0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+    </style>
+</head>
+<body class="bg-[#F7F8FA] text-on-surface">
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/history@5/umd/history.development.js"></script>
+    <script src="https://unpkg.com/react-router@6.3.0/umd/react-router.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        const { createRoot } = ReactDOM;
+        const { MemoryRouter, Routes, Route, Link, useNavigate, useLocation } = ReactRouterDOM;
+
+        // --- Common Components ---
+
+        const SideNavBar = () => {
+            const location = useLocation();
+            const navItems = [
+                { path: "/", icon: "search", label: "Drug Lookup" },
+                { path: "/comparison", icon: "compare_arrows", label: "Comparison View" },
+                { path: "/ask-ai", icon: "psychology", label: "Ask AI" },
+                { path: "/changes", icon: "history_edu", label: "Policy Changes" },
+                { path: "/ingest", icon: "upload_file", label: "Ingest Policies" },
+                { path: "/library", icon: "library_books", label: "Policy Library" },
+            ];
+
+            return (
+                <aside className="h-screen w-64 fixed left-0 top-0 bg-[#F2F4F6] flex flex-col p-4 space-y-2 z-50">
+                    <div className="mb-8 px-4 py-2">
+                        <div className="flex items-center gap-2 mb-1">
+                            <span className="material-symbols-outlined text-[#0EA5A0] text-2xl font-bold">analytics</span>
+                            <h1 className="text-xl font-black text-[#0EA5A0] tracking-tight font-headline">Policy Lens</h1>
+                        </div>
+                        <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Clinical Analytics</p>
+                    </div>
+                    <nav className="flex-1 space-y-1">
+                        {navItems.map((item) => (
+                            <Link 
+                                key={item.path}
+                                to={item.path} 
+                                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ease-out font-medium text-sm ${location.pathname === item.path ? 'bg-white text-[#0EA5A0] shadow-sm font-semibold' : 'text-slate-600 hover:text-[#0EA5A0] hover:bg-white/50 group'}`}
+                            >
+                                <span className={`material-symbols-outlined text-[20px] ${location.pathname === item.path ? 'fill-1' : ''}`} style={{ fontVariationSettings: location.pathname === item.path ? "'FILL' 1" : "'FILL' 0" }}>{item.icon}</span>
+                                <span>{item.label}</span>
+                            </Link>
+                        ))}
+                    </nav>
+                    <div className="pt-4 border-t border-slate-200/50 space-y-1">
+                        <a className="flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-[#0EA5A0] hover:bg-white/50 transition-all duration-200 ease-out rounded-lg font-medium text-sm" href="#">
+                            <span className="material-symbols-outlined text-[20px]">settings</span>
+                            <span>Settings</span>
+                        </a>
+                        <a className="flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-[#0EA5A0] hover:bg-white/50 transition-all duration-200 ease-out rounded-lg font-medium text-sm" href="#">
+                            <span className="material-symbols-outlined text-[20px]">contact_support</span>
+                            <span>Support</span>
+                        </a>
+                    </div>
+                </aside>
+            );
+        };
+
+        const TopAppBar = ({ title, showSearch = true }) => (
+            <header className="h-16 bg-[#F7F8FA] flex items-center justify-between px-8 w-full sticky top-0 z-40">
+                <div className="flex items-center gap-4 flex-1">
+                    {showSearch ? (
+                        <div className="relative w-96">
+                            <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">search</span>
+                            <input className="w-full bg-[#F2F4F6] border-none rounded-lg py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-[#0EA5A0] transition-all" placeholder="Search..." type="text"/>
+                        </div>
+                    ) : (
+                        <div className="flex items-center gap-2">
+                            <span className="text-slate-400 text-sm">Workspace</span>
+                            <span className="material-symbols-outlined text-slate-300 text-sm">chevron_right</span>
+                            <span className="text-sm font-semibold text-on-surface">{title}</span>
+                        </div>
+                    )}
+                </div>
+                <div className="flex items-center gap-6">
+                    <button className="text-slate-500 hover:bg-[#F2F4F6] p-2 rounded-lg transition-colors relative">
+                        <span className="material-symbols-outlined text-[22px]">notifications</span>
+                        <span className="absolute top-2 right-2 w-2 h-2 bg-error rounded-full border-2 border-white"></span>
+                    </button>
+                    <button className="text-slate-500 hover:bg-[#F2F4F6] p-2 rounded-lg transition-colors">
+                        <span className="material-symbols-outlined text-[22px]">help_outline</span>
+                    </button>
+                    <div className="flex items-center gap-3 pl-4 border-l border-slate-200">
+                        <div className="text-right">
+                            <p className="text-xs font-bold text-on-surface">Sarah Jenkins</p>
+                            <p className="text-[10px] text-slate-500 uppercase tracking-wider">Senior Clinical Analyst</p>
+                        </div>
+                        <img alt="Analyst Profile" className="w-8 h-8 rounded-full border border-slate-200 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmpOLGtrGMyek7tVGSsmlLW35Nf5Dh1VKK1kpv5I6mdjQt97xjhBedGD1ULqzw5tAZKWYKDyh2d2NztbO4YuOOGm0IDWOFYIcFrF8GK6BOx79cHlOXkq0HL1K0sa-KwIY6vnTBh3gINLcNCfB_Iu83KbLy5PD3haNhcARtaDdYtZ4kqoKYy5Wa_EVrKVb4KvlDlYH-opdLhGfhK_Nz5n0iY5JgE8Nw0SBAMeC4QN5iwz-Ebxd0ELzq4HuKfzG57p_VBe-q0B6-KZg"/>
+                    </div>
+                </div>
+            </header>
+        );
+
+        // --- Pages ---
+
+        const DrugLookupPage = () => {
+            return (
+                <div className="p-10 max-w-7xl mx-auto">
+                    <section className="mb-12">
+                        <h2 className="text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-4">Drug Lookup</h2>
+                        <p className="text-on-surface-variant text-lg max-w-2xl mb-8 text-slate-500">Analyze real-time coverage, tiering, and prior authorization requirements across national payers.</p>
+                        <div className="relative max-w-3xl">
+                            <div className="bg-white rounded-xl whisper-shadow p-2 flex items-center border border-slate-100">
+                                <span className="material-symbols-outlined text-[#0EA5A0] mx-4 text-3xl">pill</span>
+                                <input className="flex-1 border-none focus:ring-0 text-xl font-medium placeholder-slate-400 py-4" defaultValue="Ozempic (Semaglutide)" placeholder="Enter drug name, NDC, or HCPCS code..." type="text" />
+                                <button className="bg-[#0EA5A0] text-white px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all active:scale-95">Search</button>
+                            </div>
+                            <div className="absolute -bottom-16 left-0 flex space-x-2">
+                                <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest pt-2 px-4 text-slate-400">Trending:</span>
+                                <button className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded text-xs font-medium text-slate-600 transition-colors">Humira</button>
+                                <button className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded text-xs font-medium text-slate-600 transition-colors">Keytruda</button>
+                                <button className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded text-xs font-medium text-slate-600 transition-colors">Entyvio</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* Result Card 1 */}
+                        <div className="bg-white rounded-xl whisper-shadow overflow-hidden flex flex-col group hover:translate-y-[-2px] transition-transform duration-200 border border-slate-100">
+                            <div className="p-6 flex-1">
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h3 className="font-bold text-lg leading-tight">Aetna Health</h3>
+                                        <p className="text-xs text-slate-400 font-mono mt-1">PLAN_ID: AET-992-COM</p>
+                                    </div>
+                                    <span className="px-3 py-1 bg-[#0EA5A0]/10 text-[#0EA5A0] rounded-full text-[11px] font-bold uppercase tracking-wider">Covered</span>
+                                </div>
+                                <div className="space-y-4 pt-2">
+                                    <div className="flex justify-between items-end border-b border-slate-50 pb-2">
+                                        <span className="text-xs font-medium text-slate-500">Tier Assignment</span>
+                                        <span className="mono-text font-semibold text-lg text-on-surface">Tier 2</span>
+                                    </div>
+                                    <div className="flex justify-between items-end border-b border-slate-50 pb-2">
+                                        <span className="text-xs font-medium text-slate-500">Copay Range</span>
+                                        <span className="mono-text font-semibold text-on-surface">$25.00</span>
+                                    </div>
+                                    <div className="flex justify-between items-end">
+                                        <span className="text-xs font-medium text-slate-500">PA Requirement</span>
+                                        <span className="material-symbols-outlined text-slate-300">block</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="px-6 py-4 bg-slate-50 flex justify-between items-center">
+                                <span className="text-[10px] uppercase font-bold text-slate-400">Last Updated: 2h ago</span>
+                                <button className="text-[#0EA5A0] text-xs font-bold hover:underline">View Policy</button>
+                            </div>
+                        </div>
+
+                        {/* Result Card 2 */}
+                        <div className="bg-white rounded-xl whisper-shadow overflow-hidden flex flex-col group hover:translate-y-[-2px] transition-transform duration-200 border border-slate-100">
+                            <div className="p-6 flex-1">
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h3 className="font-bold text-lg leading-tight">UnitedHealthcare</h3>
+                                        <p className="text-xs text-slate-400 font-mono mt-1">PLAN_ID: UHC-TX-440</p>
+                                    </div>
+                                    <span className="px-3 py-1 bg-tertiary-container/20 text-tertiary-container text-[11px] font-bold uppercase tracking-wider">Covered (PA)</span>
+                                </div>
+                                <div className="space-y-4 pt-2">
+                                    <div className="flex justify-between items-end border-b border-slate-50 pb-2">
+                                        <span className="text-xs font-medium text-slate-500">Tier Assignment</span>
+                                        <span className="mono-text font-semibold text-lg text-on-surface">Tier 3</span>
+                                    </div>
+                                    <div className="flex justify-between items-end border-b border-slate-50 pb-2">
+                                        <span className="text-xs font-medium text-slate-500">Copay Range</span>
+                                        <span className="mono-text font-semibold text-on-surface">$45.00 - $70.00</span>
+                                    </div>
+                                    <div className="flex justify-between items-end">
+                                        <span className="text-xs font-medium text-slate-500">PA Requirement</span>
+                                        <span className="material-symbols-outlined text-tertiary-container fill-1" style={{fontVariationSettings: "'FILL' 1"}}>assignment_late</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="px-6 py-4 bg-slate-50 flex justify-between items-center">
+                                <span className="text-[10px] uppercase font-bold text-slate-400">Last Updated: Oct 12</span>
+                                <button className="text-[#0EA5A0] text-xs font-bold hover:underline">View Criteria</button>
+                            </div>
+                        </div>
+
+                        {/* Result Card 3: AI Analytics */}
+                        <div className="bg-[#003331] rounded-xl whisper-shadow p-6 text-white flex flex-col justify-between">
+                            <div>
+                                <div className="flex items-center space-x-2 mb-6">
+                                    <span className="material-symbols-outlined text-[#0EA5A0]">auto_awesome</span>
+                                    <span className="text-xs font-bold uppercase tracking-widest text-[#0EA5A0]">Policy Summary</span>
+                                </div>
+                                <p className="text-lg leading-relaxed mb-4">Coverage for <span className="font-bold text-[#5ED9D3]">Semaglutide</span> has shifted by <span className="font-bold">14%</span> across North American plans in Q4.</p>
+                                <div className="bg-white/10 rounded-lg p-4 mb-4">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-xs font-medium opacity-80">Market Penetration</span>
+                                        <span className="text-xs font-mono">68%</span>
+                                    </div>
+                                    <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
+                                        <div className="bg-[#0EA5A0] h-full w-[68%]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button className="w-full py-3 bg-[#0EA5A0] rounded-lg text-sm font-bold hover:brightness-110 transition-all">Generate Market Insight Report</button>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const ComparisonPage = () => {
+            const factors = [
+                { label: "Coverage Status", values: ["COVERED_TIER_2", "COVERED_TIER_3", "NOT_PREFERRED", "COVERED_TIER_2"], type: "badge" },
+                { label: "Prior Auth", values: ["REQUIRED", "REQUIRED", "Enhanced Review", "NOT REQUIRED"], type: "status" },
+                { label: "Step Therapy", values: ["Requires 1 alternative fail", "None defined", "Requires 3 alternative fails", "Requires 1 alternative fail"], type: "mono" },
+                { label: "Site of Care", values: ["Home / Physician Office", "Outpatient Hospital Only", "Home Only", "Any Facility"], type: "icon-text" },
+                { label: "Indications", values: ["RA, PsA, AS, CD, UC, Ps, HS, UV", "RA, PsA, AS, CD, UC", "RA, PsA ONLY", "All FDA Approved"], type: "text" },
+                { label: "Quantity Limit", values: ["2 pens / 28 days", "4 pens / 28 days", "1 pen / 30 days", "No Limit"], type: "mono-bold" },
+            ];
+
+            return (
+                <div className="p-8 flex flex-col gap-8 max-w-7xl mx-auto w-full">
+                    <div className="flex flex-col gap-6">
+                        <div className="flex justify-between items-end">
+                            <div>
+                                <nav className="flex items-center gap-2 text-slate-400 text-xs mb-2 font-medium">
+                                    <span>Clinical Analytics</span>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span>Payer Comparison</span>
+                                </nav>
+                                <h2 className="text-4xl font-extrabold font-headline tracking-tight text-slate-900">Humira <span className="text-slate-400 font-medium">(Adalimumab)</span></h2>
+                            </div>
+                            <div className="flex gap-3">
+                                <button className="px-4 py-2 bg-white text-slate-600 border border-slate-200 rounded-lg text-sm font-semibold hover:bg-slate-50 transition-all flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-[18px]">download</span> Export Analysis
+                                </button>
+                                <button className="px-6 py-2 bg-[#0EA5A0] text-white rounded-lg text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">Generate AI Summary</button>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            {[{l:"Avg Covered Lives", v:"12.4M", d:"+4.2%"}, {l:"Total Policy Alerts", v:"08", d:"3 New", e:true}, {l:"Clinical Variance", v:"24%", d:"Stable"}, {l:"Market Access Score", v:"82", d:"/ 100", p:true}].map((m, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col justify-between">
+                                    <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">{m.l}</span>
+                                    <div className="flex items-baseline gap-2 mt-2">
+                                        <span className={`text-4xl font-semibold tracking-tighter ${m.p ? 'text-[#0EA5A0]' : 'text-slate-900'}`}>{m.v}</span>
+                                        <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold ${m.e ? 'bg-error-container/20 text-error' : 'bg-primary-container/10 text-[#0EA5A0]'}`}>{m.d}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col overflow-hidden rounded-xl bg-white border border-slate-100 shadow-sm">
+                        <div className="grid grid-cols-5 bg-slate-900 text-white">
+                            <div className="p-6 flex items-center font-bold text-sm border-r border-white/5">COMPARISON FACTORS</div>
+                            {["United Healthcare", "Aetna", "Cigna", "Anthem BCBS"].map((payer, idx) => (
+                                <div key={idx} className="p-6 flex flex-col gap-1 border-r border-white/5 last:border-0">
+                                    <span className="text-[10px] text-[#0EA5A0] font-black tracking-widest uppercase">Payer 0{idx+1}</span>
+                                    <h4 className="font-bold text-lg leading-tight">{payer}</h4>
+                                    <p className="text-xs text-slate-400">Commercial / Regional</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {factors.map((f, i) => (
+                            <div key={i} className={`grid grid-cols-5 group hover:bg-[#F7F8FA] transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
+                                <div className="p-6 flex items-center font-semibold text-sm text-slate-500">{f.label}</div>
+                                {f.values.map((v, idx) => (
+                                    <div key={idx} className="p-6 border-l border-slate-100">
+                                        {f.type === 'badge' && <span className={`px-2.5 py-1 rounded-full text-xs font-bold font-mono ${v.includes('NOT') ? 'bg-error-container/20 text-error' : 'bg-[#0EA5A0]/10 text-[#0EA5A0]'}`}>{v}</span>}
+                                        {f.type === 'status' && (
+                                            <div className={`flex items-center gap-2 ${v === 'REQUIRED' ? 'text-[#0EA5A0]' : v === 'NOT REQUIRED' ? 'text-slate-400' : 'text-error'}`}>
+                                                <span className="material-symbols-outlined text-[20px]">{v === 'REQUIRED' ? 'check_circle' : v === 'NOT REQUIRED' ? 'info' : 'warning'}</span>
+                                                <span className="text-xs font-bold">{v}</span>
+                                            </div>
+                                        )}
+                                        {f.type === 'mono' && <span className="text-xs font-mono text-slate-600">{v}</span>}
+                                        {f.type === 'icon-text' && (
+                                            <div className="flex items-center gap-2">
+                                                <span className="material-symbols-outlined text-slate-400 text-[18px]">home</span>
+                                                <span className="text-xs font-medium">{v}</span>
+                                            </div>
+                                        )}
+                                        {f.type === 'text' && <span className="text-xs text-slate-600 leading-relaxed">{v}</span>}
+                                        {f.type === 'mono-bold' && <span className="text-sm font-mono text-slate-900 font-bold">{v}</span>}
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        const AskAIPage = () => {
+            return (
+                <div className="flex flex-col h-[calc(100vh-64px)]">
+                    <section className="flex-1 overflow-y-auto px-8 py-10 custom-scrollbar max-w-4xl mx-auto w-full space-y-12">
+                        <div className="flex flex-col items-end max-w-[85%] ml-auto">
+                            <div className="bg-white chat-bubble-shadow rounded-2xl rounded-tr-none px-6 py-4 border border-slate-100">
+                                <p className="font-dialogue text-on-surface text-base leading-relaxed">
+                                    What are the step therapy requirements for Humira vs. biosimilars in the BCBS Massachusetts 2024 Commercial policy?
+                                </p>
+                            </div>
+                            <span className="text-[10px] text-slate-400 mt-2 font-mono uppercase">10:42 AM • SENT</span>
+                        </div>
+
+                        <div className="flex items-start gap-4 mb-2 max-w-[95%]">
+                            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white shrink-0">
+                                <span className="material-symbols-outlined text-sm fill-1" style={{fontVariationSettings: "'FILL' 1"}}>psychology</span>
+                            </div>
+                            <div className="flex flex-col gap-6">
+                                <div className="bg-white chat-bubble-shadow rounded-2xl rounded-tl-none px-6 py-5 border border-slate-100">
+                                    <p className="font-dialogue text-on-surface text-base leading-relaxed mb-4">
+                                        According to the <span className="font-bold text-primary">BCBSMA 2024 Commercial Pharmacy Medical Policy</span>, the criteria for Humira have been updated to prioritize "preferred biosimilars" before approving the reference brand.
+                                    </p>
+                                    <ul className="space-y-4 font-dialogue text-sm text-slate-700 list-disc pl-5">
+                                        <li><strong>Step 1:</strong> Documented trial and failure of at least two (2) preferred biosimilars (Adalimumab-adbm or Hadlima).</li>
+                                        <li><strong>Clinical Exception:</strong> Criteria for reference Humira may be met if the patient has a documented contraindication to all preferred biosimilars.</li>
+                                        <li><strong>Policy Transition:</strong> For patients currently on Humira, there is a 90-day grace period for re-authorization.</li>
+                                    </ul>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div className="bg-slate-50 rounded-xl p-4 flex flex-col gap-3 group hover:bg-white transition-all duration-150 border border-transparent hover:border-primary/10">
+                                        <div className="flex justify-between items-start">
+                                            <div className="flex items-center gap-2">
+                                                <span className="material-symbols-outlined text-primary text-lg">description</span>
+                                                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-tighter">Primary Source</span>
+                                            </div>
+                                            <span className="font-mono text-[10px] bg-white px-2 py-0.5 rounded text-slate-500 border border-slate-200">BCBSMA-PMP-2024</span>
+                                        </div>
+                                        <p className="text-xs font-semibold text-on-surface-variant line-clamp-1">Adalimumab (Humira) and Biosimilars Policy</p>
+                                        <div className="flex items-center justify-between mt-1">
+                                            <span className="font-mono text-[10px] text-slate-400">PDF • Jan 15</span>
+                                            <button className="text-primary flex items-center gap-1 text-[11px] font-bold hover:underline">VIEW CITATION</button>
+                                        </div>
+                                    </div>
+                                    <div className="bg-slate-50 rounded-xl p-4 flex flex-col gap-3 group hover:bg-white transition-all duration-150 border border-transparent hover:border-primary/10">
+                                        <div className="flex justify-between items-start">
+                                            <div className="flex items-center gap-2">
+                                                <span className="material-symbols-outlined text-primary text-lg">history_edu</span>
+                                                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-tighter">Summary of Changes</span>
+                                            </div>
+                                            <span className="font-mono text-[10px] bg-white px-2 py-0.5 rounded text-slate-500 border border-slate-200">BCBSMA-SOC-Q1</span>
+                                        </div>
+                                        <p className="text-xs font-semibold text-on-surface-variant line-clamp-1">Pharmacy Benefit Quarterly Update - Q1 2024</p>
+                                        <div className="flex items-center justify-between mt-1">
+                                            <span className="font-mono text-[10px] text-slate-400">PDF • Dec 01</span>
+                                            <button className="text-primary flex items-center gap-1 text-[11px] font-bold hover:underline">VIEW CITATION</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer className="w-full bg-white/80 backdrop-blur-md px-8 py-6 border-t border-slate-200/50">
+                        <div className="max-w-4xl mx-auto space-y-4">
+                            <div className="flex flex-wrap gap-2">
+                                {["Compare Humira biosimilars", "Summarize recent oncology edits", "Check PA criteria for Ozempic"].map((prompt, idx) => (
+                                    <button key={idx} className="px-4 py-2 bg-white rounded-full text-xs font-medium text-slate-600 chat-bubble-shadow hover:text-primary hover:scale-[1.02] transition-all flex items-center gap-2 border border-slate-100">
+                                        <span className="material-symbols-outlined text-base">auto_awesome</span> {prompt}
+                                    </button>
+                                ))}
+                            </div>
+                            <div className="relative">
+                                <div className="flex items-center bg-white rounded-2xl chat-bubble-shadow border border-slate-200 px-4 py-2 group focus-within:border-primary/50 transition-colors">
+                                    <span className="material-symbols-outlined text-slate-400 mr-3">chat_bubble</span>
+                                    <input className="flex-1 bg-transparent border-none focus:ring-0 text-sm placeholder:text-slate-400 py-3" placeholder="Ask a clinical policy question..." type="text"/>
+                                    <div className="flex items-center gap-2">
+                                        <button className="p-2 text-slate-400 hover:text-primary transition-colors"><span className="material-symbols-outlined">attach_file</span></button>
+                                        <button className="bg-primary text-white p-2.5 rounded-xl flex items-center justify-center shadow-md shadow-primary/20"><span className="material-symbols-outlined">send</span></button>
+                                    </div>
+                                </div>
+                                <p className="text-[10px] text-slate-400 text-center mt-3 font-medium uppercase tracking-widest">Powered by Policy Lens Medical Knowledge Base • v4.2.0</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        const PolicyChangesPage = () => {
+            return (
+                <div className="p-8 max-w-7xl w-full mx-auto">
+                    <div className="flex items-end justify-between mb-8">
+                        <div>
+                            <h2 className="text-3xl font-extrabold font-headline tracking-tight text-on-surface">Policy Changes</h2>
+                            <p className="text-slate-500 text-sm mt-1">Real-time clinical and administrative modification timeline.</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <button className="bg-white text-slate-600 px-4 py-2 rounded-lg text-sm font-medium whisper-shadow ghost-border hover:bg-slate-50 transition-all flex items-center gap-2">
+                                <span className="material-symbols-outlined text-[18px]">filter_list</span> Filter Feed
+                            </button>
+                            <button className="bg-[#0EA5A0] text-white px-4 py-2 rounded-lg text-sm font-medium whisper-shadow hover:scale-95 duration-150 transition-all flex items-center gap-2">
+                                <span className="material-symbols-outlined text-[18px]">file_download</span> Export Report
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-4 gap-6 mb-10">
+                        {[{l:"Critical Updates", v:"12", d:"+3 today", c:"error"}, {l:"Clinical Minor", v:"48", d:"Stable", c:"tertiary"}, {l:"Pending Review", v:"07", d:"Active", c:"primary"}, {l:"Auto-Processed", v:"214", d:"24h", c:"slate"}].map((stat, i) => (
+                            <div key={i} className="bg-white p-6 rounded-xl whisper-shadow border border-slate-100">
+                                <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mb-1">{stat.l}</p>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-3xl font-semibold font-headline">{stat.v}</span>
+                                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${stat.c === 'error' ? 'bg-red-50 text-error' : stat.c === 'primary' ? 'bg-teal-50 text-[#0EA5A0]' : 'bg-slate-100 text-slate-500'}`}>{stat.d}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="space-y-8 relative before:absolute before:left-[19px] before:top-2 before:bottom-0 before:w-px before:bg-slate-200">
+                        <div className="relative pl-12">
+                            <div className="absolute left-0 top-1 w-10 h-10 bg-[#F7F8FA] flex items-center justify-center rounded-full border-2 border-white z-10">
+                                <div className="w-3 h-3 bg-[#0EA5A0] rounded-full"></div>
+                            </div>
+                            <div className="mb-4"><span className="text-sm font-bold text-slate-400 uppercase tracking-widest">Today, Oct 24</span></div>
+                            
+                            <div className="bg-white rounded-xl whisper-shadow border border-slate-100 overflow-hidden mb-6">
+                                <div className="p-6">
+                                    <div className="flex items-start justify-between mb-4">
+                                        <div className="flex items-center gap-4">
+                                            <span className="bg-red-50 text-error text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Clinical Major</span>
+                                            <h3 className="text-lg font-bold text-on-surface">Humira (Adalimumab) Prior Authorization Update</h3>
+                                        </div>
+                                        <span className="mono-text text-xs text-slate-500 bg-slate-50 px-2 py-1 rounded">RX-992-B-2024</span>
+                                    </div>
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div className="p-4 rounded-lg bg-red-50/50 border border-red-100/30">
+                                            <p className="text-[10px] font-bold text-error uppercase tracking-widest mb-2">Previous Version</p>
+                                            <p className="text-sm text-slate-700 leading-relaxed italic">"Coverage requires failure of at least one preferred alternative therapy (Enbrel)..."</p>
+                                        </div>
+                                        <div className="p-4 rounded-lg bg-emerald-50/50 border border-emerald-100/30">
+                                            <p className="text-[10px] font-bold text-[#0EA5A0] uppercase tracking-widest mb-2">Updated Version</p>
+                                            <p className="text-sm text-slate-800 leading-relaxed font-medium">"Coverage requires failure of <span className="bg-emerald-100 text-teal-900 px-1 rounded font-bold italic">two (2)</span> preferred alternative therapies..."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const IngestPage = () => {
+            return (
+                <div className="p-8 max-w-6xl mx-auto">
+                    <header className="mb-10">
+                        <h2 className="font-headline text-3xl font-extrabold text-on-surface tracking-tight">Ingest Policies</h2>
+                        <p className="text-slate-500 mt-2 text-lg">Add new payer policies to the Clinical Knowledge Graph for real-time analysis.</p>
+                    </header>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                        <div className="md:col-span-2 bg-white rounded-xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="flex items-center justify-between mb-6">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-teal-50 flex items-center justify-center rounded-lg">
+                                        <span className="material-symbols-outlined text-[#0EA5A0]">upload_file</span>
+                                    </div>
+                                    <h3 className="font-semibold text-lg">Direct Document Upload</h3>
+                                </div>
+                                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest bg-slate-50 px-2 py-1 rounded">PDF / DOCX</span>
+                            </div>
+                            <div className="border-2 border-dashed border-slate-200 rounded-xl bg-slate-50/50 p-12 flex flex-col items-center justify-center group cursor-pointer hover:bg-white hover:border-[#0EA5A0] transition-all">
+                                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
+                                    <span className="material-symbols-outlined text-[#0EA5A0] text-3xl">add</span>
+                                </div>
+                                <p className="text-on-surface font-medium text-center">Drag and drop policy files here</p>
+                                <p className="text-slate-400 text-sm mt-1">or <span className="text-[#0EA5A0] font-semibold underline decoration-2 underline-offset-4">browse files</span></p>
+                            </div>
+                        </div>
+
+                        <div className="space-y-6">
+                            <div className="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <div className="w-8 h-8 bg-teal-50 flex items-center justify-center rounded-lg">
+                                        <span className="material-symbols-outlined text-[#0EA5A0] text-xl">link</span>
+                                    </div>
+                                    <h3 className="font-semibold">Import from URL</h3>
+                                </div>
+                                <p className="text-slate-500 text-sm mb-4">Crawl specific payer portal URLs to automatically extract text.</p>
+                                <div className="relative">
+                                    <input className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-[#0EA5A0] outline-none transition-all pr-12" placeholder="https://payer-portal.com/policy-pdf" type="text"/>
+                                    <button className="absolute right-2 top-2 p-1.5 bg-[#0EA5A0] rounded-md text-white"><span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+                        <table className="w-full text-left">
+                            <thead>
+                                <tr className="text-[11px] uppercase tracking-widest text-slate-400 font-bold bg-slate-50">
+                                    <th className="px-6 py-4">Source File</th>
+                                    <th className="px-6 py-4">Status</th>
+                                    <th className="px-6 py-4">Knowledge Extraction</th>
+                                    <th className="px-6 py-4 text-right">Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody className="text-sm divide-y divide-slate-50">
+                                {[{f:"BCBS_TX_ONCOLOGY_2024.pdf", s:"VECTORIZING", k:"OCR Complete", p:78}, {f:"cms.gov/medicare-coverage-database/...", s:"ENTITY_MAPPING", k:"Mapping Clinical Codes", p:42}].map((item, i) => (
+                                    <tr key={i} className="hover:bg-slate-50/30 transition-colors">
+                                        <td className="px-6 py-5">
+                                            <div className="flex items-center gap-3">
+                                                <span className="material-symbols-outlined text-slate-400">picture_as_pdf</span>
+                                                <span className="font-mono text-xs">{item.f}</span>
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-5"><span className="px-3 py-1 bg-teal-50 text-[#0EA5A0] text-xs font-bold rounded-full">{item.s}</span></td>
+                                        <td className="px-6 py-5 text-slate-500">{item.k}</td>
+                                        <td className="px-6 py-5 text-right">
+                                            <div className="flex flex-col items-end gap-1.5">
+                                                <span className="font-mono text-xs font-semibold text-[#0EA5A0]">{item.p}%</span>
+                                                <div className="w-24 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                                                    <div className="h-full bg-[#0EA5A0]" style={{width: `${item.p}%`}}></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        };
+
+        const LibraryPage = () => {
+            const policies = [
+                { name: "Oncology Biosimilar Preferred Products", id: "POL-ONC-88219", payer: "UnitedHealthcare", class: "Oncology", date: "2024-05-12", status: "Active" },
+                { name: "Advanced Psoriasis Therapies", id: "POL-DERM-44321", payer: "Aetna CVS Health", class: "Dermatology", date: "2024-05-10", status: "Active" },
+                { name: "Multiple Sclerosis Clinical Guideline", id: "POL-NEURO-11202", payer: "Cigna", class: "Neurology", date: "2024-05-08", status: "Review" },
+                { name: "Growth Hormone Replacement Therapy", id: "POL-ENDO-99812", payer: "BCBS", class: "Endocrinology", date: "2024-04-29", status: "Active" },
+            ];
+
+            return (
+                <div className="px-8 pb-12">
+                    <div className="flex justify-between items-end py-8">
+                        <div>
+                            <h2 className="text-3xl font-extrabold font-headline tracking-tight text-slate-900">Policy Library</h2>
+                            <p className="text-slate-500 text-sm mt-1">Access and manage over 1,420 clinical policy documents across all payers.</p>
+                        </div>
+                        <div className="flex gap-3">
+                            <button className="flex items-center gap-2 px-4 py-2 bg-white text-slate-700 text-sm font-semibold rounded-lg shadow-sm border border-slate-200">
+                                <span className="material-symbols-outlined text-[18px]">filter_list</span> Advanced Filters
+                            </button>
+                            <button className="flex items-center gap-2 px-4 py-2 bg-[#0EA5A0] text-white text-sm font-semibold rounded-lg shadow-sm">
+                                <span className="material-symbols-outlined text-[18px]">add</span> New Policy
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-4 gap-6 mb-8">
+                        {[{l:"Total Documents", v:"1,428"}, {l:"Indexed Networks", v:"84"}, {l:"AI Policy Coverage", v:"92%"}, {l:"Latest Indexed", v:"May 14"}].map((s, i) => (
+                            <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between h-32">
+                                <p className="text-slate-500 text-xs font-bold uppercase tracking-wider">{s.l}</p>
+                                <span className="text-4xl font-semibold text-slate-900 tracking-tight leading-none">{s.v}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+                        <table className="w-full text-left">
+                            <thead className="bg-slate-50">
+                                <tr className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
+                                    <th className="px-6 py-4">Policy Name</th>
+                                    <th className="px-6 py-4">Payer</th>
+                                    <th className="px-6 py-4">Drug Class</th>
+                                    <th className="px-6 py-4">Last Indexed</th>
+                                    <th className="px-6 py-4 text-center">Status</th>
+                                    <th className="px-6 py-4 text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-50">
+                                {policies.map((p, i) => (
+                                    <tr key={i} className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-5">
+                                            <div className="flex flex-col">
+                                                <span className="text-sm font-bold text-slate-900">{p.name}</span>
+                                                <span className="text-[10px] font-mono text-slate-400">{p.id}</span>
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-5 text-sm text-slate-700">{p.payer}</td>
+                                        <td className="px-6 py-5"><span className="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded uppercase">{p.class}</span></td>
+                                        <td className="px-6 py-5 font-mono text-[11px] text-slate-500">{p.date}</td>
+                                        <td className="px-6 py-5">
+                                            <div className="flex justify-center">
+                                                <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${p.status === 'Active' ? 'bg-teal-50 text-[#0EA5A0]' : 'bg-amber-50 text-amber-700'}`}>{p.status}</span>
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-5 text-right"><button className="text-slate-400 hover:text-[#0EA5A0]"><span className="material-symbols-outlined">more_vert</span></button></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        };
+
+        const App = () => {
+            return (
+                <div className="flex min-h-screen">
+                    <SideNavBar />
+                    <main className="flex-1 ml-64 flex flex-col min-w-0">
+                        <Routes>
+                            <Route path="/" element={
+                                <React.Fragment>
+                                    <TopAppBar showSearch={true} />
+                                    <DrugLookupPage />
+                                </React.Fragment>
+                            } />
+                            <Route path="/comparison" element={
+                                <React.Fragment>
+                                    <TopAppBar showSearch={true} />
+                                    <ComparisonPage />
+                                </React.Fragment>
+                            } />
+                            <Route path="/ask-ai" element={
+                                <React.Fragment>
+                                    <TopAppBar title="Ask AI" showSearch={false} />
+                                    <AskAIPage />
+                                </React.Fragment>
+                            } />
+                            <Route path="/changes" element={
+                                <React.Fragment>
+                                    <TopAppBar showSearch={true} />
+                                    <PolicyChangesPage />
+                                </React.Fragment>
+                            } />
+                            <Route path="/ingest" element={
+                                <React.Fragment>
+                                    <TopAppBar title="Policy Ingestion Engine" showSearch={false} />
+                                    <IngestPage />
+                                </React.Fragment>
+                            } />
+                            <Route path="/library" element={
+                                <React.Fragment>
+                                    <TopAppBar showSearch={true} />
+                                    <LibraryPage />
+                                </React.Fragment>
+                            } />
+                        </Routes>
+                    </main>
+
+                    {/* Global Floating AI Action Button (Visible on most screens except Ask AI) */}
+                    <Routes>
+                        <Route path="/ask-ai" element={null} />
+                        <Route path="*" element={
+                            <Link to="/ask-ai" className="fixed bottom-8 right-8 w-14 h-14 bg-[#0EA5A0] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
+                                <span className="material-symbols-outlined text-[28px] fill-1" style={{fontVariationSettings: "'FILL' 1"}}>psychology</span>
+                            </Link>
+                        } />
+                    </Routes>
+                </div>
+            );
+        };
+
+        const root = createRoot(document.getElementById('root'));
+        root.render(
+            <MemoryRouter>
+                <App />
+            </MemoryRouter>
+        );
+    </script>
+</body>
+</html>
