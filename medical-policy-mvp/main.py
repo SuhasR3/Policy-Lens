@@ -19,9 +19,7 @@ _SRC = _ROOT / "src"
 if str(_SRC) not in sys.path:
     sys.path.insert(0, str(_SRC))
 
-from anthropic import Anthropic
-
-from extract import run_extraction_on_ingest
+from extract import _active_model, _build_client, run_extraction_on_ingest
 from ingest import ingest_directory, ingest_pdf
 
 logger = logging.getLogger(__name__)
@@ -41,13 +39,19 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        logger.error("ANTHROPIC_API_KEY missing; add it to .env")
+    provider = (os.environ.get("LLM_PROVIDER") or "anthropic").lower()
+    model = _active_model(provider)
+
+    try:
+        client = _build_client(provider)
+    except RuntimeError as exc:
+        logger.error(str(exc))
         sys.exit(1)
+
+    logger.info("Using provider=%s model=%s", provider, model)
 
     out_dir = _ROOT / "outputs"
     out_dir.mkdir(parents=True, exist_ok=True)
-    client = Anthropic()
 
     if args.only:
         p = args.only.expanduser().resolve()
@@ -55,7 +59,7 @@ def main() -> None:
             logger.error("File not found: %s", p)
             sys.exit(1)
         payload = ingest_pdf(p)
-        data = run_extraction_on_ingest(payload, client)
+        data = run_extraction_on_ingest(payload, client, provider, model)
         out_path = out_dir / f"{p.stem}.json"
         out_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
         logger.info("Wrote %s", out_path)
@@ -69,7 +73,7 @@ def main() -> None:
     for fname, payload in ingest_directory(args.docs_dir).items():
         stem = Path(fname).stem
         logger.info("Extracting %s", fname)
-        data = run_extraction_on_ingest(payload, client)
+        data = run_extraction_on_ingest(payload, client, provider, model)
         out_path = out_dir / f"{stem}.json"
         out_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
         logger.info("Wrote %s", out_path)
