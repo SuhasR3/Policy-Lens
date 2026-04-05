@@ -1,5 +1,6 @@
 fastapi
 uvicorn[standard]
+python-dotenv
 aiosqlite
 openai
 python-multipart

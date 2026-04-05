@@ -97,6 +97,7 @@ export const api = {
     payers: () => get<string[]>("/payers"),
   },
   ai: {
+    status: () => get<{ ask_ai_ready: boolean }>("/ai/status"),
     chat: (messages: ChatMessage[]) => post<{ content: string }>("/ai/chat", { messages, stream: false }),
     suggestedPrompts: () => get<string[]>("/ai/suggested-prompts"),
   },

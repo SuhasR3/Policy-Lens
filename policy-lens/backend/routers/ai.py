@@ -48,6 +48,13 @@ class ChatRequest(BaseModel):
     stream: bool = True
 
 
+@router.get("/status")
+async def ai_status():
+    """Ask AI is ready when GOOGLE_API_KEY is set in policy-lens/backend/.env (see .env.template)."""
+    key = (GEMINI_API_KEY or "").strip()
+    return {"ask_ai_ready": bool(key)}
+
+
 async def _build_context(user_message: str) -> str:
     """Query the database for relevant drug/policy context based on the user's question."""
     import re
