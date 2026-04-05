@@ -30,6 +30,14 @@ export default function AskAIPage() {
     staleTime: 300_000,
   });
 
+  const { data: aiStatus } = useQuery({
+    queryKey: ["ai", "status"],
+    queryFn: api.ai.status,
+    staleTime: 60_000,
+  });
+
+  const askAiConfigured = !aiStatus || aiStatus.ask_ai_ready;
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -37,7 +45,7 @@ export default function AskAIPage() {
   async function handleSubmit(e?: FormEvent) {
     e?.preventDefault();
     const text = input.trim();
-    if (!text || isStreaming) return;
+    if (!text || isStreaming || !askAiConfigured) return;
 
     const userMsg: ChatMessage = { role: "user", content: text };
     const updatedMessages = [...messages, userMsg];
@@ -80,6 +88,28 @@ export default function AskAIPage() {
 
   return (
     <div className="flex flex-col h-[calc(100vh-64px)]">
+      {aiStatus && !aiStatus.ask_ai_ready && (
+        <div className="shrink-0 px-8 pt-6 max-w-4xl mx-auto w-full">
+          <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">
+            <p className="font-semibold text-amber-900">Ask AI needs a Google API key</p>
+            <p className="mt-1 text-amber-900/90">
+              Set <code className="rounded bg-amber-100/80 px-1.5 py-0.5 font-mono text-xs">GOOGLE_API_KEY</code>{" "}
+              in <code className="rounded bg-amber-100/80 px-1.5 py-0.5 font-mono text-xs">policy-lens/backend/.env</code>{" "}
+              (copy from <code className="rounded bg-amber-100/80 px-1.5 py-0.5 font-mono text-xs">.env.template</code>
+              ), use a key from{" "}
+              <a
+                href="https://aistudio.google.com/apikey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-amber-800 underline underline-offset-2"
+              >
+                Google AI Studio
+              </a>
+              , then restart the FastAPI server.
+            </p>
+          </div>
+        </div>
+      )}
       <section className="flex-1 overflow-y-auto px-8 py-10 custom-scrollbar max-w-4xl mx-auto w-full space-y-8">
         {showWelcome && (
           <div className="flex flex-col items-center justify-center h-full text-center py-20">
@@ -183,11 +213,11 @@ export default function AskAIPage() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                disabled={isStreaming}
+                disabled={isStreaming || !askAiConfigured}
               />
               <button
                 type="submit"
-                disabled={isStreaming || !input.trim()}
+                disabled={isStreaming || !input.trim() || !askAiConfigured}
                 className="bg-[#0EA5A0] text-white p-2.5 rounded-xl flex items-center justify-center shadow-md shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span className="material-symbols-outlined">
