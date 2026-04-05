@@ -1,3 +1,6 @@
 fastapi
 uvicorn[standard]
 aiosqlite
+openai
+python-multipart
+pdfplumber

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import drugs, compare
+from routers import drugs, compare, ai, policies, ingest
 
 app = FastAPI(title="Policy Lens API", version="1.0.0")
 
@@ -15,6 +15,9 @@ app.add_middleware(
 
 app.include_router(drugs.router)
 app.include_router(compare.router)
+app.include_router(ai.router)
+app.include_router(policies.router)
+app.include_router(ingest.router)
 
 
 @app.get("/api/health")

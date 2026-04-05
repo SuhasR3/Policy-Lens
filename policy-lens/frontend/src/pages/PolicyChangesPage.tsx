@@ -1,11 +1,69 @@
-const stats = [
-  { l: "Critical Updates", v: "12", d: "+3 today", c: "error" as const },
-  { l: "Clinical Minor", v: "48", d: "Stable", c: "tertiary" as const },
-  { l: "Pending Review", v: "07", d: "Active", c: "primary" as const },
-  { l: "Auto-Processed", v: "214", d: "24h", c: "slate" as const },
-];
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { api } from "../lib/api";
+
+const severityStyles: Record<string, { badge: string; dot: string }> = {
+  Clinical: { badge: "bg-red-50 text-red-700", dot: "bg-red-500" },
+  Notable: { badge: "bg-amber-50 text-amber-700", dot: "bg-amber-500" },
+  Moderate: { badge: "bg-blue-50 text-blue-700", dot: "bg-blue-500" },
+  Minor: { badge: "bg-slate-100 text-slate-500", dot: "bg-slate-400" },
+};
 
 export default function PolicyChangesPage() {
+  const [filter, setFilter] = useState<string>("all");
+
+  const { data: changes, isLoading } = useQuery({
+    queryKey: ["policies", "changes"],
+    queryFn: () => api.policies.changes(100),
+    staleTime: 60_000,
+  });
+
+  const { data: stats } = useQuery({
+    queryKey: ["policies", "changes", "stats"],
+    queryFn: api.policies.changesStats,
+    staleTime: 60_000,
+  });
+
+  const filteredChanges = changes?.filter((c) => {
+    if (filter === "all") return true;
+    return c.severity === filter;
+  });
+
+  const statCards = [
+    {
+      l: "Total Changes",
+      v: stats?.total_changes?.toString() ?? "—",
+      d: `${stats?.policies_with_changes ?? 0} policies`,
+      c: "primary" as const,
+    },
+    {
+      l: "Clinical Updates",
+      v: stats?.clinical_updates?.toString() ?? "—",
+      d: "Criteria changes",
+      c: "error" as const,
+    },
+    {
+      l: "Coding Updates",
+      v: stats?.coding_updates?.toString() ?? "—",
+      d: "HCPCS & formatting",
+      c: "slate" as const,
+    },
+    {
+      l: "Payers Tracked",
+      v: stats?.policies_with_changes?.toString() ?? "—",
+      d: "With change history",
+      c: "tertiary" as const,
+    },
+  ];
+
+  // Group changes by date for timeline
+  const grouped = new Map<string, typeof filteredChanges>();
+  for (const change of filteredChanges || []) {
+    const key = change.change_date || "Unknown Date";
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key)!.push(change);
+  }
+
   return (
     <div className="p-8 max-w-7xl w-full mx-auto">
       <div className="flex items-end justify-between mb-8">
@@ -14,24 +72,28 @@ export default function PolicyChangesPage() {
             Policy Changes
           </h2>
           <p className="text-slate-500 text-sm mt-1">
-            Real-time clinical and administrative modification timeline.
+            Track clinical and administrative modifications across all indexed payer policies.
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <button className="bg-white text-slate-600 px-4 py-2 rounded-lg text-sm font-medium whisper-shadow ghost-border hover:bg-slate-50 transition-all flex items-center gap-2">
-            <span className="material-symbols-outlined text-[18px]">filter_list</span> Filter
-            Feed
-          </button>
-          <button className="bg-[#0EA5A0] text-white px-4 py-2 rounded-lg text-sm font-medium whisper-shadow hover:scale-95 duration-150 transition-all flex items-center gap-2">
-            <span className="material-symbols-outlined text-[18px]">file_download</span> Export
-            Report
-          </button>
+          {["all", "Clinical", "Notable", "Moderate", "Minor"].map((f) => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                filter === f
+                  ? "bg-[#0EA5A0] text-white shadow-sm"
+                  : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+              }`}
+            >
+              {f === "all" ? "All" : f}
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Stat cards */}
       <div className="grid grid-cols-4 gap-6 mb-10">
-        {stats.map((stat, i) => (
+        {statCards.map((stat, i) => (
           <div key={i} className="bg-white p-6 rounded-xl whisper-shadow border border-slate-100">
             <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mb-1">
               {stat.l}
@@ -41,7 +103,7 @@ export default function PolicyChangesPage() {
               <span
                 className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                   stat.c === "error"
-                    ? "bg-red-50 text-error"
+                    ? "bg-red-50 text-red-700"
                     : stat.c === "primary"
                     ? "bg-teal-50 text-[#0EA5A0]"
                     : "bg-slate-100 text-slate-500"
@@ -54,60 +116,69 @@ export default function PolicyChangesPage() {
         ))}
       </div>
 
-      {/* Timeline */}
-      <div className="space-y-8 relative before:absolute before:left-[19px] before:top-2 before:bottom-0 before:w-px before:bg-slate-200">
-        <div className="relative pl-12">
-          <div className="absolute left-0 top-1 w-10 h-10 bg-[#F7F8FA] flex items-center justify-center rounded-full border-2 border-white z-10">
-            <div className="w-3 h-3 bg-[#0EA5A0] rounded-full" />
-          </div>
-          <div className="mb-4">
-            <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
-              Today, Oct 24
-            </span>
-          </div>
-
-          <div className="bg-white rounded-xl whisper-shadow border border-slate-100 overflow-hidden mb-6">
-            <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center gap-4">
-                  <span className="bg-red-50 text-error text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    Clinical Major
-                  </span>
-                  <h3 className="text-lg font-bold text-on-surface">
-                    Humira (Adalimumab) Prior Authorization Update
-                  </h3>
-                </div>
-                <span className="mono-text text-xs text-slate-500 bg-slate-50 px-2 py-1 rounded">
-                  RX-992-B-2024
+      {isLoading ? (
+        <div className="flex items-center justify-center py-20">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0EA5A0]" />
+          <span className="ml-3 text-slate-500">Loading changes...</span>
+        </div>
+      ) : (
+        <div className="space-y-6 relative before:absolute before:left-[19px] before:top-2 before:bottom-0 before:w-px before:bg-slate-200">
+          {Array.from(grouped.entries()).map(([dateKey, items]) => (
+            <div key={dateKey} className="relative pl-12">
+              <div className="absolute left-0 top-1 w-10 h-10 bg-[#F7F8FA] flex items-center justify-center rounded-full border-2 border-white z-10">
+                <div className="w-3 h-3 bg-[#0EA5A0] rounded-full" />
+              </div>
+              <div className="mb-4">
+                <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
+                  {dateKey}
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 rounded-lg bg-red-50/50 border border-red-100/30">
-                  <p className="text-[10px] font-bold text-error uppercase tracking-widest mb-2">
-                    Previous Version
-                  </p>
-                  <p className="text-sm text-slate-700 leading-relaxed italic">
-                    "Coverage requires failure of at least one preferred alternative therapy
-                    (Enbrel)..."
-                  </p>
-                </div>
-                <div className="p-4 rounded-lg bg-emerald-50/50 border border-emerald-100/30">
-                  <p className="text-[10px] font-bold text-[#0EA5A0] uppercase tracking-widest mb-2">
-                    Updated Version
-                  </p>
-                  <p className="text-sm text-slate-800 leading-relaxed font-medium">
-                    "Coverage requires failure of{" "}
-                    <span className="bg-emerald-100 text-teal-900 px-1 rounded font-bold italic">
-                      two (2)
-                    </span>{" "}
-                    preferred alternative therapies..."
-                  </p>
-                </div>
+
+              <div className="space-y-4">
+                {items!.map((change, idx) => {
+                  const styles = severityStyles[change.severity] || severityStyles.Minor;
+                  return (
+                    <div
+                      key={idx}
+                      className="bg-white rounded-xl whisper-shadow border border-slate-100 overflow-hidden"
+                    >
+                      <div className="p-5">
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex items-center gap-3">
+                            <span
+                              className={`${styles.badge} text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider`}
+                            >
+                              {change.severity}
+                            </span>
+                            <h3 className="text-sm font-bold text-on-surface">
+                              {change.payer}
+                            </h3>
+                          </div>
+                          <span className="text-[10px] text-slate-400 font-mono whitespace-nowrap">
+                            {change.policy_title?.slice(0, 40) || "Policy"}
+                          </span>
+                        </div>
+                        <p className="text-sm text-slate-700 leading-relaxed">
+                          {change.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          </div>
+          ))}
+
+          {filteredChanges && filteredChanges.length === 0 && (
+            <div className="text-center py-20 pl-12">
+              <span className="material-symbols-outlined text-slate-300 text-5xl mb-4">
+                history
+              </span>
+              <p className="text-slate-500 text-lg">No changes found for this filter</p>
+            </div>
+          )}
         </div>
-      </div>
+      )}
     </div>
   );
 }

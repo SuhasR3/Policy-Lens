@@ -2,7 +2,7 @@ import aiosqlite
 from pathlib import Path
 from contextlib import asynccontextmanager
 
-DB_PATH = Path(__file__).resolve().parent.parent / "db" / "policies2.db"
+DB_PATH = Path(__file__).resolve().parent.parent / "db" / "policies.db"
 
 
 @asynccontextmanager

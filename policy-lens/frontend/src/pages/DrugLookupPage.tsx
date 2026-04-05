@@ -1,6 +1,7 @@
-import { useState, type FormEvent } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import { useDrugSearch, useTrendingDrugs } from "../hooks/useDrugSearch";
-import type { DrugSearchResult } from "../lib/types";
+import { useDrugNames, useCoverageMatrix } from "../hooks/useCoverageFilter";
+import type { DrugSearchResult, CoverageMatrix } from "../lib/types";
 
 function statusLabel(result: DrugSearchResult) {
   const group = result.access_status_group;
@@ -109,12 +110,212 @@ function SkeletonCard() {
   );
 }
 
+function DrugChipInput({
+  selectedDrugs,
+  onAdd,
+  onRemove,
+}: {
+  selectedDrugs: string[];
+  onAdd: (drug: string) => void;
+  onRemove: (drug: string) => void;
+}) {
+  const [input, setInput] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  const { data: suggestions } = useDrugNames(input);
+
+  const filtered = (suggestions ?? []).filter((s) => !selectedDrugs.includes(s));
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
+        setShowDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  function selectDrug(drug: string) {
+    onAdd(drug);
+    setInput("");
+    setShowDropdown(false);
+  }
+
+  return (
+    <div ref={wrapperRef} className="relative">
+      <div className="bg-white rounded-xl whisper-shadow p-3 flex items-center flex-wrap gap-2 border border-slate-100 min-h-[56px]">
+        <span className="material-symbols-outlined text-[#0EA5A0] mx-2 text-2xl">filter_alt</span>
+        {selectedDrugs.map((drug) => (
+          <span
+            key={drug}
+            className="inline-flex items-center gap-1.5 bg-[#0EA5A0]/10 text-[#0EA5A0] pl-3 pr-1.5 py-1.5 rounded-full text-sm font-semibold"
+          >
+            {drug}
+            <button
+              onClick={() => onRemove(drug)}
+              className="hover:bg-[#0EA5A0]/20 rounded-full p-0.5 transition-colors"
+            >
+              <span className="material-symbols-outlined text-[16px]">close</span>
+            </button>
+          </span>
+        ))}
+        <input
+          className="flex-1 min-w-[200px] border-none focus:ring-0 text-base font-medium placeholder-slate-400 py-1"
+          value={input}
+          onChange={(e) => {
+            setInput(e.target.value);
+            setShowDropdown(true);
+          }}
+          onFocus={() => input.length >= 2 && setShowDropdown(true)}
+          placeholder={
+            selectedDrugs.length === 0
+              ? "Type a drug name to filter coverage..."
+              : "Add another drug..."
+          }
+          type="text"
+        />
+      </div>
+
+      {showDropdown && filtered.length > 0 && (
+        <div className="absolute z-50 top-full left-0 right-0 mt-1 bg-white rounded-xl whisper-shadow border border-slate-100 max-h-60 overflow-y-auto">
+          {filtered.map((name) => (
+            <button
+              key={name}
+              onClick={() => selectDrug(name)}
+              className="w-full text-left px-5 py-3 text-sm font-medium text-slate-700 hover:bg-[#0EA5A0]/5 hover:text-[#0EA5A0] transition-colors flex items-center gap-3"
+            >
+              <span className="material-symbols-outlined text-slate-300 text-[18px]">pill</span>
+              {name}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function PayerCoverageGrid({ matrix, drugs }: { matrix: CoverageMatrix; drugs: string[] }) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {matrix.payers.map((payer) => {
+        const allCovered = drugs.every((d) => matrix.drugs[d]?.[payer]?.covered);
+
+        return (
+          <div
+            key={payer}
+            className={`rounded-xl overflow-hidden border transition-all duration-200 ${
+              allCovered
+                ? "bg-teal-50 border-[#0EA5A0]/30 whisper-shadow"
+                : "bg-slate-50 border-slate-200"
+            }`}
+          >
+            <div className="p-5">
+              <div className="flex items-center gap-3 mb-4">
+                <span
+                  className={`material-symbols-outlined text-2xl ${
+                    allCovered ? "text-[#0EA5A0]" : "text-slate-400"
+                  }`}
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  {allCovered ? "verified" : "cancel"}
+                </span>
+                <div>
+                  <h4
+                    className={`font-bold text-sm leading-tight ${
+                      allCovered ? "text-[#003331]" : "text-slate-500"
+                    }`}
+                  >
+                    {payer}
+                  </h4>
+                  <p className={`text-[11px] mt-0.5 font-semibold uppercase tracking-wider ${
+                    allCovered ? "text-[#0EA5A0]" : "text-slate-400"
+                  }`}>
+                    {allCovered ? "Full Coverage" : "Partial / No Coverage"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                {drugs.map((drug) => {
+                  const info = matrix.drugs[drug]?.[payer];
+                  const covered = info?.covered ?? false;
+
+                  return (
+                    <div
+                      key={drug}
+                      className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs ${
+                        covered ? "bg-[#0EA5A0]/10" : "bg-white/60"
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`material-symbols-outlined text-[16px] ${
+                            covered ? "text-[#0EA5A0]" : "text-slate-400"
+                          }`}
+                          style={{ fontVariationSettings: "'FILL' 1" }}
+                        >
+                          {covered ? "check_circle" : "cancel"}
+                        </span>
+                        <span
+                          className={`font-semibold ${
+                            covered ? "text-[#003331]" : "text-slate-400"
+                          }`}
+                        >
+                          {drug}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-1.5">
+                        {info?.status && (
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide ${
+                              covered
+                                ? "bg-[#0EA5A0]/15 text-[#0EA5A0]"
+                                : "bg-slate-200 text-slate-500"
+                            }`}
+                          >
+                            {info.status.replace(/_/g, " ")}
+                          </span>
+                        )}
+                        {info?.prior_auth && (
+                          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide bg-amber-100 text-amber-700">
+                            PA
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div
+              className={`px-5 py-3 text-[10px] uppercase font-bold tracking-wider ${
+                allCovered
+                  ? "bg-[#0EA5A0]/10 text-[#0EA5A0]"
+                  : "bg-slate-100 text-slate-400"
+              }`}
+            >
+              {drugs.filter((d) => matrix.drugs[d]?.[payer]?.covered).length} of {drugs.length} drugs
+              covered
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function DrugLookupPage() {
   const [query, setQuery] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedDrugs, setSelectedDrugs] = useState<string[]>([]);
 
   const { data: results, isLoading, isError } = useDrugSearch(searchTerm);
   const { data: trending } = useTrendingDrugs();
+  const { data: coverageMatrix, isLoading: coverageLoading } = useCoverageMatrix(selectedDrugs);
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -124,6 +325,16 @@ export default function DrugLookupPage() {
   function handleTrendingClick(drug: string) {
     setQuery(drug);
     setSearchTerm(drug);
+  }
+
+  function addDrug(drug: string) {
+    if (!selectedDrugs.includes(drug)) {
+      setSelectedDrugs((prev) => [...prev, drug]);
+    }
+  }
+
+  function removeDrug(drug: string) {
+    setSelectedDrugs((prev) => prev.filter((d) => d !== drug));
   }
 
   const trendingList = trending?.slice(0, 6) ?? [];
@@ -140,38 +351,52 @@ export default function DrugLookupPage() {
         </p>
 
         <form onSubmit={handleSubmit} className="relative max-w-3xl">
-          <div className="bg-white rounded-xl whisper-shadow p-2 flex items-center border border-slate-100">
-            <span className="material-symbols-outlined text-[#0EA5A0] mx-4 text-3xl">pill</span>
-            <input
-              className="flex-1 border-none focus:ring-0 text-xl font-medium placeholder-slate-400 py-4"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Enter drug name, NDC, or HCPCS code..."
-              type="text"
-            />
-            <button
-              type="submit"
-              className="bg-[#0EA5A0] text-white px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all active:scale-95"
-            >
-              Search
-            </button>
-          </div>
           <div className="absolute -bottom-16 left-0 flex space-x-2 flex-wrap">
-            <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest pt-2 px-4 text-slate-400">
-              Trending:
-            </span>
-            {trendingList.map((drug) => (
-              <button
-                key={drug.drug_name}
-                type="button"
-                onClick={() => handleTrendingClick(drug.drug_name)}
-                className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded text-xs font-medium text-slate-600 transition-colors"
-              >
-                {drug.drug_name}
-              </button>
-            ))}
           </div>
         </form>
+      </section>
+
+      {/* Multi-Drug Coverage Filter */}
+      <section className="mb-12">
+        <p className="text-sm text-slate-500 mb-4 max-w-2xl">
+          Select multiple drugs to see which insurance providers cover all of them.
+          Green cards indicate full coverage; grey cards show partial or no coverage.
+        </p>
+
+        <div className="max-w-3xl mb-6">
+          <DrugChipInput
+            selectedDrugs={selectedDrugs}
+            onAdd={addDrug}
+            onRemove={removeDrug}
+          />
+        </div>
+
+        {coverageLoading && (
+          <div className="flex items-center justify-center py-16">
+            <div className="flex items-center gap-3 text-slate-500">
+              <svg className="animate-spin h-5 w-5 text-[#0EA5A0]" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+              </svg>
+              <span className="text-sm font-medium">Loading coverage data...</span>
+            </div>
+          </div>
+        )}
+
+        {!coverageLoading && selectedDrugs.length === 0 && (
+          <div className="text-center py-12 bg-slate-50/50 rounded-xl border border-dashed border-slate-200">
+            <span className="material-symbols-outlined text-slate-200 text-5xl mb-3">
+              medication
+            </span>
+            <p className="text-slate-400 text-sm font-medium">
+              Start typing a drug name above to see payer coverage
+            </p>
+          </div>
+        )}
+
+        {!coverageLoading && coverageMatrix && selectedDrugs.length > 0 && (
+          <PayerCoverageGrid matrix={coverageMatrix} drugs={selectedDrugs} />
+        )}
       </section>
 
       {/* Results */}
