@@ -1,0 +1,72 @@
+{
+  "payer": null,
+  "document_type": "drug_list",
+  "source_filename": "UHC_Botulinum_Toxins_A_and_B___Commercial_Medical_Benefit_Drug_Policy.pdf",
+  "entries": [
+    {
+      "payer": "UnitedHealthcare Commercial",
+      "hcpcs_code": "J0585",
+      "drug_name": "onabotulinumtoxinA",
+      "description": "Injection, onabotulinumtoxinA, 1 unit",
+      "coverage_level": "Covered with medical necessity criteria (General Requirements and Diagnosis-Specific Requirements)",
+      "notes": "Brand name: Botox. Proven indications include: achalasia, chronic anal fissures, blepharospasm associated with dystonia, cervical dystonia (spasmodic torticollis), detrusor overactivity/detrusor-sphincter dyssynergia due to spinal cord injury or disease, essential tremor, hand dystonia, hemifacial spasm, hyperhidrosis including gustatory sweating (Frey's syndrome), chronic migraine headache (prophylaxis when \u226515 headache days/month, \u22658 migraine days/month, headaches lasting \u22654 hours/day), oromandibular dystonia, overactive bladder, sialorrhea, spasmodic dysphonia (laryngeal dystonia), spasticity, strabismus, tongue dystonia, torsion dystonia. Unproven indications include: acquired nystagmus, anismus, benign prostatic hyperplasia, brachial plexus palsy, chronic daily headache, chronic low back pain, chronic prostatic pain, cricopharyngeal dysphagia (excludes achalasia), epiphora following salivary gland transplantation, esophageal spasm, gastroparesis, gustatory epiphora (crocodile tears), lateral epicondylitis, lichen simplex, lower urinary tract (voiding) dysfunction, motor tics, myofascial pain syndrome, nasal hypersecretion, pain and/or wound healing after hemorrhoidectomy, pancreas divisum, piriformis syndrome, post-parotidectomy sialoceles, post-thoracotomy pseudoangina, proctalgia fugax, severe bruxism, severe paradoxical vocal cord movement, sphincter of Oddi dysfunction, temporomandibular disorders, tension-type headache, thyroid associated ophthalmopathy, Tourette's syndrome, traumatic sixth nerve palsy, trigeminal neuralgia, trismus and stridor in ALS. Botulinum toxin administration no more frequent than every 12 weeks. Applies to ICD-10 diagnosis codes: C71.0\u2013C71.9, C72.0, C72.1, D33.0\u2013D33.4, D33.7, D33.9, D43.0\u2013D43.4, D43.8, D43.9, D49.6, G04.1, G11.4, G24.09, G24.1, G24.2, G24.3, G24.4, G24.5, G24.8, G24.9, G25.0, G35.A, G35.B0, G35.B1, G35.B2, G35.C0, G35.C1, G35.C2, G35.D, G36.0, G43.701, G43.709, G43.711, G43.719, G43.E01, G43.E09, G43.E11, G43.E19, G51.0, G51.1, G51.2, G51.31, G51.32, G51.33, G51.39, G51.4, G51.8, G51.9, G80.0\u2013G80.4, G80.8, G80.9, G81.10\u2013G81.14, G83.4, H49.881\u2013H49.883, H49.889, H49.9, H50.21, H50.22, H50.60, H50.69, H50.89, H50.9, H51.0, I60.10\u2013I60.12, I61.0\u2013I61.6, I61.8, I61.9, I63.00\u2013I63.9 (full range), J38.5, K11.7, K22.0, K60.1, L74.510\u2013L74.513, L74.519, L74.52, N31.0, N31.1, N31.9, N32.81, N36.44, N39.41, N39.46, R13.12, R25.0\u2013R25.3, R25.8, R25.9, R49.0, R49.9, R61, Z85.841, Z85.848, Z87.820.",
+      "covered_alternatives": [
+        "J0586 (Dysport/abobotulinumtoxinA)",
+        "J0587 (Myobloc/rimabotulinumtoxinB)",
+        "J0588 (Xeomin/incobotulinumtoxinA)"
+      ]
+    },
+    {
+      "payer": "UnitedHealthcare Commercial",
+      "hcpcs_code": "J0586",
+      "drug_name": "abobotulinumtoxinA",
+      "description": "Injection, abobotulinumtoxinA, 5 units",
+      "coverage_level": "Covered with medical necessity criteria (General Requirements and Diagnosis-Specific Requirements)",
+      "notes": "Brand name: Dysport. Proven indications include: achalasia, chronic anal fissures, blepharospasm associated with dystonia, cervical dystonia (spasmodic torticollis), detrusor overactivity/detrusor-sphincter dyssynergia due to spinal cord injury or disease, essential tremor, hand dystonia, hemifacial spasm, hyperhidrosis including gustatory sweating (Frey's syndrome), oromandibular dystonia, sialorrhea, spasmodic dysphonia (laryngeal dystonia), spasticity, strabismus, tongue dystonia, torsion dystonia. Unproven for chronic migraine headache. Unproven indications same as Botox list. Botulinum toxin administration no more frequent than every 12 weeks. Applies to ICD-10 diagnosis codes: C71.0\u2013C71.9, C72.0, C72.1, D33.0\u2013D33.4, D33.7, D33.9, D43.0\u2013D43.4, D43.8, D43.9, D49.6, G04.1, G11.4, G24.09, G24.1, G24.2, G24.3, G24.4, G24.5, G24.8, G24.9, G25.0, G35.A, G35.B0, G35.B1, G35.B2, G35.C0, G35.C1, G35.C2, G35.D, G36.0, G51.0\u2013G51.2, G51.31\u2013G51.33, G51.39, G51.4, G51.8, G51.9, G80.0\u2013G80.4, G80.8, G80.9, G81.10\u2013G81.14, G83.4, H49.881\u2013H49.883, H49.889, H49.9, H50.21, H50.22, H50.60, H50.69, H50.89, H50.9, H51.0, I60.10\u2013I60.12, I61.0\u2013I61.6, I61.8, I61.9, I63.00\u2013I63.9 (full range), J38.5, K11.7, K22.0, K60.1, L74.510\u2013L74.513, L74.519, L74.52, N31.0, N31.1, N31.9, N36.44, R13.12, R25.0\u2013R25.3, R25.8, R25.9, R49.0, R49.9, R61, Z85.841, Z85.848, Z87.820.",
+      "covered_alternatives": [
+        "J0585 (Botox/onabotulinumtoxinA)",
+        "J0587 (Myobloc/rimabotulinumtoxinB)",
+        "J0588 (Xeomin/incobotulinumtoxinA)"
+      ]
+    },
+    {
+      "payer": "UnitedHealthcare Commercial",
+      "hcpcs_code": "J0587",
+      "drug_name": "rimabotulinumtoxinB",
+      "description": "Injection, rimabotulinumtoxinB, 100 units",
+      "coverage_level": "Covered with medical necessity criteria (step therapy/failure of preferred agents required for most indications)",
+      "notes": "Brand name: Myobloc. Proven indication: cervical dystonia (spasmodic torticollis). Medically necessary for cervical dystonia, detrusor overactivity, sialorrhea, and spasticity only after failure, contraindication, or intolerance to preferred agents. For cervical dystonia (initial): requires failure/contraindication/intolerance to Botox, Dysport, or Xeomin; authorization \u226412 months. For detrusor overactivity (initial): requires failure/contraindication/intolerance to Botox or Dysport; authorization \u226412 months. For sialorrhea (initial): requires failure/contraindication/intolerance to Botox, Dysport, or Xeomin; authorization \u226412 months. For spasticity (initial): requires failure/contraindication/intolerance to Botox, Dysport, or Xeomin; authorization \u226412 months. Continuation/reauthorization \u226412 months for all indications. Unproven for chronic migraine headache. Botulinum toxin administration no more frequent than every 12 weeks. Applies to ICD-10 diagnosis codes: C71.0\u2013C71.9, C72.0, C72.1, D33.0\u2013D33.4, D33.7, D33.9, D43.0\u2013D43.4, D43.8, D43.9, D49.6, G04.1, G11.4, G24.3, G80.0\u2013G80.4, G80.8, G80.9, G81.10\u2013G81.14, G83.4, G35.A, G35.B0, G35.B1, G35.B2, G35.C0, G35.C1, G35.C2, G35.D, G36.0, I60.10\u2013I60.12, I61.0\u2013I61.6, I61.8, I61.9, I63.00\u2013I63.9 (full range), K11.7, N31.0, N31.1, N31.9, N36.44, R25.0\u2013R25.3, R25.8, R25.9, Z85.841, Z85.848, Z87.820.",
+      "covered_alternatives": [
+        "J0585 (Botox/onabotulinumtoxinA)",
+        "J0586 (Dysport/abobotulinumtoxinA)",
+        "J0588 (Xeomin/incobotulinumtoxinA)"
+      ]
+    },
+    {
+      "payer": "UnitedHealthcare Commercial",
+      "hcpcs_code": "J0588",
+      "drug_name": "incobotulinumtoxinA",
+      "description": "Injection, incobotulinumtoxinA, 1 unit",
+      "coverage_level": "Covered with medical necessity criteria (General Requirements and Diagnosis-Specific Requirements)",
+      "notes": "Brand name: Xeomin. Proven indications include: blepharospasm associated with dystonia, cervical dystonia (spasmodic torticollis), sialorrhea, spasticity. Unproven for chronic migraine headache. Unproven indications same as Botox list. Botulinum toxin administration no more frequent than every 12 weeks. Applies to ICD-10 diagnosis codes: C71.0\u2013C71.9, C72.0, C72.1, D33.0\u2013D33.4, D33.7, D33.9, D43.0\u2013D43.4, D43.8, D43.9, D49.6, G04.1, G11.4, G24.3, G24.5, G35.A, G35.B0, G35.B1, G35.B2, G35.C0, G35.C1, G35.C2, G35.D, G36.0, G80.0\u2013G80.4, G80.8, G80.9, G81.10\u2013G81.14, I60.10\u2013I60.12, I61.0\u2013I61.6, I61.8, I61.9, I63.00\u2013I63.9 (full range), K11.7, N31.0, N31.1, N31.9, N36.44, R25.0\u2013R25.3, R25.8, R25.9, Z85.841, Z85.848, Z87.820.",
+      "covered_alternatives": [
+        "J0585 (Botox/onabotulinumtoxinA)",
+        "J0586 (Dysport/abobotulinumtoxinA)",
+        "J0587 (Myobloc/rimabotulinumtoxinB)"
+      ]
+    },
+    {
+      "payer": "UnitedHealthcare Commercial",
+      "hcpcs_code": "J0589",
+      "drug_name": "daxibotulinumtoxinA-lanm",
+      "description": "Injection, daxibotulinumtoxina-lanm, 1 unit",
+      "coverage_level": "Typically excluded from coverage",
+      "notes": "Brand name: Daxxify. Typically excluded from coverage; coverage reviews may be in place if required by law or the benefit plan. Refer to the Medical Benefit Drug Policy titled Medical Benefit Therapeutic Equivalent Medications \u2013 Excluded Drugs and the corresponding excluded drug list with preferred alternatives. Proven indication (if covered): cervical dystonia (spasmodic torticollis) only. Unproven for chronic migraine headache and all other indications listed under the Botox unproven list. Botulinum toxin administration no more frequent than every 12 weeks. Only ICD-10 code mapped to this drug in the Applicable Codes table: G24.3 (Spasmodic torticollis).",
+      "covered_alternatives": [
+        "J0585 (Botox/onabotulinumtoxinA)",
+        "J0586 (Dysport/abobotulinumtoxinA)",
+        "J0588 (Xeomin/incobotulinumtoxinA)"
+      ]
+    }
+  ]
+}

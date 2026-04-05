@@ -80,6 +80,8 @@ class DrugListEntry(BaseModel):
     coverage_level: Optional[str] = None
     notes: Optional[str] = None
     covered_alternatives: list[str] = Field(default_factory=list)
+    therapeutic_class: Optional[str] = None
+    source_page: Optional[int] = None
 
 
 class DrugListChunkExtraction(BaseModel):

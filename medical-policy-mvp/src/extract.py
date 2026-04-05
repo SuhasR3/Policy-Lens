@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import time
+from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
 
@@ -57,6 +58,21 @@ SYSTEM_DRUG_LIST = (
     "if present, and any notes or covered alternatives. Preserve wording from the document."
 )
 
+HCPCS_CODE_RE = re.compile(r"^(?:[A-Z]\d{4}|\d{5})$")
+HEADER_TEXT_PATTERNS = (
+    "hcpcs/cpt code",
+    "drug name",
+    "coverage level",
+    "notes & restrictions",
+    "lowercase italics = generic drugs",
+    "uppercase = brand name drugs",
+)
+FOOTER_TEXT_PATTERNS = (
+    "pa-prior authorization",
+    "priority health commercial",
+    "last updated",
+)
+
 
 def _repo_root() -> Path:
     return _SRC.parent
@@ -82,6 +98,172 @@ def _chunk_page_texts(page_texts: list[str], chunk_size: int) -> list[tuple[int,
         chunks.append((i + 1, j, "\n\n".join(parts)))
         i = j
     return chunks
+
+
+def _clean_table_cell(value: str | None) -> str | None:
+    if value is None:
+        return None
+    text = re.sub(r"\s+", " ", value.replace("\u00a0", " ")).strip()
+    return text or None
+
+
+def _looks_like_code(value: str | None) -> bool:
+    if not value:
+        return False
+    return bool(HCPCS_CODE_RE.match(value.strip().upper()))
+
+
+def _row_text(row: Iterable[str | None]) -> str:
+    parts = [_clean_table_cell(cell) for cell in row]
+    return " ".join(part for part in parts if part)
+
+
+def _is_header_row(row: list[str | None]) -> bool:
+    text = _row_text(row).lower()
+    if not text:
+        return False
+    return any(pattern in text for pattern in HEADER_TEXT_PATTERNS)
+
+
+def _is_footer_row(row: list[str | None]) -> bool:
+    text = _row_text(row).lower()
+    if not text:
+        return False
+    return any(pattern in text for pattern in FOOTER_TEXT_PATTERNS)
+
+
+def _is_section_row(row: list[str | None]) -> bool:
+    if _looks_like_code(_clean_table_cell(row[0] if row else None)):
+        return False
+    text = _row_text(row)
+    if not text:
+        return False
+    non_empty = [_clean_table_cell(cell) for cell in row if _clean_table_cell(cell)]
+    if len(non_empty) != 1:
+        return False
+    if text.lower().startswith(("pa-prior authorization", "priority health commercial", "last updated")):
+        return False
+    if len(text) > 120:
+        return False
+    return True
+
+
+def _normalize_coverage(value: str | None) -> str | None:
+    if not value:
+        return None
+    return re.sub(r"\s+", " ", value).replace("Non- ", "Non-").strip()
+
+
+def _extract_covered_alternatives(notes: str | None) -> list[str]:
+    if not notes:
+        return []
+    items = re.findall(r"([A-Z]\d{4}|\d{5})\s*-\s*([^,.;)]+(?:\([^)]+\))?)", notes)
+    return [f"{code} - {name.strip()}" for code, name in items]
+
+
+def _iter_page_table_rows(page_tables: list[list[list[str | None]]]) -> Iterable[list[str | None]]:
+    for table in page_tables:
+        for row in table:
+            yield row
+
+
+def _extract_drug_list_page_entries(
+    page_number: int,
+    page_text: str,
+    page_tables: list[list[list[str | None]]],
+    current_section: str | None,
+    payer: str | None,
+) -> tuple[list[DrugListEntry], str | None]:
+    entries: list[DrugListEntry] = []
+    section = current_section
+
+    for row in _iter_page_table_rows(page_tables):
+        cells = [_clean_table_cell(cell) for cell in row]
+        if not any(cells):
+            continue
+        if _is_header_row(cells) or _is_footer_row(cells):
+            continue
+        if _is_section_row(cells):
+            candidate = _row_text(cells)
+            if candidate and candidate != section:
+                section = candidate
+            continue
+
+        code = _clean_table_cell(cells[0] if cells else None)
+        if not _looks_like_code(code):
+            continue
+
+        drug_name = _clean_table_cell(cells[1] if len(cells) > 1 else None)
+        description = _clean_table_cell(cells[2] if len(cells) > 2 else None)
+        coverage = _normalize_coverage(_clean_table_cell(cells[4] if len(cells) > 4 else (cells[3] if len(cells) > 3 else None)))
+        notes_idx = 5 if len(cells) > 5 else (4 if len(cells) > 4 else None)
+        notes = _clean_table_cell(cells[notes_idx] if notes_idx is not None else None)
+        if len(cells) == 5:
+            coverage = _normalize_coverage(_clean_table_cell(cells[3]))
+            notes = _clean_table_cell(cells[4])
+
+        entries.append(
+            DrugListEntry(
+                payer=payer,
+                hcpcs_code=code,
+                drug_name=drug_name,
+                description=description,
+                coverage_level=coverage,
+                notes=notes,
+                covered_alternatives=_extract_covered_alternatives(notes),
+                therapeutic_class=section,
+                source_page=page_number,
+            )
+        )
+
+    if entries:
+        return entries, section
+
+    # Fallback for pages where table extraction misses rows: split on code anchors locally.
+    cleaned_lines: list[str] = []
+    for raw_line in page_text.splitlines():
+        line = re.sub(r"\s+", " ", raw_line).strip()
+        if not line:
+            continue
+        lowered = line.lower()
+        if any(pattern in lowered for pattern in HEADER_TEXT_PATTERNS + FOOTER_TEXT_PATTERNS):
+            continue
+        cleaned_lines.append(line)
+
+    anchored_rows: list[list[str]] = []
+    current: list[str] = []
+    for line in cleaned_lines:
+        first_token = line.split()[0] if line.split() else ""
+        if _looks_like_code(first_token):
+            if current:
+                anchored_rows.append(current)
+            current = [line]
+        elif current:
+            current.append(line)
+        else:
+            if len(line) <= 80 and not re.search(r"\d", line):
+                section = line
+    if current:
+        anchored_rows.append(current)
+
+    for row_lines in anchored_rows:
+        first = row_lines[0]
+        parts = first.split(maxsplit=1)
+        if len(parts) != 2:
+            continue
+        code, rest = parts
+        entries.append(
+            DrugListEntry(
+                payer=payer,
+                hcpcs_code=code,
+                drug_name=rest,
+                description=" ".join(row_lines[1:]) or None,
+                covered_alternatives=[],
+                therapeutic_class=section,
+                source_page=page_number,
+            )
+        )
+    return entries, section
 
 
 def _split_on_toc_sections(page_texts: list[str]) -> list[tuple[int, int, str]] | None:
@@ -319,8 +501,45 @@ def extract_drug_list(
     ingest_payload: dict[str, Any],
 ) -> DrugListDocument:
     page_texts: list[str] = ingest_payload.get("page_texts") or []
+    page_tables: list[list[list[list[str | None]]]] = ingest_payload.get("page_tables") or []
     tables: list[str] = ingest_payload.get("tables") or []
     filename = ingest_payload.get("filename") or ""
+    payer = None
+    if page_texts:
+        first_page = page_texts[0]
+        first_line = next((line.strip() for line in first_page.splitlines() if line.strip()), None)
+        payer = first_line or None
+
+    deterministic_entries: list[DrugListEntry] = []
+    current_section: str | None = None
+    pages_without_rows: list[int] = []
+    for idx, page_text in enumerate(page_texts, start=1):
+        tables_for_page = page_tables[idx - 1] if idx - 1 < len(page_tables) else []
+        page_entries, current_section = _extract_drug_list_page_entries(
+            idx, page_text, tables_for_page, current_section, payer
+        )
+        if page_entries:
+            deterministic_entries.extend(page_entries)
+            logger.info(
+                "Drug list page %d: parsed %d entries deterministically%s",
+                idx,
+                len(page_entries),
+                f" (section={current_section})" if current_section else "",
+            )
+        else:
+            pages_without_rows.append(idx)
+
+    if deterministic_entries and len(deterministic_entries) >= max(25, len(page_texts)):
+        logger.info(
+            "Drug list: using deterministic page-local parser for %d entries across %d pages",
+            len(deterministic_entries),
+            len(page_texts),
+        )
+        return DrugListDocument(
+            payer=payer,
+            source_filename=filename,
+            entries=deterministic_entries,
+        )
 
     if len(page_texts) > LARGE_DOC_PAGES:
         toc_chunks = _split_on_toc_sections(page_texts)
@@ -343,6 +562,8 @@ def extract_drug_list(
         user_parts = [
             f"This is pages {start_p}-{end_p} of a consolidated medical drug list PDF.",
             "Extract every drug row you see in this section into `entries`.",
+            "Keep rows page-local. Do not merge text from adjacent HCPCS/CPT rows.",
+            "Use each HCPCS/CPT code as a row anchor. Repeated table headers and footer legends are not data rows.",
         ]
         if tables_block and start_p == 1:
             user_parts.append(tables_block)
@@ -361,6 +582,7 @@ def extract_drug_list(
             logger.warning("Empty chunk extraction for pages %s-%s", start_p, end_p)
 
     return DrugListDocument(
+        payer=payer,
         source_filename=filename,
         entries=all_entries,
     )

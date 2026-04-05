@@ -1,0 +1,982 @@
+{
+  "payer": "Cigna",
+  "policy_id": "IP0319",
+  "policy_title": "Rituximab Intravenous Products for Non-Oncology Indications",
+  "effective_date": "02/01/2026",
+  "revision_date": "02/01/2026",
+  "document_type": "single_drug_policy",
+  "drugs": [
+    {
+      "generic_name": "rituximab",
+      "brand_names": [
+        "Rituxan"
+      ],
+      "hcpcs_codes": [
+        "J9312"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "rituximab-abbs",
+      "brand_names": [
+        "Truxima"
+      ],
+      "hcpcs_codes": [
+        "Q5115"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "Rituxan"
+    },
+    {
+      "generic_name": "rituximab-pvvr",
+      "brand_names": [
+        "Ruxience"
+      ],
+      "hcpcs_codes": [
+        "Q5119"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "Rituxan"
+    },
+    {
+      "generic_name": "rituximab-arrx",
+      "brand_names": [
+        "Riabni"
+      ],
+      "hcpcs_codes": [
+        "Q5123"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "Rituxan"
+    }
+  ],
+  "covered_indications": [
+    {
+      "indication_name": "ANCA-Associated Vasculitis \u2013 Induction Treatment",
+      "clinical_criteria": [
+        "Patient has an ANCA-associated vasculitis (examples include granulomatosis with polyangiitis [Wegener's granulomatosis], or microscopic polyangiitis); AND",
+        "The medication is being administered in combination with glucocorticoids; AND",
+        "The medication is prescribed by or in consultation with a rheumatologist, nephrologist, pulmonologist, or immunologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [
+        "glucocorticoids"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "ANCA-Associated Vasculitis \u2013 Follow-Up Treatment of Patients Who Have Received Induction Treatment",
+      "clinical_criteria": [
+        "According to the prescriber, the patient achieved disease control with induction treatment (includes a patient who received induction treatment using a rituximab product or other standard of care immunosuppressants); AND",
+        "If the patient previously received a course of therapy, at least 16 weeks will elapse between courses; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Pemphigus Vulgaris \u2013 Initial Treatment",
+      "clinical_criteria": [
+        "Therapy is initiated in combination with a corticosteroid unless contraindicated (an example of a corticosteroid is prednisone); AND",
+        "The medication is prescribed by or in consultation with a dermatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [
+        "corticosteroid (unless contraindicated)"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Pemphigus Vulgaris \u2013 Treatment of a Relapse",
+      "clinical_criteria": [
+        "Subsequent infusions will be administered no sooner than 16 weeks following the previous infusion of a rituximab product (there will be a minimum of 16 weeks since the first dose of the previous course and the first dose of the next course of a rituximab product); AND",
+        "The medication is prescribed by or in consultation with a dermatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Pemphigus Vulgaris \u2013 Maintenance",
+      "clinical_criteria": [
+        "Subsequent infusions will be administered no sooner than 16 weeks following the previous infusion of a rituximab product (there will be a minimum of 16 weeks since the first dose of the previous course and the first dose of the next course of a rituximab product); AND",
+        "The medication is prescribed by or in consultation with a dermatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Rheumatoid Arthritis \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient has tried ONE conventional synthetic disease-modifying antirheumatic drug (DMARD) for at least 3 months (examples include methotrexate [oral or injectable], leflunomide, hydroxychloroquine, and sulfasalazine; an exception to the requirement for a trial of one conventional synthetic DMARD can be made if the patient already has a 3-month trial of at least one biologic other than the requested drug; a biosimilar of the requested biologic does not count; a patient who has already tried a biologic is not required to 'step back' and try a conventional synthetic DMARD); AND",
+        "The medication will not be used concurrently with another biologic or with a targeted synthetic DMARD; AND",
+        "The medication is prescribed by or in consultation with a rheumatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Rheumatoid Arthritis \u2013 Patient has already received one course of a Rituximab Product",
+      "clinical_criteria": [
+        "16 weeks or greater will elapse between treatment courses (there will be a minimum of 16 weeks since the first dose of the previous course and the first dose of the next course of a rituximab product); AND",
+        "The medication will not be used concurrently with another biologic or with a targeted synthetic DMARD; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Rheumatoid Arthritis \u2013 Patient has already received two or more courses of a Rituximab Product",
+      "clinical_criteria": [
+        "16 weeks or greater will elapse between treatment courses (there will be a minimum of 16 weeks since the first dose of the previous course and the first dose of the next course of a rituximab product); AND",
+        "The medication will not be used concurrently with another biologic or with a targeted synthetic DMARD; AND",
+        "Patient meets at least ONE of the following: (a) Patient experienced a beneficial clinical response when assessed by at least one objective measure (examples of standardized and validated measures of disease activity include Clinical Disease Activity Index [CDAI], Disease Activity Score [DAS] 28 using erythrocyte sedimentation rate [ESR] or C-reactive protein [CRP], Patient Activity Scale [PAS]-II, Rapid Assessment of Patient Index Data 3 [RAPID-3], and/or Simplified Disease Activity Index [SDAI]); OR (b) Patient experienced an improvement in at least one symptom, such as decreased joint pain, morning stiffness, or fatigue; improved function or activities of daily living; decreased soft tissue swelling in joints or tendon sheaths; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Autoimmune Hemolytic Anemia",
+      "clinical_criteria": [
+        "The medication is prescribed by or in consultation with a hematologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Graft-Versus-Host Disease \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient has chronic graft-versus-host disease; AND",
+        "Patient has tried at least one systemic medication for graft-versus-host disease (examples of systemic medications include systemic corticosteroids [methylprednisolone, prednisone], Jakafi [ruxolitinib], Rezurock [belumosudil], Niktimvo [axatilimab-csfr], cyclosporine, tacrolimus, mycophenolate mofetil, Imbruvica [ibrutinib], imatinib, hydroxychloroquine, methotrexate, Nipent [pentostatin], interleukin-2 [e.g., Proleukin (aldesleukin)], sirolimus, or an etanercept product); AND",
+        "The medication is prescribed by or in consultation with an oncologist, hematologist, or a physician affiliated with a transplant center; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Graft-Versus-Host Disease \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "Patient meets ONE of the following: (a) When assessed by at least one objective measure, patient experienced a beneficial clinical response from baseline prior to initiating a rituximab product (examples of objective measures include normalization of liver function tests, red blood cell count, or platelet count; or resolution of fever or rash); OR (b) Compared with baseline prior to initiating a rituximab product, patient experienced an improvement in at least one symptom, such as improvement in skin, oral mucosal, ocular, or gastrointestinal symptoms (e.g., nausea, vomiting, anorexia); AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Hematopoietic Cell Transplantation",
+      "clinical_criteria": [
+        "The medication will be used as part of a conditioning regimen for allogeneic transplant; AND",
+        "The medication is prescribed by or in consultation with an oncologist, hematologist, or a physician affiliated with a transplant center; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [
+        "cyclophosphamide",
+        "fludarabine (per conditioning regimen)"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Immune Thrombocytopenia (ITP) \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient has tried one other therapy (examples of therapies for ITP include intravenous immunoglobulin [IVIG], anti-D [RHO] immunoglobulin, corticosteroids, Alvaiz [eltrombopag], Doptelet [avatrombopag], Nplate [romiplostim], Promacta [eltrombopag], Tavalisse [fostamatinib] and splenectomy); AND",
+        "The medication is prescribed by or in consultation with a hematologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Immune Thrombocytopenia (ITP) \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "At least 6 months will elapse between treatment courses (there will be a minimum of 6 months separating the first dose of the previous course and the first dose of the requested course of a rituximab product); AND",
+        "According to the prescriber, the patient responded to therapy (examples of a response include a platelet count increase from baseline following treatment with a rituximab product); AND",
+        "According to the prescriber, the patient has relapsed (examples of relapse include the patient experiences thrombocytopenia after achievement of a remission); AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "According to the prescriber, patient developed an immunotherapy-related toxicity; AND",
+        "Patient developed this immunotherapy-related toxicity while receiving a checkpoint inhibitor (examples include Keytruda [pembrolizumab], Opdivo [nivolumab], Yervoy [ipilimumab], Tecentriq [atezolizumab], Bavencio [avelumab], Imfinzi [durvalumab], and Libtayo [cemiplimab-rwlc]); AND",
+        "Patient is symptomatic despite a trial of at least ONE systemic corticosteroid (examples include methylprednisolone and prednisone); AND",
+        "The medication is prescribed by or in consultation with an oncologist, hematologist, nephrologist, neurologist, rheumatologist, or dermatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "The medication is prescribed by or in consultation with an oncologist, hematologist, nephrologist, neurologist, rheumatologist, or dermatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic Disease \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient is \u2265 18 years of age; AND",
+        "Diagnosis is confirmed by high-resolution computed tomography; AND",
+        "The medication is prescribed by or in consultation with a pulmonologist or a rheumatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic Disease \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "24 weeks or greater will elapse between treatment courses (there will be a minimum of 24 weeks since the first dose of the previous course and the first dose of the next course of a rituximab product); AND",
+        "Patient has experienced a beneficial response to therapy with rituximab (examples of a beneficial response include a reduction in the anticipated decline in forced vital capacity, improvement in 6-minute walk distance, and/or reduction in the number or severity of disease-related exacerbations); AND",
+        "The medication is prescribed by or in consultation with a pulmonologist or a rheumatologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Membranous Nephropathy \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "According to the prescriber, the patient is at moderate risk or high risk for the progressive loss of kidney function; AND",
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Membranous Nephropathy \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Minimal Change Disease \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "The medication is being used for frequently relapsing or steroid-dependent disease; AND",
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Minimal Change Disease \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Multiple Sclerosis \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "According to the prescriber, the patient has experienced inadequate efficacy or significant intolerance to at least TWO other disease-modifying agents for multiple sclerosis (see Appendix B for examples); AND",
+        "Medication will not be used concurrently with another disease-modifying agent used for multiple sclerosis; AND",
+        "The medication is prescribed by or in consultation with a neurologist or a physician who specializes in the treatment of multiple sclerosis; AND",
+        "At least 6 months will elapse between treatment courses (if the patient has already received a course of therapy there will be a minimum of 6 months separating the first dose of the previous course and the first dose of the requested course of therapy); AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Multiple Sclerosis \u2013 Patient is Currently Receiving Rituximab for less than 1 year",
+      "clinical_criteria": [
+        "Medication will not be used concurrently with another disease-modifying agent used for multiple sclerosis; AND",
+        "At least 6 months will elapse between treatment courses (there will be a minimum of 6 months separating the first dose of the previous course and the first dose of the requested course of therapy); AND",
+        "Medication is prescribed by or in consultation with a neurologist or a physician who specializes in the treatment of multiple sclerosis; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Multiple Sclerosis \u2013 Patient is Currently Receiving Rituximab for 1 year or more",
+      "clinical_criteria": [
+        "Medication will not be used concurrently with another disease-modifying agent used for multiple sclerosis; AND",
+        "At least 6 months will elapse between treatment courses (there will be a minimum of 6 months separating the first dose of the previous course and the first dose of the requested course of therapy); AND",
+        "Patient meets ONE of the following: (1) Patient experienced a beneficial clinical response when assessed by at least one objective measure (examples include stabilization or reduced worsening in disease activity as evaluated by MRI [absence or a decrease in gadolinium enhancing lesions, decrease in the number of new or enlarging T2 lesions]; stabilization or reduced worsening on the Expanded Disability Status Scale [EDSS] score; achievement in criteria for No Evidence of Disease Activity-3 [NEDA-3] or NEDA-4; improvement on the fatigue symptom and impact questionnaire-relapsing multiple sclerosis [FSIQ-RMS] scale; reduction or absence of relapses; improvement or maintenance on the six-minute walk test or 12-Items Multiple Sclerosis Walking Scale; improvement on the Multiple Sclerosis Functional Composite [MSFC] score; and/or attenuation of brain volume loss); OR (2) Patient experienced stabilization, slow progression, or improvement in at least one symptom such as motor function, fatigue, vision, bowel/bladder function, spasticity, walking/gait, or pain/numbness/tingling sensation; AND",
+        "Medication is prescribed by or in consultation with a neurologist or a physician who specializes in the treatment of multiple sclerosis; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Myasthenia Gravis \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient has confirmed anti-muscle-specific tyrosine kinase antibody-positive myasthenia gravis; AND",
+        "Patient meets ONE of the following: (a) Patient previously received or is currently receiving pyridostigmine; OR (b) Patient has had inadequate efficacy, contraindication, or significant intolerance to pyridostigmine; AND",
+        "Patient has tried at least one immunosuppressant therapy (examples include azathioprine, cyclosporine, mycophenolate mofetil, methotrexate, tacrolimus, and cyclophosphamide; a trial of Imaavy [nipocalimab-aahu intravenous infusion] or Rystiggo [rozanolixizumab-noli subcutaneous infusion] also counts); AND",
+        "Patient has evidence of unresolved symptoms of myasthenia gravis (includes difficulty swallowing, difficulty breathing, or a functional disability resulting in the discontinuation of physical activity [e.g., double vision, talking, impairment of mobility]); AND",
+        "The medication is prescribed by or in consultation with a neurologist; AND",
+        "Preferred Product Criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Myasthenia Gravis \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "According to the prescriber, patient is continuing to derive benefit from the rituximab product (examples of benefit include reductions in exacerbations of myasthenia gravis; improvements in speech, swallowing, mobility, and respiratory function); AND",
+        "The medication is prescribed by or in consultation with a neurologist; AND",
+        "Preferred Product Criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Neuromyelitis Optica Spectrum Disorder",
+      "clinical_criteria": [
+        "Medication is prescribed by or in consultation with a neurologist; AND",
+        "Preferred Product Criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Pediatric Nephrotic Syndrome \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "Patient is \u2264 18 years of age; AND",
+        "Patient meets ONE of the following: (a) Patient has tried at least one systemic corticosteroid (examples include prednisone or prednisolone); OR (b) Patient has tried at least one glucocorticoid-sparing agent for nephrotic syndrome (examples include oral calcineurin inhibitors [e.g., tacrolimus, cyclosporine], cyclophosphamide, or mycophenolate mofetil); AND",
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Pediatric Nephrotic Syndrome \u2013 Patient has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "The medication is prescribed by or in consultation with a nephrologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Solid Organ Transplantation",
+      "clinical_criteria": [
+        "Patient meets ONE of the following: (i) The medication will be used for desensitization therapy prior to or immediately after transplantation; OR (ii) The medication will be used for antibody-mediated rejection; AND",
+        "The medication will be prescribed by or in consultation with a physician affiliated with a transplant center; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Systemic Lupus Erythematosus (SLE) [Lupus] \u2013 Initial Therapy",
+      "clinical_criteria": [
+        "This includes nephrotic syndrome in a patient with SLE.",
+        "Patient has tried at least ONE standard immunomodulating or immunosuppressant agent (examples include hydroxychloroquine, corticosteroids [e.g., prednisone, methylprednisolone], methotrexate, azathioprine, mycophenolate, and cyclophosphamide); AND",
+        "The medication is prescribed by or in consultation with a rheumatologist, nephrologist, or neurologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Systemic Lupus Erythematosus (SLE) [Lupus] \u2013 Individual has Already Received a Course of a Rituximab Product",
+      "clinical_criteria": [
+        "6 months or greater will elapse between treatment courses (there will be a minimum of 6 months separating the first dose of the previous rituximab course and the first dose of the requested course of rituximab); AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "indication_name": "Thrombotic Thrombocytopenic Purpura",
+      "clinical_criteria": [
+        "The medication will be used in combination with systemic corticosteroids (examples include prednisone and methylprednisolone); AND",
+        "The medication will be used in combination with therapeutic plasma exchange; AND",
+        "The medication is prescribed by or in consultation with a hematologist; AND",
+        "Preferred product criteria is met for the product(s) as listed in the below table(s)."
+      ],
+      "required_combination_regimens": [
+        "systemic corticosteroids",
+        "therapeutic plasma exchange"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    }
+  ],
+  "prior_auth_required": true,
+  "step_therapy": [
+    {
+      "required_prior_drugs": [
+        "methotrexate (oral or injectable)",
+        "leflunomide",
+        "hydroxychloroquine",
+        "sulfasalazine (one conventional synthetic DMARD for at least 3 months, OR one biologic other than the requested drug for at least 3 months)"
+      ],
+      "condition_description": "Rheumatoid Arthritis \u2013 Initial Therapy: patient must have tried a conventional synthetic DMARD prior to rituximab, unless the patient has already tried a biologic.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "intravenous immunoglobulin (IVIG)",
+        "anti-D (RHO) immunoglobulin",
+        "corticosteroids",
+        "Alvaiz (eltrombopag)",
+        "Doptelet (avatrombopag)",
+        "Nplate (romiplostim)",
+        "Promacta (eltrombopag)",
+        "Tavalisse (fostamatinib)",
+        "splenectomy (one required)"
+      ],
+      "condition_description": "Immune Thrombocytopenia (ITP) \u2013 Initial Therapy: patient must have tried one other therapy for ITP.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "systemic corticosteroids (methylprednisolone, prednisone)",
+        "Jakafi (ruxolitinib)",
+        "Rezurock (belumosudil)",
+        "Niktimvo (axatilimab-csfr)",
+        "cyclosporine",
+        "tacrolimus",
+        "mycophenolate mofetil",
+        "Imbruvica (ibrutinib)",
+        "imatinib",
+        "hydroxychloroquine",
+        "methotrexate",
+        "Nipent (pentostatin)",
+        "interleukin-2 (e.g., Proleukin [aldesleukin])",
+        "sirolimus",
+        "etanercept product (at least one required)"
+      ],
+      "condition_description": "Graft-Versus-Host Disease \u2013 Initial Therapy: patient must have tried at least one systemic medication for GVHD.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "methylprednisolone",
+        "prednisone (at least one systemic corticosteroid)"
+      ],
+      "condition_description": "Immunotherapy-Related Toxicities \u2013 Initial Therapy: patient must be symptomatic despite a trial of at least ONE systemic corticosteroid.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "at least TWO disease-modifying agents for multiple sclerosis (see Appendix B for examples)"
+      ],
+      "condition_description": "Multiple Sclerosis \u2013 Initial Therapy: patient must have experienced inadequate efficacy or significant intolerance to at least TWO other disease-modifying agents for multiple sclerosis.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "pyridostigmine (or contraindication/intolerance)",
+        "azathioprine",
+        "cyclosporine",
+        "mycophenolate mofetil",
+        "methotrexate",
+        "tacrolimus",
+        "cyclophosphamide",
+        "Imaavy (nipocalimab-aahu)",
+        "Rystiggo (rozanolixizumab-noli) (at least one immunosuppressant required)"
+      ],
+      "condition_description": "Myasthenia Gravis \u2013 Initial Therapy: patient must have tried at least one immunosuppressant therapy and must have received or tried pyridostigmine.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "hydroxychloroquine",
+        "corticosteroids (e.g., prednisone, methylprednisolone)",
+        "methotrexate",
+        "azathioprine",
+        "mycophenolate",
+        "cyclophosphamide (at least one required)"
+      ],
+      "condition_description": "Systemic Lupus Erythematosus (SLE) \u2013 Initial Therapy: patient must have tried at least ONE standard immunomodulating or immunosuppressant agent.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "prednisone",
+        "prednisolone",
+        "oral calcineurin inhibitors (e.g., tacrolimus, cyclosporine)",
+        "cyclophosphamide",
+        "mycophenolate mofetil (at least one required)"
+      ],
+      "condition_description": "Pediatric Nephrotic Syndrome \u2013 Initial Therapy: patient must have tried at least one systemic corticosteroid OR at least one glucocorticoid-sparing agent.",
+      "applies_to_products": [
+        "Rituxan",
+        "Riabni",
+        "Ruxience",
+        "Truxima"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "Truxima (rituximab-abbs)",
+        "Riabni (rituximab-arrx)",
+        "Ruxience (rituximab-pvvr)"
+      ],
+      "condition_description": "Rituxan (rituximab) preferred product step therapy: patient must have tried all biosimilar alternatives (Truxima, Riabni, Ruxience) before Rituxan will be approved, unless a formulation difference would cause a significant allergy or serious adverse reaction.",
+      "applies_to_products": [
+        "Rituxan"
+      ]
+    }
+  ],
+  "excluded_indications": [
+    "Rituximab products (Rituxan, Riabni, Ruxience, Truxima) for any other non-oncology use is considered not medically necessary.",
+    "Oncology indications (including post-transplant lymphoproliferative disorder and Castleman's disease) are addressed in a separate coverage policy (Oncology Medications #1403).",
+    "Rituxan Hycela (rituximab and hyaluronidase human) is addressed in a separate coverage policy.",
+    "Factor Inhibitors in an Individual with Hemophilia \u2013 this use was removed from this policy."
+  ],
+  "approval_duration_initial": "Varies by indication: 1 month for most initial therapy approvals; 6 months for Myasthenia Gravis; 1 year for Solid Organ Transplantation and Multiple Sclerosis initial therapy.",
+  "approval_duration_renewal": "Varies by indication: 1 month for most renewal/subsequent course approvals; 1 year for ANCA-Associated Vasculitis follow-up, GVHD subsequent course, Multiple Sclerosis (\u22651 year on rituximab), Pemphigus Vulgaris maintenance, and Solid Organ Transplantation.",
+  "dosing_limits": [
+    {
+      "description": "ANCA-Associated Vasculitis \u2013 Initial Therapy (Option 1)",
+      "max_dose": "375 mg/m2 per dose",
+      "frequency": "4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "ANCA-Associated Vasculitis \u2013 Initial Therapy (Option 2)",
+      "max_dose": "Up to two 1,000 mg intravenous doses",
+      "frequency": "separated by at least 2 weeks",
+      "max_units_per_period": null
+    },
+    {
+      "description": "ANCA-Associated Vasculitis \u2013 Follow-Up Treatment \u2265 18 years of age",
+      "max_dose": "Up to 1,000 mg administered by intravenous infusion",
+      "frequency": "for 6 doses",
+      "max_units_per_period": null
+    },
+    {
+      "description": "ANCA-Associated Vasculitis \u2013 Follow-Up Treatment < 18 years of age",
+      "max_dose": "Up to 250 mg/m2 administered by intravenous infusion",
+      "frequency": "for two doses",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Pemphigus Vulgaris \u2013 Initial Treatment or Treatment of a Relapse",
+      "max_dose": "Up to two 1,000 mg doses administered as an intravenous infusion",
+      "frequency": "separated by at least 2 weeks (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Pemphigus Vulgaris \u2013 Maintenance Therapy",
+      "max_dose": "Up to 500 mg per dose administered intravenously",
+      "frequency": "every 6 months",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Rheumatoid Arthritis",
+      "max_dose": "Up to two 1,000 mg intravenous doses",
+      "frequency": "separated by at least 2 weeks (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Autoimmune Hemolytic Anemia (Option 1)",
+      "max_dose": "375 mg/m2 administered intravenously",
+      "frequency": "4 doses separated by at least 7 days (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Autoimmune Hemolytic Anemia (Option 2)",
+      "max_dose": "100 mg administered intravenously",
+      "frequency": "4 doses separated by at least 7 days (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Graft-Versus-Host Disease",
+      "max_dose": "Up to 375 mg/m2 administered intravenously",
+      "frequency": "doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Hematopoietic Cell Transplantation",
+      "max_dose": "One dose of 375 mg/m2 IV before transplant; three doses of 1,000 mg/m2 IV after transplant",
+      "frequency": "post-transplant doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Immune Thrombocytopenia (ITP)",
+      "max_dose": "Up to 375 mg/m2 administered intravenously",
+      "frequency": "doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors (Option 1)",
+      "max_dose": "Up to 500 mg/m2 or up to 1,000 mg administered intravenously",
+      "frequency": "2 doses separated by at least 14 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors (Option 2)",
+      "max_dose": "Up to 375 mg/m2 administered intravenously",
+      "frequency": "4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic Disease",
+      "max_dose": "Up to two 1,000 mg intravenous doses",
+      "frequency": "separated by at least 2 weeks (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Membranous Nephropathy (Option 1)",
+      "max_dose": "1,000 mg administered intravenously",
+      "frequency": "2 doses separated by at least 14 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Membranous Nephropathy (Option 2)",
+      "max_dose": "375 mg/m2 administered intravenously",
+      "frequency": "up to 4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Minimal Change Disease (Option 1)",
+      "max_dose": "1,000 mg administered intravenously",
+      "frequency": "up to 2 doses separated by at least 14 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Minimal Change Disease (Option 2)",
+      "max_dose": "375 mg/m2 administered intravenously",
+      "frequency": "up to 4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Multiple Sclerosis",
+      "max_dose": "Up to 2,000 mg (total)",
+      "frequency": "administered as one or two intravenous infusions over 1 month; at least 6 months between courses",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Myasthenia Gravis (Option 1)",
+      "max_dose": "1,000 mg administered intravenously",
+      "frequency": "2 doses separated by at least 14 days (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Myasthenia Gravis (Option 2)",
+      "max_dose": "375 mg/m2 administered intravenously for 4 doses separated by at least 7 days with or without an additional 375 mg/m2 administered monthly for 2 doses",
+      "frequency": "up to 6 doses total (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Myasthenia Gravis (Option 3)",
+      "max_dose": "750 mg/m2 administered intravenously",
+      "frequency": "2 doses separated by at least 14 days (one course)",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Neuromyelitis Optica Spectrum Disorder (Option 1)",
+      "max_dose": "Up to 375 mg/m2 administered intravenously",
+      "frequency": "4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Neuromyelitis Optica Spectrum Disorder (Option 2)",
+      "max_dose": "Up to two 1,000 mg doses administered as an intravenous infusion",
+      "frequency": "separated by at least 2 weeks",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Pediatric Nephrotic Syndrome",
+      "max_dose": "375 mg/m2 administered intravenously",
+      "frequency": "up to 4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Solid Organ Transplantation",
+      "max_dose": "Per transplant center protocol",
+      "frequency": "Per transplant center protocol",
+      "max_units_per_period": null
+    },
+    {
+      "description": "Systemic Lupus Erythematosus (SLE)",
+      "max_dose": "Approve the requested dose",
+      "frequency": null,
+      "max_units_per_period": null
+    },
+    {
+      "description": "Thrombotic Thrombocytopenic Purpura",
+      "max_dose": "Up to 375 mg/m2 administered intravenously",
+      "frequency": "up to 4 doses separated by at least 7 days",
+      "max_units_per_period": null
+    }
+  ],
+  "site_of_care_restrictions": null,
+  "general_requirements": [
+    "Prior Authorization is required for benefit coverage of rituximab IV products.",
+    "Approval is recommended for those who meet the Criteria and Dosing for the listed indications.",
+    "Requests for doses outside of the established dosing documented in this policy will be considered on a case-by-case basis by a clinician (i.e., Medical Director or Pharmacist).",
+    "In cases where the approval is authorized in months, 1 month is equal to 30 days.",
+    "Initial approval requires rituximab to be prescribed by or in consultation with a physician who specializes in the condition being treated.",
+    "Documentation is required where noted in the criteria as [documentation required]. Documentation may include, but is not limited to, chart notes, laboratory tests, claims records, and/or other information. All documentation must include patient-specific identifying information.",
+    "Employer Plans \u2013 Rituxan (rituximab intravenous infusion) Product Criteria: Patient meets BOTH of the following (A and B): A. Patient has tried ALL of the following: Truxima, Riabni, and Ruxience [documentation required]; B. Patient cannot continue to use each formulary alternative due to a formulation difference in the inactive ingredient(s) [e.g., differences in stabilizing agent, buffering agent, and/or surfactant] which, according to the prescriber, would result in a significant allergy or serious adverse reaction [documentation required].",
+    "Individual and Family Plans \u2013 Rituxan (rituximab intravenous infusion) Product Criteria: Patient meets BOTH of the following (A and B): A. Patient has tried ALL of the following: Truxima, Riabni, and Ruxience [documentation required]; B. Patient cannot continue to use each formulary alternative due to a formulation difference in the inactive ingredient(s) [e.g., differences in stabilizing agent, buffering agent, and/or surfactant] which, according to the prescriber, would result in a significant allergy or serious adverse reaction [documentation required]."
+  ],
+  "preferred_products": [
+    "Riabni (rituximab-arrx)",
+    "Ruxience (rituximab-pvvr)",
+    "Truxima (rituximab-abbs)"
+  ],
+  "policy_changes": [
+    "7/1/2025 \u2013 Selected Revision: Preferencing Product Table. Removed 'Individual has previously started on or is currently receiving Rituxan (rituximab)'.",
+    "8/15/2025 \u2013 Selected Revision: Added documentation instructions. Neuromyelitis Optica Spectrum Disorder: Updated from 'Documented diagnosis of neuromyelitis optica spectrum disorder' to 'diagnosis was confirmed by a positive blood serum test for anti-aquaporin-4 antibody [documentation required]'.",
+    "10/15/2025 \u2013 Annual Revision: Policy Title updated from 'Rituximab for Non-Oncology Indication' to 'Rituximab Intravenous Products for Non-Oncology Indications'. ANCA-Associated Vasculitis: Induction Therapy approval duration updated from 12 months to 1 month; removed Churg-Strauss syndrome and pauci-immune glomerulonephritis from examples; updated glucocorticoid requirement; added pulmonologist to specialty requirement. Follow-Up Treatment: updated prescriber language; updated interval language; removed specialty requirement. Dosing: updated adult and pediatric follow-up dosing language. Pemphigus Vulgaris: renamed indication; updated approval durations; added relapse-specific and maintenance-specific criteria; updated dosing. Rheumatoid Arthritis: updated approval durations; added criteria for two or more courses. Graft-Versus-Host Disease: updated approval duration; added chronic GVHD criterion; updated prior therapy language; added criteria for subsequent course. Hematopoietic Cell Transplantation: added criteria and dosing. Immune Thrombocytopenia: updated name; updated approval duration; updated prior therapy language; updated subsequent course language; removed hematologist requirement for subsequent course. Immunotherapy-Related Toxicities: added checkpoint inhibitor examples; updated approval durations; added prescriber attestation criteria; added specialties; updated dosing. Multiple Sclerosis: updated prior therapy requirement from one to two agents; added criteria for currently receiving rituximab. Neuromyelitis Optica Spectrum Disorder: updated approval duration from 12 months to 1 month; removed AQP4 antibody documentation requirement. Systemic Lupus Erythematosus: corrected spelling; updated approval durations; updated prior therapy language; updated subsequent course criteria; added dosing.",
+    "2/1/2026 \u2013 Selected Revision: Pemphigus Vulgaris Maintenance Therapy: Added 'every 6 months' to dosing regimen. Autoimmune Hemolytic Anemia: updated name from 'Refractory Autoimmune Hemolytic Anemia'; updated authorization duration from 12 months to 1 month; removed prior therapy failure requirement; added hematologist requirement; added dosing. Immune Thrombocytopenia (ITP): updated subsequent course response/relapse language from 'as determined by the prescriber' to 'according to the prescriber'. Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic Disease: added criteria and dosing. Membranous Nephropathy: updated name; updated authorization duration from 12 months to 1 month; removed specific risk criteria; added moderate/high risk language; added subsequent course criteria; added dosing. Minimal Change Disease: added criteria and dosing. Myasthenia Gravis: updated authorization duration from 12 months to 6 months; added anti-MuSK antibody criterion; added pyridostigmine criterion; updated prior therapy requirement; added unresolved symptoms criterion; added neurologist requirement; added subsequent course criteria; added dosing. Pediatric Nephrotic Syndrome: updated authorization duration from 12 months to 1 month; updated prior therapy language; added nephrologist requirement; added subsequent course criteria; added dosing. Solid Organ Transplantation: updated desensitization language; updated antibody-mediated rejection language; added transplant center affiliation requirement; added dosing. Thrombotic Thrombocytopenic Purpura: updated authorization duration from 12 months to 1 month; removed diagnosis criterion; updated corticosteroid requirement language; updated plasma exchange language; added dosing. Factor Inhibitors in an Individual with Hemophilia: this use was removed."
+  ],
+  "raw_text": "--- Page 1 ---\nDrug Coverage Policy\nEffective Date .................. 02/01/2026\nCoverage Policy Number .......... IP0319\nPolicy Title\u2026.... Rituximab Intravenous\nProducts for Non-Oncology Indications\nRituximab Intravenous Products for Non-\nOncology Indications\n\u2022 Riabni\u2122 (rituximab-arrx intravenous infusion \u2013 Amgen)\n\u2022 Rituxan\u00ae (rituximab intravenous infusion \u2212 Genentech)\n\u2022 Ruxience\u00ae (rituximab-pvvr intravenous infusion \u2013 Pfizer)\n\u2022 Truxima\u00ae (rituximab-abbs intravenous infusion \u2013 Celltrion/Teva)\nINSTRUCTIONS FOR USE\nThe following Coverage Policy applies to health benefit plans administered by Cigna Companies.\nCertain Cigna Companies and/or lines of business only provide utilization review services to clients\nand do not make coverage determinations. References to standard benefit plan language and\ncoverage determinations do not apply to those clients. Coverage Policies are intended to provide\nguidance in interpreting certain standard benefit plans administered by Cigna Companies. Please\nnote, the terms of a customer\u2019s particular benefit plan document [Group Service Agreement,\nEvidence of Coverage, Certificate of Coverage, Summary Plan Description (SPD) or similar plan\ndocument] may differ significantly from the standard benefit plans upon which these Coverage\nPolicies are based. For example, a customer\u2019s benefit plan document may contain a specific\nexclusion related to a topic addressed in a Coverage Policy. In the event of a conflict, a customer\u2019s\nbenefit plan document always supersedes the information in the Coverage Policies. In the absence\nof a controlling federal or state coverage mandate, benefits are ultimately determined by the\nterms of the applicable benefit plan document. Coverage determinations in each specific instance\nrequire consideration of 1) the terms of the applicable benefit plan document in effect on the date\nof service; 2) any applicable laws/regulations; 3) any relevant collateral source materials including\nCoverage Policies and; 4) the specific facts of the particular situation. Each coverage request\nshould be reviewed on its own merits. Medical directors are expected to exercise clinical judgment\nwhere appropriate and have discretion in making individual coverage determinations. Where\ncoverage for care or services does not depend on specific circumstances, reimbursement will only\nbe provided if a requested service(s) is submitted in accordance with the relevant criteria outlined\nin the applicable Coverage Policy, including covered diagnosis and/or procedure code(s).\nReimbursement is not allowed for services when billed for conditions or diagnoses that are not\ncovered under this Coverage Policy (see \u201cCoding Information\u201d below). When billing, providers\nmust use the most appropriate codes as of the effective date of the submission. Claims submitted\nfor services that are not accompanied by covered code(s) under the applicable Coverage Policy will\nbe denied as not covered. Coverage Policies relate exclusively to the administration of health\nbenefit plans. Coverage Policies are not recommendations for treatment and should never be used\nas treatment guidelines. In certain markets, delegated vendor guidelines may be used to support\nmedical necessity and other coverage determinations.\nPage 1 of 32\nCoverage Policy Number: IP0319\n\n--- Page 2 ---\nOVERVIEW\nRituximab products are CD20-directed cytolytic antibodies. All approved rituximab intravenous\nproducts are indicated for treatment of the following conditions:1-3,22\n\u2022 Chronic lymphocytic leukemia (CLL), in combination with fludarabine and\ncyclophosphamide (FC) for the treatment of patients with previously untreated and\npreviously treated CD20-positive disease.\n\u2022 Granulomatosis with polyangiitis (Wegener\u2019s granulomatosis) and microscopic\npolyangiitis in adults, in combination with glucocorticoids.\n\u2022 Non-Hodgkin lymphoma (NHL), for the following uses:\npreviously untreated follicular, CD20-positive disease, in combination with first-line\no\nchemotherapy, and in patients achieving a complete or partial response to rituximab in\ncombination with chemotherapy, as a single-agent maintenance therapy.\nfor relapsed or refractory, low-grade or follicular, CD20-positive, B-cell disease.\no\nfor non-progressing (including stable disease) low-grade, CD20-positive, B-cell disease\no\nas a single agent after first-line cyclophosphamide/vincristine/prednisone (CVP)\nchemotherapy.\nfor previously untreated diffuse large B-cell, CD20-positive disease, in combination with\no\ncyclophosphamide/doxorubicin/vincristine/prednisone (CHOP) or other anthracycline-\nbased chemotherapy regimens.\n\u2022 Pemphigus vulgaris, for adults with moderate to severe disease.\n\u2022 Rheumatoid arthritis, in adult patients with moderately to severely active disease, in\ncombination with methotrexate for patients who have had an inadequate response to one\nor more tumor necrosis factor inhibitors.\nIn addition to the above indications, Rituxan intravenous is also indicated for treatment of the\nfollowing conditions:1\n\u2022 Granulomatosis with polyangiitis (Wegener\u2019s granulomatosis) and microscopic\npolyangiitis in patients \u2265 2 years of age, in combination with glucocorticoids.\n\u2022 B-cell lymphoma, in patients \u2265 6 months of age with previously untreated, advanced\nstage, CD20-positive diffuse large B-cell lymphoma, Burkitt lymphoma, Burkitt-like\nlymphoma, or mature B-cell acute leukemia in combination with chemotherapy.\nRiabni, Ruxience, and Truxima are approved as biosimilars to Rituxan intravenous, indicating no\nclinically meaningful differences in safety and effectiveness and the same mechanism of action,\nroute of administration, dosage form, and strength as Rituxan intravenous. However, minor\ndifferences in clinically inactive components are allowed. At this time, biosimilars have not\ndemonstrated interchangeability.\nGuidelines\nThe use of rituximab is supported in clinical guidelines in numerous situations, both as first-line\ntherapy and in patients who have refractory disease or have relapsed following treatment with\nother therapies.4-21\n\u2022 Antineutrophil Cytoplasmic Antibody (ANCA)-Associated Vasculitis: Guidelines\nfrom the American College of Rheumatology (ACR) [2021] list rituximab among the\nalternatives for induction or maintenance of remission. Various regimens are recommended\nwith a typical maximum of 1,000 mg/infusion. For maintenance dosing, at least 4 months\nshould separate doses. The optimal dose of rituximab for remission maintenance remains\nuncertain. Although scheduled maintenance is conditionally recommended over the use of\nPage 2 of 32\nCoverage Policy Number: IP0319\n\n--- Page 3 ---\nCD19+ B-cell counts and/or ANCA titers to guide retreatment, there are data to support\nboth approaches.\n\u2022 Autoimmune Hemolytic Anemia (AIHA): AIHA is divided serologically into warm type\n(65% of cases), cold type (29% of cases are cold hemagglutinin disease [CHAD]),\nparoxysmal cold hemoglobinuria (1% of cases), or mixed AIHA (5% of cases).30 For\nprimary warm AIHA, prednisolone is recommended first-line by the British Society for\nHaematology (BSH) with rituximab as second-line if no response or if patient relapses.\nThird-line options include azathioprine, cyclosporin, danazol, mycophenolate mofetil, or\nsplenectomy. For CHAD, rituximab is considered a first-line therapy. Mixed AIHA is treated\nas warm AIHA. Supportive care is recommended for paroxysmal cold hemoglobinuria. The\nBSH guidelines note that the standard regimen for rituximab IV is 375 mg/m2 weekly for 4\nconsecutive weeks; however low dose rituximab (i.e., 100 mg weekly for 4 weeks with\nprednisolone, first or second line) produced comparable response rates.\n\u2022 Immune Thrombocytopenia (ITP): Guidelines from the American Society of\nHematology for ITP (2019) mention rituximab as an alternative for children and adults with\nITP who do not respond to first-line treatment, and for adults who are corticosteroid-\ndependent.17\n\u2022 Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors: NCCN\n(version 1.2025 \u2013 December 20, 2024) and the American Society of Clinical Oncology\n(ASCO) guidelines (2021) recommend rituximab as an option for corticosteroid-refractory\ndermatologic and hematologic immune mediated adverse events, as well as for myasthenia\ngravis, immune-mediated encephalitis, myositis, and stage 3 acute kidney injury/elevated\nserum creatinine.26,27\n\u2022 Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic\nDisease (SARD-ILD): The American College of Rheumatology (ACR) and the American\nCollege of Chest Physicians (CHEST) [2023] conditionally recommend rituximab as a first-\nline ILD treatment option for adults with SARD-ILD.48 Other first-line options include\nmycophenolate, azathioprine, and cyclophosphamide. In addition, rituximab is conditionally\nrecommended for people with SARD-ILD progression despite first ILD treatment. Rituximab\nis also conditionally recommended for people with SARD and rapidly progressive ILD as a\nfirst-line treatment option. Other first-line treatment options include cyclophosphamide,\nintravenous immune globulin, mycophenolate, a calcineurin inhibitor, and Janus kinases\ninhibitors. Recommended dosing is 1 gram IV every 2 weeks for 2 doses; treatment may\nbe repeated every 24 weeks as needed.\n\u2022 Membranous Nephropathy: The Kidney Disease: Improving Global Outcomes (KDIGO)\nClinical Practice Guideline for the Management of Glomerular Diseases (2021) list rituximab\nas a therapeutic option for membranous nephropathy in patients at moderate risk or high\nrisk for progressive loss of kidney function.31 In patients who relapse, initial therapy can\nbe repeated or treatment may be switched to rituximab if the initial treatment was a\ncalcineurin inhibitor or cyclophosphamide. KDIGO recommends a treatment regimen of 1\nor 2 infusions of 1 gram of rituximab each administered 2 weeks apart or 375 mg/m2 give\n1-4 times at weekly intervals.\n\u2022 Minimal Change Disease (MCD): The Kidney Disease: Improving Global Outcomes\n(KDIGO) Clinical Practice Guideline for the Management of Glomerular Diseases (2021) list\nrituximab as a therapeutic option for adults with frequently relapsing or steroid-dependent\nMCD.31 KDIGO recommends one of the following induction regimens: 375 mg/m2 weekly\nPage 3 of 32\nCoverage Policy Number: IP0319\n\n--- Page 4 ---\nfor 4 doses; 375 mg/m2 for a single dose and repeat after one week if CD19 cells >\n5/mm3; or 1 gram/dose for 2 doses, 2 weeks apart. For relapses after induction, either\n375 mg/m2 for one dose or 1 gram for 1 dose is recommended.\n\u2022 Multiple Sclerosis (MS): In June 2019, a consensus paper was updated by the MS\nCoalition that discusses the use of disease-modifying therapies in MS.18 Rituximab is listed\namong various options, involving different mechanisms of action and modes of\nadministration, which have shown benefits in patients with MS. The American Academy of\nNeurology has practice guidelines regarding disease-modifying therapies for adults with\nMS.19 The guidelines mention rituximab for use in MS.\n\u2022 Myasthenia Gravis (MG): An international consensus guidance for the management of\nMG was published in 2016.35 The consensus guidance recommends pyridostigmine for the\ninitial treatment in most patients with MG. The ability to discontinue pyridostigmine can\nindicate that the patient has met treatment goals and may guide the tapering of other\ntherapies. Corticosteroids or immunosuppressant therapy should be used in all patients\nwith MG who have not met treatment goals after an adequate trial of pyridostigmine.\nNonsteroidal immunosuppressant agents used in MG include azathioprine, cyclosporine,\nmycophenolate mofetil, methotrexate, and tacrolimus. It is usually necessary to maintain\nsome immunosuppression for many years, sometimes for life. Plasma exchange and\nintravenous immunoglobulin can be used as short-term treatments for certain patients. An\nupdate to an international consensus guidance for the management of MG was published in\n2020.36 Rituximab should be considered as an early therapeutic option in patients with\nmuscle specific kinase antibody-positive MG who have an unsatisfactory response to initial\nimmunotherapy. While the efficacy of rituximab in acetylcholine receptor antibody-positive\nMG is uncertain, it is an option if patients fail or do not tolerate other immunosuppressive\nagents. Various dosing regimens have been utilized in both prospective trials and\nretrospective analyses that are referenced in the consensus guidance.\n\u2022 Neuromyelitis Optica Spectrum Disorders (NMOSD): The Neuromyelitis Optica Study\nGroup (NEMOS) published revised recommendations for the treatment of NMOSD in 2023\nand recommend rituximab as a treatment option for aquaporin-4 (AQP4)-immunoglobulin\nG (IgG) positive NMOSD and double-negative NMOSD.20\n\u2022 Oncology indications covered in National Comprehensive Cancer Network (NCCN)\nguidelines:6\nAcute Lymphoblastic Leukemia: Guidelines (version 2.2025 \u2013 June 27, 2025) list\no\nrituximab in multiple regimens for Philadelphia chromosome (Ph)-negative disease for\npatients with CD20-positive disease.11 In those with Ph-positive disease, rituximab\nshould be considered in addition to chemotherapy for those with CD20-positive disease,\nespecially in those < 60 years of age.\nB-Cell Lymphomas: In the guidelines (version 2.2025 \u2013 February 10, 2025),\no\nrituximab is included in multiple treatment regimens across the spectrum of disease.8\nGuidelines for pediatric aggressive mature B-cell lymphomas (version 2.2025 \u2013 April\n28, 2025) include rituximab intravenous as a component of treatment regimens for\ninduction therapy/initial treatment and as subsequent therapy for relapsed or refractory\ndisease.9 For primary cutaneous lymphomas (version 3.2025 \u2013 June 10, 2025),\nrituximab is a treatment option for patients with primary cutaneous B-cell lymphoma.10\nFor Castleman disease, rituximab is broadly recommended in the guidelines (version\n2.2025 \u2013 January 28, 2025) for unicentric and multicentric Castleman disease as initial\nPage 4 of 32\nCoverage Policy Number: IP0319\n\n--- Page 5 ---\ntherapy and second-line and subsequent therapy either as monotherapy or in\ncombination with other treatments.28\nCLL/Small Lymphocytic Lymphoma: Rituximab features prominently in the\no\nguidelines (version 3.2025 \u2013 April 2, 2025) and is included in multiple treatment\nregimens across the spectrum of disease.7\nGraft-Versus-Host Disease (GVHD): The hematopoietic cell transplantation\no\nguidelines (version 2.2025 \u2013 June 3, 2025) list rituximab among the agents used for\nsteroid-refractory chronic GVHD.15 Among the agents FDA-approved for use in chronic\nGVHD, Jakafi\u00ae (ruxolitinib tablets) is the only agent given a category 1 recommendation\nfor chronic GVHD. Other alternatives with a category 2A recommendation include\nNiktimvo\u2122 (axatilimab-csfr), Rezurock\u00ae (belumosudil), and Imbruvica\u00ae (ibrutinib),\nOrencia\u00ae (abatacept), alemtuzumab, calcineurin inhibitors (e.g., tacrolimus,\ncyclosporine), etanercept, extracorporeal photopheresis, hydroxychloroquine, imatinib,\ninterleukin-2, low-dose methotrexate, mammalian target of rapamycin inhibitors (e.g.,\nsirolimus), mycophenolate mofetil, pentostatin, and rituximab.\nHairy Cell Leukemia: Guidelines (version 1.2025 \u2013 September 26, 2024) recommend\no\nrituximab as a component in a preferred primary regimen, and in multiple regimens for\nrelapsed/refractory disease (including in patients with progressive disease after\nrelapsed/refractory therapy).12\nHematopoietic Cell Transplant: Guidelines (version 2.2025 \u2013 June 3, 2025) list\no\nrituximab in combination with cyclophosphamide and fludarabine as a non-\nmyeloablative regimen for conditioning for allogeneic transplantation.15 NCCN provides\na specific regimen of 375 mg/m2 IV for 1 day before transplant and 1,000 mg/m2 IV on\ndays 1, 8, and 15 after transplant.\nHistiocytic Neoplasms \u2013 Rosai-Dorman Disease: Guidelines (version 1.2025 \u2013\no\nJune 20, 2025) recommend rituximab as first-line or subsequent therapy, irrespective\nof mutation, as a single agent.29\nHodgkin Lymphoma: Guidelines (version 2.2025 \u2013 January 30, 2025) recommend\no\nrituximab \u00b1 chemotherapy and/or radiation (depending on the clinical presentation) in\nthe first-line setting for nodular lymphocyte-predominant disease.13 Rituximab is also\nused for relapsed/refractory disease and for maintenance. Guidelines for pediatric\ndisease (version 2.2025 \u2013 June 9, 2025) include rituximab in regimens for primary\ntreatment of nodular lymphocyte-predominant disease.25\nPrimary Central Nervous System Lymphoma: Guidelines for central nervous\no\nsystem cancers (version 1.2025 \u2013 June 3, 2025) recommend rituximab in multiple\nregimens for induction therapy and relapsed or refractory primary central nervous\nsystem lymphoma.24\nWaldenstrom Macroglobulinemia/Lymphoplasmacytic Lymphoma: Guidelines\no\n(version 1.2026 \u2013 June 24, 2025) include rituximab in regimens across the spectrum of\ndisease (primary therapy, previously treated disease, and maintenance).14\n\u2022 Pediatric Nephrotic Syndrome: The Kidney Disease: Improving Global Outcomes\n(KDIGO) 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in\nChildren recommends rituximab as a treatment option for steroid-sensitive nephrotic\nsyndrome in children who have frequent relapses despite optimal combinations of\nprednisone and glucocorticoid-sparing oral agents.32 For steroid-resistant nephrotic\nsyndrome, KDIGO recommends cyclosporine or tacrolimus as initial second-line therapy. A\nPage 5 of 32\nCoverage Policy Number: IP0319\n\n--- Page 6 ---\npotential role was suggested for the use of rituximab in patients with calcineurin inhibitor-\nresistant, steroid-resistant nephrotic syndrome. KDIGO provides a dosing recommendation\nfor rituximab of 375 mg/m2 IV for 1 to 4 doses. Supporting references that used more than\n1 dose separated infusions by at least 1 week.\n\u2022 Pemphigus Vulgaris: British guidelines (2017) list rituximab in combination with\ncorticosteroids as a first-line therapy.23\n\u2022 Rheumatoid Arthritis: Guidelines from ACR (2021) recommend the addition of a biologic\n(which includes rituximab) or a targeted synthetic disease modifying antirheumatic drug\n(DMARD) for a patient taking the maximum tolerated dose of methotrexate who is not at\ntarget.16\n\u2022 Solid Organ Transplantation: Various transplant center protocols and clinical practice\nguidelines discuss the use of rituximab for highly sensitized patients as part of\ndesensitization protocols and for acute antibody-mediated rejection following\ntransplantation.37-44\n\u2022 Systemic Lupus Erythematosus (SLE): European League Against Rheumatism\nrecommendations for the management of SLE (2023) mention rituximab as a therapeutic\noption for patients who are refractory to standard immunosuppressive therapies.21\n\u2022 Thrombotic Thrombocytopenic Purpura (TTP): The International Society on\nThrombosis and Haemostasis (ISTH) [2025] recommends the addition of rituximab to\ncorticosteroids and therapeutic plasma exchange for patients experiencing their first acute\nevent or relapses of immune-mediated TTP.33-34 This is a conditional recommendation in\nthe context of very low certainty of evidence. A dosing regimen of rituximab IV 375 mg/m2\nadministered weekly for 4 doses has been used in a phase II study and observed in\nretrospective analyses.45-47\nThis coverage policy addresses the use of rituximab for non-oncology indications. The use of\nrituximab for oncology indications (including post-transplant lymphoproliferative disorder and\nCastleman\u2019s disease) and Rituxan Hycela\u00ae (rituximab and hyaluronidase human) are addressed in\na separate coverage policy. Please refer to the related coverage policy (Oncology Medications\n#1403).\nCoverage Policy\nPOLICY STATEMENT\nPrior Authorization is required for benefit coverage of rituximab IV products. Approval is\nrecommended for those who meet the Criteria and Dosing for the listed indications. Requests for\ndoses outside of the established dosing documented in this policy will be considered on a case-by-\ncase basis by a clinician (i.e., Medical Director or Pharmacist). All approvals are provided for the\nduration noted below. In cases where the approval is authorized in months, 1 month is equal to\n30 days. Because of the specialized skills required for evaluation and diagnosis of patients treated\nwith rituximab products as well as the monitoring required for adverse events and long-term\nefficacy, initial approval requires rituximab to be prescribed by or in consultation with a physician\nwho specializes in the condition being treated.\nDocumentation: Documentation is required where noted in the criteria as [documentation\nrequired]. Documentation may include, but is not limited to, chart notes, laboratory tests, claims\nrecords, and/or other information. All documentation must include patient-specific identifying\ninformation.\nPage 6 of 32\nCoverage Policy Number: IP0319\n\n--- Page 7 ---\nRituximab intravenous products (Rituxan, Riabni, Ruxience, Truxima) are considered\nmedically necessary when ONE of the following is met:\nFDA-Approved Indications\n1. Antineutrophil Cytoplasmic Antibody (ANCA)-Associated Vasculitis. Approve for the\nduration noted if the patient meets ONE of the following (A or B):\nA. Induction Treatment. Approve for 1 month if the patient meets ALL of the following\n(i, ii, iii and iv):\ni. Patient has an ANCA-associated vasculotide; AND\nNote: Examples of ANCA-associated vasculitis include granulomatosis with\npolyangiitis (Wegener\u2019s granulomatosis), or microscopic polyangiitis.\nii. The medication is being administered in combination with glucocorticoids;\nAND\niii. The medication is prescribed by or in consultation with a rheumatologist,\nnephrologist, pulmonologist, or immunologist; AND\niv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Follow-Up Treatment of Patients Who Have Received Induction Treatment for ANCA-\nAssociated Vasculitis. Approve for 1 year if the patient meets ALL of the following (i,\nii, and iii):\nNote: This includes a patient who received induction treatment using a rituximab\nproduct or other standard of care immunosuppressants.\ni. According to the prescriber, the patient achieved disease control with\ninduction treatment; AND\nii. If the patient previously received a course of therapy, at least 16 weeks will\nelapse between courses; AND.\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve ONE of the following (A or B):\nA. Initial Therapy: Approve ONE of the following (i or ii):\ni. 375 mg/m2 per dose administered intravenously for 4 doses separated by at\nleast 7 days; OR\nii. Up to two 1,000 mg intravenous doses separated by at least 2 weeks; OR\nB. Follow-Up Treatment of a Patient Who Has Received Induction Treatment for ANCA-\nAssociated Vasculitis: Approve ONE of the following (i or ii):\ni. \u2265 18 years of age: Up to 1,000 mg administered by intravenous infusion for\n6 doses; OR\nii. < 18 years of age: Up to 250 mg/m2 administered by intravenous infusion\nfor two doses.\n2. Pemphigus Vulgaris. Approve for the duration noted if the patient meets ONE of the\nfollowing (A, B, or C):\nA. Initial Treatment. Approve for 1 month (which is adequate duration to administer\none course of therapy) if the patient meets ALL of the following (i ii, and iii):\ni. Therapy is initiated in combination with a corticosteroid unless\ncontraindicated; AND\nNote: An example of a corticosteroid is prednisone.\nii. The medication is prescribed by or in consultation with a dermatologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nPage 7 of 32\nCoverage Policy Number: IP0319\n\n--- Page 8 ---\nB. Patient is Being Treated for a Relapse of Pemphigus Vulgaris. Approve for 1 month\n(which is adequate duration to administer one course of therapy) if the patient\nmeets ALL of the following (i, ii and iii):\ni. Subsequent infusions will be administered no sooner than 16 weeks following\nthe previous infusion of a rituximab product; AND\nNote: For example, there will be a minimum of 16 weeks since the first dose\nof the previous course and the first dose of the next course of a rituximab\nproduct.\nii. The medication is prescribed by or in consultation with a dermatologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s)\nC. Patient is Being Treated for Maintenance of Pemphigus Vulgaris. Approve for 1 year\nif the patient meets ALL of the following (i, ii and iii):\ni. Subsequent infusions will be administered no sooner than 16 weeks following\nthe previous infusion of a rituximab product; AND\nNote: For example, there will be a minimum of 16 weeks since the first dose\nof the previous course and the first dose of the next course of a rituximab\nproduct.\nii. The medication is prescribed by or in consultation with a dermatologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s)\nDosing. Approve ONE of the following (A or B):\nA. Initial Treatment or Treatment of a Relapse: Approve one course of therapy, which\nconsists of up to two 1,000 mg doses administered as an intravenous infusion\nseparated by at least 2 weeks; OR\nB. Maintenance Therapy: Approve up to 500 mg per dose administered intravenously\nevery 6 months.\n3. Rheumatoid Arthritis. Approve for the duration noted if the patient meets ONE of the\nfollowing (A, B or C):\nA. Initial Therapy. Approve for 1 month (which is adequate duration to administer one\ncourse of therapy) if the patient meets ALL of the following (i, ii, iii and iv):\ni. Patient has tried ONE conventional synthetic disease-modifying antirheumatic drug\n(DMARD) for at least 3 months; AND\nNote: Examples of conventional synthetic DMARDs include methotrexate [oral or\ninjectable], leflunomide, hydroxychloroquine, and sulfasalazine. An exception to the\nrequirement for a trial of one conventional synthetic DMARD can be made if the\npatient already has a 3-month trial of at least one biologic other than the requested\ndrug. A biosimilar of the requested biologic does not count. Refer to Appendix A for\nexamples of biologics used for rheumatoid arthritis. A patient who has already tried\na biologic is not required to \u201cstep back\u201d and try a conventional synthetic DMARD.\nii. The medication will not be used concurrently with another biologic or with a\ntargeted synthetic DMARD; AND\nNote: Refer to Appendix A for examples of biologics and targeted synthetic\nDMARDs.\niii. The medication is prescribed by or in consultation with a rheumatologist; AND\niv. Preferred product criteria is met for the product(s) as listed in the below table(s);\nOR\nB. Patient has already received one course of a Rituximab Product for Rheumatoid\nArthritis. Approve for 1 month (which is adequate duration to administer one course of\ntherapy) if the patient meets ALL of the following (i, ii and iii):\nPage 8 of 32\nCoverage Policy Number: IP0319\n\n--- Page 9 ---\ni. 16 weeks or greater will elapse between treatment courses; AND\nNote: For example, there will be a minimum of 16 weeks since the first dose of the\nprevious course and the first dose of the next course of a rituximab product.\nii. The medication will not be used concurrently with another biologic or with a\ntargeted synthetic DMARD; AND\nNote: Refer to Appendix A for examples of biologics and targeted synthetic\nDMARDs.\niii. Preferred product criteria is met for the product(s) as listed in the below table(s);\nOR\nC. Patient has already received two or more courses of a Rituximab Product for\nRheumatoid Arthritis. Approve for 1 month (which is adequate duration to administer\none course of therapy) if the patient meets ALL of the following (i, ii, iii and iv):\ni. 16 weeks or greater will elapse between treatment courses; AND\nNote: For example, there will be a minimum of 16 weeks since the first dose of the\nprevious course and the first dose of the next course of a rituximab product.\nii. The medication will not be used concurrently with another biologic or with a\ntargeted synthetic DMARD; AND\nNote: Refer to Appendix A for examples of biologics and targeted synthetic\nDMARDs.\niii. Patient meets at least ONE of the following (a or b):\na. Patient experienced a beneficial clinical response when assessed by at least one\nobjective measure; OR\nNote: Examples of standardized and validated measures of disease activity\ninclude Clinical Disease Activity Index (CDAI), Disease Activity Score (DAS) 28\nusing erythrocyte sedimentation rate (ESR) or C-reactive protein (CRP), Patient\nActivity Scale (PAS)-II, Rapid Assessment of Patient Index Data 3 (RAPID-3),\nand/or Simplified Disease Activity Index (SDAI).\nb. Patient experienced an improvement in at least one symptom, such as\ndecreased joint pain, morning stiffness, or fatigue; improved function or\nactivities of daily living; decreased soft tissue swelling in joints or tendon\nsheaths; AND\niv. Preferred product criteria is met for the product(s) as listed in the below table(s).\nDosing. Approve one course of therapy, which consists of up to two 1,000 mg intravenous\ndoses separated by at least 2 weeks.\nOther Uses with Supportive Evidence\n4. Autoimmune Hemolytic Anemia. Approve for 1 month if the patient meets BOTH of the\nfollowing (A and B):\nA. The medication is prescribed by or in consultation with a hematologist; AND\nB. Preferred product criteria is met for the product(s) as listed in the below table(s).\nDosing: Approve one course of therapy (4 doses), which consists of ONE of the following\n(A or B):\nA. 375 mg/m2 administered intravenously with doses separated by at least 7 days; OR\nB. 100 mg administered intravenously with doses separated by at least 7 days.\nPage 9 of 32\nCoverage Policy Number: IP0319\n\n--- Page 10 ---\n5. Graft-Versus-Host Disease. Approve for the duration noted if the patient meets ONE of\nthe following (A or B):\nA. Initial Therapy: Approve for 1 month if the patient meets ALL of the following (i, ii,\niii, and iv)\ni. Patient has chronic graft-versus-host disease; AND\nii. Patient has tried at least one systemic medication for graft-versus-host\ndisease; AND\nNote: Examples of systemic medications include systemic corticosteroids\n(methylprednisolone, prednisone), Jakafi (ruxolitinib), Rezurock\n(belumosudil), Niktimvo (axatilimab-csfr), cyclosporine, tacrolimus,\nmycophenolate mofetil, Imbruvica (ibrutinib), imatinib, hydroxychloroquine,\nmethotrexate, Nipent (pentostatin), interleukin-2 (e.g., Proleukin\n[aldesleukin]), sirolimus, or an etanercept product.\niii. The medication is prescribed by or in consultation with an oncologist,\nhematologist, or a physician affiliated with a transplant center; AND\niv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product for Graft-Versus-Host\nDisease. Approve for 1 year if the patient meets BOTH of the following (i and ii):\ni. Patient meets ONE of the following (a or b):\na. When assessed by at least one objective measure, patient\nexperienced a beneficial clinical response from baseline (prior to\ninitiating a rituximab product); OR\nNote: Examples of objective measures include normalization of liver\nfunction tests, red blood cell count, or platelet count; or resolution of\nfever or rash.\nb. Compared with baseline (prior to initiating a rituximab product),\npatient experienced an improvement in at least one symptom, such\nas improvement in skin, oral mucosal, ocular, or gastrointestinal\nsymptoms (e.g., nausea, vomiting, anorexia); AND\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve up to 375 mg/m2 administered intravenously with doses separated by at\nleast 7 days\n6. Hematopoietic Cell Transplantation. Approve for 1 month (which is adequate duration\nto administer one course of therapy) if the patient meets ALL of the following (A, B and C):\nA. The medication will be used as part of a conditioning regimen for allogeneic\ntransplant; AND\nB. The medication is prescribed by or in consultation with an oncologist, hematologist,\nor a physician affiliated with a transplant center; AND\nC. Preferred product criteria is met for the product(s) as listed in the below table(s).\nDosing. Approve one course of therapy, which consists of one dose of 375 mg/m2\nadministered intravenously before transplant and three doses of 1,000 mg/m2\nadministered intravenously separated by at least 7 days after transplant.\n7. Immune Thrombocytopenia (ITP). Approve if the patient meets ONE of the following (A\nor B):\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii,\nand iii):\ni. Patient has tried one other therapy; AND\nPage 10 of 32\nCoverage Policy Number: IP0319\n\n--- Page 11 ---\nNote: Examples of therapies for ITP include intravenous immunoglobulin\n(IVIG), anti-D (RHO) immunoglobulin, corticosteroids, Alvaiz (eltrombopag),\nDoptelet (avatrombopag), Nplate (romiplostim), Promacta (eltrombopag),\nTavalisse (fostamatinib) and splenectomy.\nii. The medication is prescribed by or in consultation with a hematologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product for ITP. Approve for 1\nmonth if the patient meets ALL of the following (i, ii, iii, and iv):\ni. At least 6 months will elapse between treatment courses; AND\nNote: For example, there will be a minimum of 6 months separating the first\ndose of the previous course and the first dose of the requested course of a\nrituximab product.\nii. According to the prescriber, the patient responded to therapy; AND\nNote: Examples of a response include a platelet count increase from baseline\nfollowing treatment with a rituximab product.\niii. According to the prescriber, the patient has relapsed; AND\nNote: Examples of relapse include the patient experiences thrombocytopenia\nafter achievement of a remission.\niv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve up to 375 mg/m2 administered intravenously with doses separated by at\nleast 7 days\n8. Immunotherapy-Related Toxicities Associated with Checkpoint Inhibitors. Approve\nfor the duration noted if the patient meets ONE of the following (A or B):\nNote: Examples of checkpoint inhibitors are Keytruda (pembrolizumab intravenous\ninfusion), Opdivo (nivolumab intravenous infusion), Yervoy (ipilimumab intravenous\ninfusion), Tecentriq (atezolizumab intravenous infusion), Bavencio (avelumab intravenous\ninfusion), Imfinzi (durvalumab intravenous infusion), and Libtayo (cemiplimab-rwlc\nintravenous infusion).\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii,\niii, iv, and v):\ni. According to the prescriber, patient developed an immunotherapy-related\ntoxicity; AND\nii. Patient developed this immunotherapy-related toxicity while receiving a\ncheckpoint inhibitor; AND\niii. Patient is symptomatic despite a trial of at least ONE systemic corticosteroid;\nAND\nNote: Examples of a corticosteroid include methylprednisolone and\nprednisone.\niv. The medication is prescribed by or in consultation with an oncologist,\nhematologist, nephrologist, neurologist, rheumatologist, or dermatologist;\nAND\nv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product. Approve for 1 month\nif the patient meets BOTH of the following (i and ii):\ni. The medication is prescribed by or in consultation with an oncologist,\nhematologist, nephrologist, neurologist, rheumatologist, or dermatologist;\nAND\nPage 11 of 32\nCoverage Policy Number: IP0319\n\n--- Page 12 ---\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve dosing that meets ONE of the following (A or B):\nA. Approve up to 500 mg/m2 or up to 1,000 mg administered intravenously for 2 doses\nseparated by at least 14 days; OR\nB. Approve up to 375 mg/m2 administered intravenously for 4 doses separated by at\nleast 7 days\n9. Interstitial Lung Disease Associated with Systemic Autoimmune Rheumatic\nDisease. Approve for the duration noted if the patient meets ONE of the following (A or\nB):\nNote: Examples of systemic autoimmune rheumatic diseases include systemic sclerosis,\nmyositis, mixed connective tissue disease, rheumatoid arthritis, and Sj\u00f6gren\u2019s disease.\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii,\niii, and iv):\ni. Patient is \u2265 18 years of age; AND\nii. Diagnosis is confirmed by high-resolution computed tomography; AND\niii. The medication is prescribed by or in consultation with a pulmonologist or a\nrheumatologist; AND\niv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product for Interstitial Lung\nDisease Associated with Systemic Autoimmune Rheumatic Disease. Approve for 1\nmonth if the patient meets ALL of the following (i, ii, iii, and iv):\ni. 24 weeks or greater will elapse between treatment courses; AND\nNote: For example, there will be a minimum of 24 weeks since the first dose\nof the previous course and the first dose of the next course of a rituximab\nproduct.\nii. Patient has experienced a beneficial response to therapy with rituximab; AND\nNote: Examples of a beneficial response include a reduction in the\nanticipated decline in forced vital capacity, improvement in 6-minute walk\ndistance, and/or reduction in the number or severity of disease-related\nexacerbations.\niii. The medication is prescribed by or in consultation with a pulmonologist or a\nrheumatologist; AND\niv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve one course of therapy, which consists of up to two 1,000 mg intravenous\ndoses separated by at least 2 weeks.\n10. Membranous Nephropathy. Approve for the duration noted if the patient meets ONE of\nthe following (A or B):\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii\nand iii):\ni. According to the prescriber, the patient is at moderate risk or high risk for\nthe progressive loss of kidney function; AND\nii. The medication is prescribed by or in consultation with a nephrologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nPage 12 of 32\nCoverage Policy Number: IP0319\n\n--- Page 13 ---\nB. Patient has Already Received a Course of a Rituximab Product for Membranous\nNephropathy. Approve for 1 month if the patient meets BOTH of the following (i and\nii):\ni. The medication is prescribed by or in consultation with a nephrologist; AND\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve dosing that meets ONE of the following (A or B):\nA. Approve 1,000 mg administered intravenously for 2 doses separated by at least 14\ndays; OR\nB. Approve 375 mg/m2 administered intravenously for up to 4 doses separated by at\nleast 7 days.\n11. Minimal Change Disease. Approve for the duration noted if the patient meets ONE of the\nfollowing (A or B):\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii\nand iii):\ni. The medication is being used for frequently relapsing or steroid-dependent\ndisease; AND\nii. The medication is prescribed by or in consultation with a nephrologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product for Minimal Change\nDisease. Approve for 1 month if patient meets both of the following (i and ii):\ni. The medication is prescribed by or in consultation with a nephrologist; AND\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve dosing that meets ONE of the following (A or B):\nA. Approve 1,000 mg administered intravenously for up to 2 doses separated by at\nleast 14 days; OR\nB. Approve 375 mg/m2 administered intravenously for up to 4 doses separated by at\nleast 7 days.\n12. Multiple Sclerosis. Approve for 1 year if the patient meets ONE of the following (A or B):\nA. Initial Therapy. Approve if the patient meets ALL the following (i, ii, iii, iv and v):\ni. According to the prescriber, the patient has experienced inadequate efficacy\nor significant intolerance to at least TWO other disease-modifying agents for\nmultiple sclerosis; AND\nNote: See Appendix B for examples of disease-modifying agents used for\nmultiple sclerosis.\nii. Medication will not be used concurrently with another disease-modifying\nagent used for multiple sclerosis; AND\nNote: See Appendix B for examples of disease-modifying agents used for\nmultiple sclerosis\niii. The medication is prescribed by or in consultation with a neurologist or a\nphysician who specializes in the treatment of multiple sclerosis; AND\niv. At least 6 months will elapse between treatment courses; AND\nNote: For example, if the patient has already received a course of therapy\nthere will be a minimum of 6 months separating the first dose of the\nprevious course and the first dose of the requested course of therapy; AND\nPage 13 of 32\nCoverage Policy Number: IP0319\n\n--- Page 14 ---\nv. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Patient is Currently Receiving Rituximab. Approve if the patient meets ONE of the\nfollowing (i or ii):\ni. Patient has been receiving Rituximab for < 1 year. Approve if the patient\nmeets ALL of the following (a, b, c, and d):\na. Medication will not be used concurrently with another disease-modifying\nagent used for multiple sclerosis; AND\nNote: See Appendix B for examples of disease-modifying agents used for\nmultiple sclerosis.\nb. At least 6 months will elapse between treatment courses; AND\nNote: For example, if the patient has already received a course of\ntherapy there will be a minimum of 6 months separating the first dose of\nthe previous course and the first dose of the requested course of therapy.\nc. Medication is prescribed by or in consultation with a neurologist or a\nphysician who specializes in the treatment of multiple sclerosis; AND\nd. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nii. Patient has been receiving Rituximab for 1 year or more. Approve for 1 year\nif the patient meets ALL of the following (a, b, c, d, and e):\na. Medication will not be used concurrently with another disease-modifying\nagent used for multiple sclerosis; AND\nNote: See Appendix B for examples of disease-modifying agents used for\nmultiple sclerosis.\nb. At least 6 months will elapse between treatment courses; AND\nNote: For example, if the patient has already received a course of\ntherapy there will be a minimum of 6 months separating the first dose of\nthe previous course and the first dose of the requested course of therapy.\nc. Patient meets ONE of the following [(1) or (2)]:\n(1)Patient experienced a beneficial clinical response when assessed by at\nleast one objective measure; OR\nNote: Examples of a beneficial clinical response include stabilization\nor reduced worsening in disease activity as evaluated by magnetic\nresonance imaging (MRI) [absence or a decrease in gadolinium\nenhancing lesions, decrease in the number of new or enlarging T2\nlesions]; stabilization or reduced worsening on the Expanded\nDisability Status Scale (EDSS) score; achievement in criteria for No\nEvidence of Disease Activity-3 (NEDA-3) or NEDA-4; improvement on\nthe fatigue symptom and impact questionnaire-relapsing multiple\nsclerosis (FSIQ-RMS) scale; reduction or absence of relapses;\nimprovement or maintenance on the six-minute walk test or 12-Items\nMultiple Sclerosis Walking Scale; improvement on the Multiple\nSclerosis Functional Composite (MSFC) score; and or attenuation of\nbrain volume loss.\n(2)Patient experienced stabilization, slow progression, or improvement in\nat least one symptom such as motor function, fatigue, vision,\nbowel/bladder function, spasticity, walking/gait, or\npain/numbness/tingling sensation; AND\nPage 14 of 32\nCoverage Policy Number: IP0319\n\n--- Page 15 ---\nd. Medication is prescribed by or in consultation with a neurologist or a\nphysician who specializes in the treatment of multiple sclerosis; AND\ne. Preferred product criteria is met for the product(s) as listed in the below\ntable(s),\nDosing. Approve up to 2,000 mg (total) administered as one or two intravenous infusions\nadministered over 1 month.\n13. Myasthenia Gravis. Approve for 6 months if the patient meets ONE of the following (A or\nB):\nA. Initial Therapy. Approve if the patient meets ALL of the following (i, ii, iii, iv, v and\nvi)\ni. Patient has confirmed anti-muscle-specific tyrosine kinase antibody-positive\nmyasthenia gravis; AND\nii. Patient meets ONE of the following (a or b):\na. Patient previously received or is currently receiving pyridostigmine; OR\nb. Patient has had inadequate efficacy, contraindication, or significant\nintolerance to pyridostigmine; AND\niii. Patient has tried at least one immunosuppressant therapy; AND\nNote: Examples of immunosuppressant therapies include azathioprine,\ncyclosporine, mycophenolate mofetil, methotrexate, tacrolimus, and\ncyclophosphamide. A trial of Imaavy (nipocalimab-aahu intravenous infusion)\nor Rystiggo (rozanolixizumab-noli subcutaneous infusion) also counts.\niv. Patient has evidence of unresolved symptoms of myasthenia gravis; AND\nNote: Evidence of unresolved symptoms of myasthenia gravis includes\ndifficulty swallowing, difficulty breathing, or a functional disability resulting in\nthe discontinuation of physical activity (e.g., double vision, talking,\nimpairment of mobility).\nv. The medication is prescribed by or in consultation with a neurologist; AND\nvi. Preferred Product Criteria is met for the product(s) as listed in the below\ntable(s).\nB. Patient has Already Received a Course of a Rituximab Product for Myasthenia\nGravis. Approve if the patient meets ALL of the following (i, ii and ii):\ni. According to the prescriber, patient is continuing to derive benefit from the\nrituximab product; AND\nNote: Examples of benefit include reductions in exacerbations of myasthenia\ngravis; improvements in speech, swallowing, mobility, and respiratory\nfunction.\nii. The medication is prescribed by or in consultation with a neurologist; AND\niii. Preferred Product Criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve one course of therapy that meets ONE of the following (A, B, or C):\nA. 1,000 mg administered intravenously for 2 doses separated by at least 14 days; OR\nB. 375 mg/m2 administered intravenously for 4 doses separated by at least 7 days\nwith or without an additional 375 mg/m2 administered monthly for 2 doses (up to 6\ndoses total); OR\nC. 750 mg/m2 administered intravenously for 2 doses separated by at least 14 days.\n14. Neuromyelitis Optica Spectrum Disorder. Approve for 1 month if the patient meets\nBOTH of the following (A and B):\nA. Medication is prescribed by or in consultation with a neurologist; AND\nPage 15 of 32\nCoverage Policy Number: IP0319\n\n--- Page 16 ---\nB. Preferred Product Criteria is met for the product(s) as listed in the below table(s):\nDosing. Approve ONE of the following (A or B):\nA. Up to 375 mg/m2 administered intravenously for 4 doses separated by at least 7\ndays; OR\nB. Up to two 1,000 mg doses administered as an intravenous infusion separated by at\nleast 2 weeks.\n15. Pediatric Nephrotic Syndrome. Approve for the duration noted if the patient meets ONE\nof the following (A or B):\nA. Initial Therapy. Approve for 1 month if the patient meets ALL of the following (i, ii,\niii and iv):\ni. Patient is \u2264 18 years of age; AND\nii. Patient meets ONE of the following (a or b):\na. Patient has tried at least one systemic corticosteroid; OR\nNote: Examples of systemic corticosteroids include prednisone or\nprednisolone.\nb. Patient has tried at least one glucocorticoid-sparing agent for nephrotic\nsyndrome; AND\nNote: Examples of glucocorticoid-sparing agents for nephrotic syndrome\ninclude oral calcineurin inhibitors (e.g., tacrolimus, cyclosporine),\ncyclophosphamide, or mycophenolate mofetil.\niii. The medication is prescribed by or in consultation with a nephrologist; AND\niv. Preferred product criteria is met for the product(s) listed in the below\ntable(s); OR\nB. Patient has Already Received a Course of a Rituximab Product for Pediatric\nNephrotic Syndrome. Approve for 1 month if patient meets BOTH of the following (i\nand ii):\ni. The medication is prescribed by or in consultation with a nephrologist; AND\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve 375 mg/m2 administered intravenously for up to 4 doses separated by at\nleast 7 days.\n16. Solid Organ Transplantation. Approve for 1 year if the patient meets ALL of the\nfollowing (A, B, and C):\nA. Patient meets ONE of the following (i or ii):\ni. The medication will be used for desensitization therapy prior to or\nimmediately after transplantation; OR\nii. The medication will be used for antibody-mediated rejection; AND\nB. The medication will be prescribed by or in consultation with a physician affiliated\nwith a transplant center; AND\nC. Preferred product criteria is met for the product(s) as listed in the below table(s).\nDosing. Approve if the requested dosage is based on a transplant center\u2019s protocol.\n17. Systemic Lupus Erythematosus (SLE) [Lupus]. Approve for the duration noted if the\npatient meets ONE of the following (A or B):\nNote: This includes nephrotic syndrome in a patient with SLE.\nA. Initial Therapy. Approve for 1 month (adequate duration to receive one course) if\nthe patient meets ALL of the following (i, ii and iii):\nPage 16 of 32\nCoverage Policy Number: IP0319\n\n--- Page 17 ---\ni. Patient has tried at least ONE standard immunomodulating or\nimmunosuppressant agent; AND\nNote: Examples of standard immunomodulating or immunosuppressant\nagents include hydroxychloroquine, corticosteroids (e.g., prednisone,\nmethylprednisolone), methotrexate, azathioprine, mycophenolate, and\ncyclophosphamide.\nii. The medication is prescribed by or in consultation with a rheumatologist,\nnephrologist, or neurologist; AND\niii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s); OR\nB. Individual has Already Received a Course of a Rituximab Product for SLE. Approve\nfor 1 month (adequate duration to receive one course) if the patient meets both of\nthe following (i and ii)::\ni. 6 months or greater will elapse between treatment courses.\nNote: There will be a minimum of 6 months separating the first dose of the\nprevious rituximab course and the first dose of the requested course of\nrituximab.\nii. Preferred product criteria is met for the product(s) as listed in the below\ntable(s).\nDosing. Approve the requested dose.\n18. Thrombotic Thrombocytopenic Purpura. Approve for 1 month if the patient meets ALL\nof the following (A, B, C, and D):\nA. The medication will be used in combination with systemic corticosteroids; AND\nNote: Examples of systemic corticosteroids include prednisone and\nmethylprednisolone.\nB. The medication will be used in combination with therapeutic plasma exchange; AND\nC. The medication is prescribed by or in consultation with a hematologist; AND\nD. Preferred product criteria is met for the product(s) as listed in the below table(s).\nDosing. Approve up to 375 mg/m2 administered intravenously for up to 4 doses\nseparated by at least 7 days.\nEmployer Plans:\nProduct Criteria\nRituxan Patient meets BOTH of the following (A and B):\n(rituximab A. Patient has tried ALL of the following: Truxima, Riabni, and Ruxience\nintravenous [documentation required]\ninfusion) B. Patient cannot continue to use each formulary alternative due to a\nformulation difference in the inactive ingredient(s) [e.g., differences\nin stabilizing agent, buffering agent, and/or surfactant] which,\naccording to the prescriber, would result in a significant allergy or\nserious adverse reaction [documentation required]\nIndividual and Family Plans:\nProduct Criteria\nRituxan Patient meets BOTH of the following (A and B):\n(rituximab A. Patient has tried ALL of the following: Truxima, Riabni, and Ruxience\nintravenous [documentation required]\ninfusion) B. Patient cannot continue to use each formulary alternative due to a\nformulation difference in the inactive ingredient(s) [e.g., differences\nPage 17 of 32\nCoverage Policy Number: IP0319\n\n--- Page 18 ---\nProduct Criteria\nin stabilizing agent, buffering agent, and/or surfactant] which,\naccording to the prescriber, would result in a significant allergy or\nserious adverse reaction [documentation required]\nConditions Not Covered\nRituximab products (Rituxan, Riabni, Ruxience, Truxima) for any other non-oncology\nuse is considered not medically necessary. Criteria will be updated as new published\ndata are available.\nCoding Information\nNote: 1) This list of codes may not be all-inclusive.\n2) Deleted codes and codes which are not effective at the time the service is rendered may\nnot be eligible for reimbursement.\nConsidered Medically Necessary when criteria in the applicable policy statements listed\nabove are met:\nHCPCS Description\nCodes\nJ9312 Injection, rituximab, 10 mg\nQ5115 Injection, rituximab-abbs, biosimilar, (truxima), 10 mg\nQ5119 Injection, rituximab-pvvr, biosimilar, (ruxience), 10 mg\nQ5123 Injection, rituximab-arrx, biosimilar, (Riabni), 10 mg\nReferences\n1. Rituxan intravenous infusion [prescribing information]. South San Francisco, CA: Genentech;\nDecember 2021.\n2. Ruxience intravenous infusion [prescribing information]. New York, NY: Pfizer; June 2025.\n3. Truxima intravenous infusion [prescribing information]. North Wales, PA: Teva/Celltrion; June\n2025.\n4. Chung SA, Langford CA, Maz M, et al. 2021 American College of Rheumatology/Vasculitis\nFoundation guideline for the management of antineutrophil cytoplasmic antibody-associated\nvasculitis. Arthritis Rheumatol. 2021 Jul 8 [online ahead of print].\n5. Tieu J, Smith R, Basu N, et al. Rituximab for maintenance of remission in ANCA-associated\nvasculitis: expert consensus guidelines. Rheumatology (Oxford). 2020;59(4):e24-e32.\n6. The NCCN Drugs and Biologics Compendium. \u00a9 2025 National Comprehensive Cancer\nNetwork. Available at: http://www.nccn.org. Accessed on August 5-7, 2025. Search term:\nrituximab.\n7. The NCCN Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma Clinical Practice\nGuidelines in Oncology (version 3.2025 \u2013 April 2, 2025). \u00a9 2025 National Comprehensive\nCancer Network. Available at: http://www.nccn.org. Accessed on August 7, 2025.\nPage 18 of 32\nCoverage Policy Number: IP0319\n\n--- Page 19 ---\n8. The NCCN B-Cell Lymphoma Clinical Practice Guidelines in Oncology (version 2.2025 \u2013\nFebruary 10, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n9. The NCCN Pediatric Aggressive Mature B-cell Lymphomas Clinical Practice Guidelines in\nOncology (version 2.2025 \u2013 April 28, 2025). \u00a9 2025 National Comprehensive Cancer Network.\nAvailable at: http://www.nccn.org. Accessed on August 7, 2025.\n10. The NCCN Primary Cutaneous Lymphomas Clinical Practice Guidelines in Oncology (version\n3.2025 \u2013 June 10, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n11. The NCCN Acute Lymphoblastic Leukemia Clinical Practice Guidelines in Oncology (version\n2.2025 \u2013June 27, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n12. The NCCN Hairy Cell Leukemia Clinical Practice Guidelines in Oncology (version 1.2025 \u2013\nSeptember 22, 2024). \u00a9 2024 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 6, 2025.\n13. The NCCN Hodgkin Lymphoma Clinical Practice Guidelines in Oncology (version 2.2025 \u2013\nJanuary 30, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n14. The NCCN Waldenstrom\u2019s Macroglobulinemia/Lymphoplasmacytic Lymphoma Clinical Practice\nGuidelines in Oncology (version 1.2026 \u2013 June 24, 2025). \u00a9 2025 National Comprehensive\nCancer Network. Available at: http://www.nccn.org. Accessed on August 7, 2025.\n15. The NCCN Hematopoietic Cell Transplantation Clinical Practice Guidelines in Oncology (version\n2.2025 \u2013 June 3, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n16. Fraenkel L, Bathon JM, England BR, et al. 2021 American College of Rheumatology guideline\nfor the treatment of rheumatoid arthritis. Arthritis Rheumatol. 2021;73(7):1108-1123.\n17. Neunert C, Terrell DR, Arnold DM, et al. American Society of Hematology 2019 guidelines for\nimmune thrombocytopenia. Blood Adv. 2019;3(23):3829-3866.\n18. A Consensus Paper by the Multiple Sclerosis Coalition. The use of disease-modifying therapies\nin multiple sclerosis. Updated June 2019. Available at: http://ms-coalition.org/wp-\ncontent/uploads/2019/06/MSC_DMTPaper_062019.pdf. Accessed on August 8, 2025.\n19. Rae-Grant A, Day GS, Marrie RA, et al. Practice guideline recommendations summary:\ndisease-modifying therapies for adults with multiple sclerosis. Report of the Guideline\nDevelopment, Dissemination, and Implementation Subcommittee of the American Academy of\nNeurology. Neurology. 2018;90:777-788.\n20. K\u0171mpfel T, Giglhuber K, Aktas O, et al. Update on the diagnosis and treatment of\nneuromyelitis optica spectrum disorders (NMOSD) \u2013 revised recommendations of the\nNeuromyelitis Optica Study Group (NEMOS). Part II: Attack therapy and long-term\nmanagement. J Neurol. 2024;271:141-176.\n21. Fanouriakis A, Kostopoulou M, Andersen J, et al. EULAR recommendations for the management\nof systemic lupus erythematosus: 2023 update. Ann Rheum Dis. 2024 Jan 2;83(1):15-29.\n22. Riabni intravenous infusion [prescribing information]. Thousand Oaks, CA: Amgen; June 2025.\n23. Harman KE, Brown D, Exton LS, et al. British Association of Dermatologists' guidelines for the\nmanagement of pemphigus vulgaris 2017. Br J Dermatol. 2017;177(5):1170-1201.\nPage 19 of 32\nCoverage Policy Number: IP0319\n\n--- Page 20 ---\n24. The NCCN Central Nervous System Cancers Clinical Practice Guidelines in Oncology (version\n1.2025 \u2013 June 3, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n25. The NCCN Pediatric Hodgkin Lymphoma Clinical Practice Guidelines in Oncology (version\n2.2025 \u2013 June 9, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n26. The NCCN Management of Immunotherapy-Related Toxicities (version 1.2025 \u2013 December 20,\n2024). \u00a9 2024 National Comprehensive Cancer Network. Available at: http://www.nccn.org.\nAccessed on August 7, 2025.\n27. Schneider B, Naidoo J, Santomasso B, et al. Management of Immune-Related Adverse Events\nin Patients Treated With Immune Checkpoint Inhibitor Therapy: ASCO Guideline Update. J Clin\nOncol. 2021:39(36):4073-4126.\n28. The NCCN Castleman Disease Clinical Practice Guidelines in Oncology (version 2.2025 \u2013\nJanuary 28, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 5, 2025.\n29. The NCCN Histiocytic Neoplasms Clinical Practice Guidelines in Oncology (version 1.2025 \u2013\nJune 20, 2025). \u00a9 2025 National Comprehensive Cancer Network. Available at:\nhttp://www.nccn.org. Accessed on August 7, 2025.\n30. Hill QA, Stamps R, Massey E, et al. The diagnosis and management of primary autoimmune\nhaemolytic anemia. Br J Haematol. 2017;176:395-411.\n31. Kidney Disease: Improving Global Outcomes (KDIGO) Glomerular Diseases Work Group.\nKDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney\nInt. 2021; 100(4S):S1\u2013S276.\n32. Kidney Disease: Improving Global Outcomes (KDIGO) Nephrotic Syndrome in Children Work\nGroup. KDIGO 2025 Clinical Practice Guideline for the Management of Nephrotic Syndrome in\nChildren. Kidney Int. 2025;107(5S):S241\u2013S289.\n33. Zheng XL, Al-Housni Z, Cataland SR, et al. 2025 focused update of the 2020 ISTH guidelines\nfor management of thrombotic thrombocytopenic purpura. J Thromb Haemost. 2025 Jun\n17:S1538-7836(25)00360-5.\n34. Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for treatment of thrombotic\nthrombocytopenic purpura. J Thromb Haemost. 2020 Oct;18(10):2496-2502.\n35. Sanders DB, Wolfe GI, Benatar M, et al. International consensus guidance for management of\nmyasthenia gravis. Neurology. 2016;87:419\u2013425.\n36. Narayanaswami P, Sanders DB, Wolfe G, et al. International consensus guidance for\nmanagement of myasthenia gravis, 2020 update. Neurology. 2021;96:114-122.\n37. Kidney Disease: Improving Global Outcomes (KDIGO) Transplant Work Group. KDIGO clinical\npractice guideline for the care of kidney transplant recipients. Am J Transplant. 2009 Nov;\n9(Suppl 3): S1\u2013S157\n38. Velleca A, Shullo MA, Dhital K, et al. The International Society for Heart and Lung\nTransplantation (ISHLT) guidelines for the care of heart transplant recipients. J Heart Lung\nTransplant. 2023 May;42(5):e1-e141.\n39. Kobashigawa J, Zuckermann A, Zeevi A, et al. Summary of the International Society for Heart\nand Lung Transplantation consensus conference on emerging understanding of antibodies and\nantibody-mediated rejection in heart transplantation. J Heart Lung Transplant. 2025\nAug;44(8):e1-e20.\nPage 20 of 32\nCoverage Policy Number: IP0319\n\n--- Page 21 ---\n40. Levine DJ, Glanville AR, Aboyoun C, et al. Antibody-mediated rejection of the lung: A\nconsensus report of the International Society for Heart and Lung Transplantation. J Heart Lung\nTransplant. 2016 Apr;35(4):397-406.\n41. Vo AA, Lukovsky M, Toyoda M, et al. Rituximab and intravenous immune globulin for\ndesensitization during renal transplantation. N Engl J Med. 2008;349:242-251.\n42. Velez M, Johnson MR. Management of allosensitized cardiac transplant candidates. Transplant\nRev (Orlando). 2009 Oct;23(4):235-247.\n43. Tyd\u00e9n G, Genberg H, Tollemar J, et al. A randomized, double blind, placebo-controlled, study\nof single-dose rituximab as induction in renal transplantation. Transplantation. 2009\nMay;87(9):1325-1329.\n44. Tyd\u00e9n G, Ekberg H, Tufveson G, Mj\u00f6rnstedt L. A randomized, double-blind, placebo-controlled\nstudy of single dose rituximab as induction in renal transplantation: A 3-year follow-up.\nTransplantation. 2012 Aug;94(3):e21-e22.\n45. Scully M, McDonald V, Cavenagh J, et al. A phase 2 study of the safety and efficacy of\nrituximab with plasma exchange in acute acquired thrombotic thrombocytopenic purpura.\nBlood. 2011;118:1746-1753.\n46. Westwood JP, Thomas M, Alwan F, et al. Rituximab prophylaxis to prevent thrombotic\nthrombocytopenic purpura relapse: outcome and evaluation of dosing regimens. Blood Adv.\n2017;1:1159-1166.\n47. Abou\u2013Ismail MY, Arafah Y, Fu P, Cao S, Schmaier AH, Nayak L. Outcomes of immune\nthrombotic thrombocytopenic purpura (iTTP) with upfront cyclophosphamide vs rituximab.\nFront Med (Lausanne). 2020;7:588526.\n48. Johnson SR, Bernstein EJ, Bolster MB, et al. 2023 American College of Rheumatology\n(ACR)/American College of Chest Physicians (CHEST) guideline for the treatment of interstitial\nlung disease in people with systemic autoimmune rheumatic diseases. Arthritis & Rheumatol.\n2024 Aug;76(8):1182-1200.\nRevision Details\nType of Revision Summary of Changes Date\nSelected Revision Preferencing Product Table. 7/1/2025\nRemoved \u201cIndividual has previously started on or\nis currently receiving Rituxan (rituximab)\nSelected Revision Added documentation instructions 8/15/2025\nNeuromyelitis Optica Spectrum Disorder\nUpdated from \u201cDocumented diagnosis of\nneuromyelitis optica spectrum disorder\u201d to\n\u201cdiagnosis was confirmed by a positive blood serum\ntest for anti-aquaporin-4 antibody\n[documentation required]\u201d\nAnnual Revision Policy Title 10/15/2025\nPage 21 of 32\nCoverage Policy Number: IP0319\n\n--- Page 22 ---\nUpdated from \u201cRituximab for Non-Oncology\nIndication\u201d to \u201cRituximab Intravenous Products for\nNon-Oncology Indications\u201d\nAntineutrophil Cytoplasmic Antibody (ANCA)-\nAssociated Vasculitis.\nInduction Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nRemoved Churg-Strauss syndrome and pauci-\nimmune glomerulonephritis from examples of\nANCA-associated vasculitis\nUpdated \u201cThe medication is being administered in\ncombination with glucocorticoids unless there is a\ndocumented failure, contraindication or intolerance\nto glucocorticoids\u201d to \u201cThe medication is being\nadministered in combination with glucocorticoids.\u201d\nAdded pulmonologist to specialty requirement\nFollow-Up Treatment:\nUpdated \u201cIndividual achieved disease control with\ninduction treatment\u201d to \u201cAccording to the\nprescriber, the patient achieved disease control\nwith induction treatment\u201d\nUpdated \u201cAt least 16 weeks will elapse between\ncourses\u201d to \u201cIf the patient previously received a\ncourse of therapy, at least 16 weeks will elapse\nbetween courses\u201d\nRemoved \u201cThe medication is prescribed by or in\nconsultation with a rheumatologist, nephrologist, or\nimmunologist.\u201d\nDosing:\nUpdated \u201c18 years of age or older: Up to 1,000\nmg administered by intravenous infusion every 4 to\n6 months based on clinical evaluation, for up to 6\ndoses\u201d to \u201c\u2265 18 years of age: Up to 1,000 mg\nadministered by intravenous infusion for 6 doses\u201d\nUpdated \u201cLess than 18 Years of age: Two 250\nmg/m2 intravenous infusion separated by two\nweeks, followed by a 250 mg/m2 intravenous\ninfusion every 6 months thereafter based on clinical\nevaluation\u201d to \u201c< 18 years of age: Up to 250\nmg/m2 administered by intravenous infusion for two\ndoses\nUpdated \u201cPemphigus Vulgaris and Other\nRefractory Autoimmune Blistering Diseases\u201d\nto \u201cPemphigus Vulgaris\u201d\nInitial Treatment:\nUpdated approval duration from 12 months to 1\nmonth\nRemoved \u201cNote: Examples of other autoimmune\nblistering diseases include pemphigus foliaceus,\nbullous pemphigoid, cicatricial pemphigoid,\nPage 22 of 32\nCoverage Policy Number: IP0319\n\n--- Page 23 ---\nepidermolysis bullosa acquisita, and paraneoplastic\npemphigus\u201d\nUpdated from Patient who is being treated for a\nrelapse or for maintenance to Patient is being\ntreated for a relapse and a patient is being treated\nfor maintenance.\nPatient is Being Treated for a Relapse of Pemphigus\nVulgaris:\nUpdated approval duration from 1 year to 1\nmonth (which is adequate duration to administer\none course of therapy).\nAdded \u201cNote: For example, there will be a\nminimum of 16 weeks since the first dose of the\nprevious course and the first dose of the next\ncourse of a rituximab product\u201d\nPatient is Being Treated for Maintenance of\nPemphigus Vulgaris:\nAdded criteria that subsequent infusions will be\nadministered no sooner than 16 weeks following the\nprevious infusion of a rituximab product, and the\nmedication is prescribed by or in consultation with a\ndermatologist.\nDosing:\nRemoved \u201cat month 12 and every 6 months\nthereafter or based on clinical evaluation\u201d\nRheumatoid Arthritis\nInitial Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nPatient has already received one course of a\nRituximab Product for Rheumatoid Arthritis:\nUpdated approval duration from 12 months to 1\nmonth\nAdded criteria for \u201cPatient has already\nreceived two or more courses of a Rituximab\nProduct for Rheumatoid Arthritis\u201d\nOther Uses with Supportive Evidence\nGraft-Versus-Host Disease\nInitial Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nAdded \u201cPatient has chronic graft-versus-host\ndisease\u201d\nUpdated \u201cDocumentation of failure,\ncontraindication, or intolerance to ONE conventional\nsystemic treatment for graft-versus-host disease\n[for example, systemic corticosteroids\n(methylprednisolone, prednisone), cyclosporine,\ntacrolimus, mycophenolate mofetil, Imbruvica\n(ibrutinib capsules and tablets), imatinib,\nPage 23 of 32\nCoverage Policy Number: IP0319\n\n--- Page 24 ---\nantithymocyte globulin, Nipent (pentostatin\ninfusion), or an infliximab product]\u201d to \u201cPatient has\ntried at least one systemic medication for graft-\nversus-host disease. Note: Examples of systemic\nmedications include systemic corticosteroids\n(methylprednisolone, prednisone), Jakafi\n(ruxolitinib), Rezurock (belumosudil), Niktimvo\n(axatilimab-csfr), cyclosporine, tacrolimus,\nmycophenolate mofetil, Imbruvica (ibrutinib),\nimatinib, hydroxychloroquine, methotrexate, Nipent\n(pentostatin), interleukin-2 (e.g., Proleukin\n[aldesleukin]), sirolimus, or an etanercept product\u201d\nAdded criteria for \u201cPatient has already Received a\nCourse of a Rituximab Product for Graft-Versus-\nHost Disease\u201d\nHematopoietic Cell Transplantation\nAdded criteria for this indication\nAdded dosing for this indication\nUpdated from \u201cImmune or Idiopathic\nThrombocytopenia (ITP)\u201d to \u201cImmune\nThrombocytopenia (ITP)\u201d\nInitial Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nUpdated from \u201cDocumentation of failure,\ncontraindication, or intolerance to ONE other\ntherapy for ITP (for example, intravenous\nimmunoglobulin (IVIG), anti-D (RHO)\nimmunoglobulin, corticosteroids, or splenectomy)\u201d\nto \u201cPatient has tried one other therapy. Note:\nExamples of therapies for ITP include intravenous\nimmunoglobulin (IVIG), anti-D (RHO)\nimmunoglobulin, corticosteroids, Alvaiz\n(eltrombopag), Doptelet (avatrombopag), Nplate\n(romiplostim), Promacta (eltrombopag), Tavalisse\n(fostamatinib) and splenectomy.\u201d\nPatient has Already Received a Course of a\nRituximab Product for ITP:\nUpdated approval duration from 12 months to 1\nmonth\nUpdated from \u201cDocumentation that the individual\nresponded to therapy (for example, a platelet count\nincrease from baseline following treatment with a\nrituximab product)\u201d to \u201cPatient responded to\ntherapy as determined by the prescriber. Note:\nExamples of a response include a platelet count\nincrease from baseline following treatment with a\nrituximab product\u201d\nRemoved \u201cThe medication is prescribed by or in\nconsultation with a hematologist\u201d\nPage 24 of 32\nCoverage Policy Number: IP0319\n\n--- Page 25 ---\nImmunotherapy-Related Toxicities Associated\nwith Checkpoint Inhibitors\nAdded \u201cNote: Examples of checkpoint inhibitors\nare Keytruda (pembrolizumab intravenous\ninfusion), Opdivo (nivolumab intravenous infusion),\nYervoy (ipilimumab intravenous infusion), Tecentriq\n(atezolizumab intravenous infusion), Bavencio\n(avelumab intravenous infusion), Imfinzi\n(durvalumab intravenous infusion), and Libtayo\n(cemiplimab-rwlc intravenous infusion).\u201d\nInitial Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nAdded \u201cAccording to the prescriber, patient\ndeveloped an immunotherapy-related toxicity\u201d\nAdded \u201cPatient developed this immunotherapy-\nrelated toxicity while receiving a checkpoint\ninhibitor\u201d\nAdded hematologist and nephrologist to specialty\nrequirement\nPatient has Already Received a Course of a\nRituximab Product:\nUpdated approval duration from 12 months to 1\nmonth\nAdded hematologist and nephrologist to specialty\nrequirement\nDosing:\nUpdated \u201cUp to 500 mg/m2 administered\nintravenously for 2 doses separated by at least 14\ndays\u201d to \u201cApprove up to 500 mg/m2 or up to 1,000\nmg administered intravenously for 2 doses\nseparated by at least 14 days\u201d\nMultiple Sclerosis\nInitial Therapy:\nUpdated from \u201cDocumentation of failure,\ncontraindication, or intolerance to at least ONE\nother disease-modifying agent for multiple\nsclerosis\u201d to \u201cAccording to the prescriber, the\npatient has experienced inadequate efficacy or\nsignificant intolerance to at least TWO other\ndisease-modifying agents for multiple sclerosis.\nNote: See Appendix B for examples of disease-\nmodifying agents used for multiple sclerosis.\u201d\nAdded criteria for \u201cPatient is Currently Receiving\nRituximab\u201d\nNeuromyelitis Optica Spectrum Disorder\nUpdated approval duration from 12 months to 1\nmonth\nPage 25 of 32\nCoverage Policy Number: IP0319\n\n--- Page 26 ---\nRemoved \u201cDiagnosis was confirmed by a positive\nblood serum test for anti-aquaporin-4 antibody\n[documentation required]\u201d\nUpdated from \u201cSystemic Lupus Erythematous\n(SLE) [Lupus]\u201d to \u201cSystemic Lupus\nErythematosus (SLE) [Lupus]\u201d\nInitial Therapy:\nUpdated approval duration from 12 months to 1\nmonth\nUpdated from \u201cDocumentation of failure,\ncontraindication, or intolerance to ONE standard\nimmunomodulating or immunosuppressant agent\n[for example, hydroxychloroquine, corticosteroids\n(e.g., prednisone, methylprednisolone),\nmethotrexate, azathioprine, mycophenolate, or\ncyclophosphamide]\u201d to \u201cPatient has tried at least\nONE standard immunomodulating or\nimmunosuppressant agent. Note: Examples of\nstandard immunomodulating or\nimmunosuppressant agents include\nhydroxychloroquine, corticosteroids (e.g.,\nprednisone, methylprednisolone), methotrexate,\nazathioprine, mycophenolate, and\ncyclophosphamide.\u201d\nIndividual has Already Received a Course of a\nRituximab Product for SLE:\nUpdated approval duration from 12 months to 1\nmonth\nRemoved \u201cThe individual has had a documented\nbeneficial response to therapy. Examples of a\nbeneficial response include: reduction in flares;\nreduction in corticosteroid dose; decrease of anti-\ndsDNA titer; improvement in specific organ\ndysfunction (for example, musculoskeletal, blood,\nhematologic, vascular, others)\u201d\nRemoved \u201cThe medication is prescribed by or in\nconsultation with a rheumatologist, nephrologist, or\nneurologist.\u201d\nAdded dosing for this indication\nSelected Revision Pemphigus Vulgaris 2/1/2026\nMaintenance Therapy: Added \u201devery 6 months\u201d\nto dosing regimen\nAutoimmune Hemolytic Anemia\nUpdated from \u201dRefractory Autoimmune Hemolytic\nAnemia\u201d to \u201dAutoimmune Hemolytic Anemia\u201d\nUpdated authorization duration from 12 months\nto 1 month\nPage 26 of 32\nCoverage Policy Number: IP0319\n\n--- Page 27 ---\nRemoved \u201d Documented failure, contraindication,\nor intolerance to conventional treatments (for\nexample, corticosteroids, immunosuppressants, or\nimmunoglobulin\u201d\nAdded \u201dThe medication is prescribed by or in\nconsultation with a hematologist\u201d\nAdded dosing for this use\nImmune Thrombocytopenia (ITP)\nUpdated for a patient that has already received a\ncourse of a rituximab product for ITP, the\nrequirements that the patient has responded to\ntherapy and that the patient has relapsed were\nmodified from \"as determined by the prescriber\" to\n\"according to the prescriber\"\nInterstitial Lung Disease Associated with\nSystemic Autoimmune Rheumatic Disease\nAdded criteria and dosing for this use\nMembranous Nephropathy\nUpdated from \u201dMembranous\nNephropathy/Membranous Glomerular\nNephropathy\u201d to \u201dMembranous Nephropathy\u201d\nUpdated authorization duration from 12 months\nto 1 month\nRemoved individual has ONE of the following:\nMembranous nephropathy and eGFR < 60 ml/min\nor declining renal function not otherwise explained,\nMembranous nephropathy with nephrotic syndrome\n(nephrotic proteinuria, peripheral edema,\nhypoalbuminemia), Membranous nephropathy with\nnephrotic proteinuria (> 3.5 gm/day after 6 months\nconservative therapy with ACEi or ARB), or\nRecurrent membranous nephropathy with\nproteinuria > 1 gm/day in a kidney transplant\nrecipient\nAdded \u201dAccording to the prescriber, the patient is\nat moderate risk or high risk for the progressive\nloss of kidney function\u201d\nAdded criteria for Patient has already Received a\nCourse of a Rituximab Product for Membranous\nNephropathy\nAdded dosing for this use\nMinimal Change Disease\nAdded criteria and dosing for this use\nPage 27 of 32\nCoverage Policy Number: IP0319\n\n--- Page 28 ---\nMyasthenia Gravis\nUpdated authorization duration from 12 months\nto 6 months\nAdded \u201dPatient has confirmed anti-muscle-specific\ntyrosine kinase antibody-positive myasthenia\ngravis\u201d\nAdded \u201dPatient meets ONE of the following (a or\nb): a.Patient previously received or is currently\nreceiving pyridostigmine b. Patient has had\ninadequate efficacy, contraindication, or significant\nintolerance to pyridostigmine\u201d\nUpdated from \u201dDocumented failure,\ncontraindication, or intolerance to at least TWO\nimmunosuppressive agents (for example,\nazathioprine, cyclosporine, or methotrexate)\u201d to\n\u201dPatient has tried at least one immunosuppressant\ntherapy. Note: Examples of immunosuppressant\ntherapies include azathioprine, cyclosporine,\nmycophenolate mofetil, methotrexate, tacrolimus,\nand cyclophosphamide. A trial of Imaavy\n(nipocalimab-aahu intravenous infusion) or\nRystiggo (rozanolixizumab-noli subcutaneous\ninfusion) also counts.\u201d\nAdded \u201dPatient has evidence of unresolved\nsymptoms of myasthenia gravis. Note: Evidence of\nunresolved symptoms of myasthenia gravis includes\ndifficulty swallowing, difficulty breathing, or a\nfunctional disability resulting in the discontinuation\nof physical activity (e.g., double vision, talking,\nimpairment of mobility)\u201d\nAdded \u201dThe medication is prescribed by or in\nconsultation with a neurologist\u201d\nAdded criteria for Patient has Already Received a\nCourse of a Rituximab Product for Myasthenia\nGravis\nAdded dosing for this use\nPediatric Nephrotic Syndrome\nUpdated authorization duration from 12 months\nto 1 month\nUpdated from \u201dDocumentation of failure,\ncontraindication, or intolerance to corticosteroid or\nimmunosuppressive medication (for example,\ncyclophosphamide, cyclosporine, mycophenolate\nmofetil)\u201d to \u201dPatient has tried at least one\nPage 28 of 32\nCoverage Policy Number: IP0319\n\n--- Page 29 ---\nglucocorticoid-sparing agent for nephrotic\nsyndrome. Note: Examples of glucocorticoid-\nsparing agents for nephrotic syndrome include oral\ncalcineurin inhibitors (e.g., tacrolimus,\ncyclosporine), cyclophosphamide, or mycophenolate\nmofetil\u201d\nUpdated from \u201dDisease is relapsing and steroid-\ndependent\u201d to \u201dPatient has tried at least one\nsystemic corticosteroid. Note: Examples of\nsystemic corticosteroids include prednisone or\nprednisolone\u201d\nAdded \u201dThe medication is prescribed by or in\nconsultation with a nephrologist\u201d\nAdded criteria for Patient has Already Received a\nCourse of a Rituximab Product for Pediatric\nNephrotic Syndrome.\nAdded dosing for this use\nSolid Organ Transplantation\nUpdated from \u201dDesensitization for highly-\nallosensitized transplant candidates (to reduce HLA\nantibodies)\u201d to \u201dThe medication will be used for\ndesensitization therapy prior to or immediately\nafter transplantation\u201d\nUpdated from \u201dAntibody-mediated rejection\n(AMR)\u201d to \u201dThe medication will be used for\nantibody-mediated rejection\u201d\nAdded \u201dThe medication will be prescribed by or in\nconsultation with a physician affiliated with a\ntransplant center\u201d\nAdded dosing for this use\nThrombotic Thrombocytopenic Purpura\nUpdated authorization duration from 12 months\nto 1 month\nRemoved \u201cDiagnosis of thrombotic\nthrombocytopenic purpura\u201d\nUpdated from \u201cIndividual is receiving concurrent\ntherapy with glucocorticoids unless there is a\ndocumented failure, contraindication, or intolerance\nto glucocorticoids\u201d to \u201cThe medication will be used\nin combination with systemic corticosteroids. Note:\nExamples of systemic corticosteroids include\nprednisone and methylprednisolone\u201d\nUpdated from \u201cRituximab will be used in\ncombination with plasma exchange therapy\u201d to\nPage 29 of 32\nCoverage Policy Number: IP0319\n\n--- Page 30 ---\n\u201cThe medication will be used in combination with\ntherapeutic plasma exchange\u201d\nAdded dosing for this use\nFactor Inhibitors in an Individual with\nHemophilia\nThis use was removed\nThe policy effective date is in force until updated or retired\nAPPENDIX A\nMechanism of Examples of\nAction Inflammatory\nIndications*\nBiologics\nAdalimumab SC Products Inhibition of TNF AS, CD, JIA, PsO, PsA, RA,\n(Humira\u00ae, biosimilars) UC\nCimzia\uf6da (certolizumab pegol SC Inhibition of TNF AS, CD, nr-axSpA, PsO,\ninjection) PsA, RA\nEtanercept SC Products (Enbrel\uf6da, Inhibition of TNF AS, JIA, PsO, PsA\nbiosimilars)\nInfliximab IV Products Inhibition of TNF AS, CD, PsO, PsA, RA, UC\n(Remicade\u00ae, biosimilars)\nZymfentra\u00ae (infliximab-dyyb SC Inhibition of TNF CD, UC\ninjection)\nSimponi\u00ae, Simponi\u00ae Aria\u2122 Inhibition of TNF SC formulation: AS, PsA,\n(golimumab SC injection, golimumab RA, UC\nIV infusion) IV formulation: AS, PJIA,\nPsA, RA\nTocilizumab Products (Actemra\u00ae Inhibition of IL-6 SC formulation: PJIA, RA,\nIV, biosimilars; Actemra\u00ae SC, SJIA\nbiosimilars) IV formulation: PJIA, RA,\nSJIA\nKevzara\u00ae (sarilumab SC injection) Inhibition of IL-6 RA\nOrencia\u00ae (abatacept IV infusion, T-cell costimulation SC formulation: JIA, PSA,\nabatacept SC injection) modulator RA\nIV formulation: JIA, PsA,\nRA\nRituximab IV Products (Rituxan\u00ae, CD20-directed RA\nbiosimilars) cytolytic antibody\nKineret\u00ae (anakinra SC injection) Inhibition of IL-1 JIA^, RA\nOmvoh\u00ae (mirikizumab IV infusion, Inhibition of IL-23 CD, UC\nSC injection)\nUstekinumab Products (Stelara\u00ae Inhibition of IL-12/23 SC formulation: CD, PsO,\nIV, biosimilars; Stelara\u00ae SC, PsA, UC\nbiosimilars) IV formulation: CD, UC\nSiliq\u2122 (brodalumab SC injection) Inhibition of IL-17 PsO\nCosentyx\u2122 (secukinumab SC Inhibition of IL-17A SC formulation: AS, ERA,\ninjection, secukinumab IV infusion) nr-axSpA, PsO, PsA\nPage 30 of 32\nCoverage Policy Number: IP0319\n\n--- Page 31 ---\nIV formulation: AS, nr-\naxSpA, PsA\nTaltz\u00ae (ixekizumab SC injection) Inhibition of IL-17A AS, nr-axSpA, PsO, PsA\nBimzelx\u00ae (bimekizumab-bkzx SC Inhibition of IL- AS, nr-axSpA, PsO, PsA\ninjection) 17A/17F\nIlumya\u00ae (tildrakizumab-asmn SC Inhibition of IL-23 PsO\ninjection)\nSkyrizi\u00ae (risankizumab-rzaa SC Inhibition of IL-23 SC formulation: CD, PsA,\ninjection, risankizumab-rzaa IV PsO, UC\ninfusion) IV formulation: CD, UC\nTremfya\u00ae (guselkumab SC injection, Inhibition of IL-23 SC formulation: CD, PsA,\nguselkumab IV infusion) PsO, UC\nIV formulation: CD, UC\nEntyvio\u00ae (vedolizumab IV infusion, Integrin receptor CD, UC\nvedolizumab SC injection) antagonist\nOral Therapies/Targeted Synthetic Oral Small Molecule Drugs\nOtezla\u00ae (apremilast tablets) Inhibition of PDE4 PsO, PsA\nOtezla XR\u2122 (apremilast extended- Inhibition of PDE4 PsO, PsA\nrelease tablets)\nCibinqo\u2122 (abrocitinib tablets) Inhibition of JAK AD\npathways\nOlumiant\u00ae (baricitinib tablets) Inhibition of JAK RA, AA\npathways\nLitfulo\u00ae (ritlecitinib capsules) Inhibition of JAK AA\npathways\nLeqselvi\u00ae (deuruxolitinib tablets) Inhibition of JAK AA\npathways\nRinvoq\u00ae (upadacitinib extended- Inhibition of JAK AD, AS, nr-axSpA, RA,\nrelease tablets) pathways PsA, UC\nRinvoq\u00ae LQ (upadacitinib oral Inhibition of JAK PsA, PJIA\nsolution) pathways\nSotyktu\u00ae (deucravacitinib tablets) Inhibition of TYK2 PsO\nXeljanz\u00ae (tofacitinib tablets) Inhibition of JAK RA, PJIA, PsA, UC\npathways\nXeljanz\u00ae XR (tofacitinib extended- Inhibition of JAK RA, PsA, UC\nrelease tablets) pathways\nZeposia\u00ae (ozanimod tablets) Sphingosine 1 UC\nphosphate receptor\nmodulator\nVelsipity\u00ae (etrasimod tablets) Sphingosine 1 UC\nphosphate receptor\nmodulator\n* Not an all-inclusive list of indication (e.g., oncology indications and rare inflammatory conditions\nare not listed). Refer to the prescribing information for the respective agent for FDA-approved\nindications; SC \u2013 Subcutaneous; TNF \u2013 Tumor necrosis factor; IV \u2013 Intravenous, IL \u2013 Interleukin;\nPDE4 \u2013 Phosphodiesterase 4; JAK \u2013 Janus kinase; AS \u2013 Ankylosing spondylitis; CD \u2013 Crohn\u2019s\ndisease; JIA \u2013 Juvenile idiopathic arthritis; PsO \u2013 Plaque psoriasis; PsA \u2013 Psoriatic arthritis; RA \u2013\nRheumatoid arthritis; UC \u2013 Ulcerative colitis; nr-axSpA \u2013 Non-radiographic axial spondyloarthritis;\n^ Off-label use of Kineret in JIA supported in guidelines; DMARDs \u2013 Disease-modifying\nantirheumatic drug; AD \u2013 Atopic dermatitis; AA \u2013 Alopecia areata; TYK2 \u2013 Tyrosine kinase 2.\nPage 31 of 32\nCoverage Policy Number: IP0319\n\n--- Page 32 ---\nAPPENDIX B\nMedication Mode of Administration\nAubagio\u00ae (teriflunomide tablets, generic) Oral\nAvonex\u00ae (interferon beta-1a intramuscular injection) Injection (self-administered)\nBafiertam\u00ae (monomethyl fumarate delayed-release Oral\ncapsules)\nBetaseron\u00ae (interferon beta-1b subcutaneous injection) Injection (self-administered)\nBriumvi\u2122 (ublituximab-xiiy intravenous infusion) Injection\nCopaxone\u00ae (glatiramer acetate subcutaneous injection, Injection (self-administered)\ngeneric)\nGilenya\u00ae (fingolimod capsules, generic) Oral\nGlatopa\u00ae (glatiramer acetate subcutaneous injection) Injection (self-administered)\nKesimpta\u00ae (ofatumumab subcutaneous injection) Injection (self-administered)\nLemtrada\u00ae (alemtuzumab intravenous infusion) Intravenous infusion\nMavenclad\u00ae (cladribine tablets) Oral\nMayzent\u00ae (siponimod tablets) Oral\nOcrevus\u00ae (ocrelizumab intravenous infusion) Intravenous infusion\nOcrevus Zunovo\u2122 (ocrelizumab and hyaluronidase-ocsq Subcutaneous injection (not\nsubcutaneous injection) self-administered)\nPlegridy\u00ae (peginterferon beta-1a subcutaneous or Injection (self-administered)\nintramuscular injection)\nPonvory\u2122 (ponesimod tablets) Oral\nRebif\u00ae (interferon beta-1a subcutaneous injection) Injection (self-administered)\nTascenso ODT\u2122 (fingolimod orally disintegrating tablets) Oral\nTecfidera\u00ae (dimethyl fumarate delayed-release Oral\ncapsules, generic)\nTyruko\u00ae (natalizumab-sztn intravenous infusion) Intravenous infusion\nTysabri\u00ae (natalizumab intravenous infusion) Intravenous infusion\nVumerity\u00ae (diroximel fumarate delayed-release Oral\ncapsules)\nZeposia\u00ae (ozanimod capsules) Oral\n\u201cCigna Companies\u201d refers to operating subsidiaries of The Cigna Group. All products and services are provided exclusively\nby or through such operating subsidiaries, including Cigna Health and Life Insurance Company, Connecticut General Life\nInsurance Company, Evernorth Behavioral Health, Inc., Cigna Health Management, Inc., and HMO or service company\nsubsidiaries of The Cigna Group. \u00a9 2026 The Cigna Group.\nPage 32 of 32\nCoverage Policy Number: IP0319\n\n--- Extracted tables (lattice) ---\n\n<!-- camelot pages 1-20 table 1 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Product | Criteria |\n| Rituxan  (rituximab  intravenous  infusion) | Patient meets BOTH of the following (A and B):  A.  Patient has tried ALL of the following: Truxima, Riabni, and Ruxience  [documentation required]  B.  Patient cannot continue to use each formulary alternative due to a  formulation difference in the inactive ingredient(s) [e.g., differences  in stabilizing agent, buffering agent, and/or surfactant] which,  according to the prescriber, would result in a significant allergy or  serious adverse reaction [documentation required] |\n\n<!-- camelot pages 1-20 table 2 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Product | Criteria |\n| Rituxan  (rituximab  intravenous  infusion) | Patient meets BOTH of the following (A and B):  A.  Patient has tried ALL of the following: Truxima, Riabni, and Ruxience  [documentation required]  B.  Patient cannot continue to use each formulary alternative due to a  formulation difference in the inactive ingredient(s) [e.g., differences |\n\n<!-- camelot pages 1-20 table 3 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Product | Criteria |\n|  | in stabilizing agent, buffering agent, and/or surfactant] which,  according to the prescriber, would result in a significant allergy or  serious adverse reaction [documentation required] |\n\n<!-- camelot pages 1-20 table 4 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| HCPCS  Codes | Description |\n| J9312 | Injection, rituximab, 10 mg |\n| Q5115 | Injection, rituximab-abbs, biosimilar, (truxima), 10 mg |\n| Q5119 | Injection, rituximab-pvvr, biosimilar, (ruxience), 10 mg |\n| Q5123 | Injection, rituximab-arrx, biosimilar, (Riabni), 10 mg |\n\n<!-- camelot pages 21-32 table 1 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n| Type of Revision | Summary of Changes | Date |\n| Selected Revision | Preferencing Product Table.  Removed \u201cIndividual has previously started on or  is currently receiving Rituxan (rituximab) | 7/1/2025 |\n| Selected Revision | N Added documentation instructions  euromyelitis Optica Spectrum Disorder  Updated from \u201cDocumented diagnosis of  neuromyelitis optica spectrum disorder\u201d to  \u201cdiagnosis was confirmed by a positive blood serum  test for anti-aquaporin-4 antibody  [documentation required]\u201d | 8/15/2025 |\n| Annual Revision | Policy Title | 10/15/2025 |\n\n<!-- camelot pages 21-32 table 2 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | U   A Updated from \u201cRituximab for Non-Oncology  Indication\u201d to \u201cRituximab Intravenous Products for  Non-Oncology Indications\u201d  ntineutrophil Cytoplasmic Antibody (ANCA)- Associated Vasculitis.   Induction Therapy:   Updated approval duration from 12 months to 1  month  Removed Churg-Strauss syndrome and pauci- immune glomerulonephritis from examples of  ANCA-associated vasculitis  Updated \u201cThe medication is being administered in  combination with glucocorticoids unless there is a  documented failure, contraindication or intolerance  to glucocorticoids\u201d to \u201cThe medication is being  administered in combination with glucocorticoids.\u201d  Added pulmonologist to specialty requirement  Follow-Up Treatment:   Updated \u201cIndividual achieved disease control with  induction treatment\u201d to \u201cAccording to the  prescriber, the patient achieved disease control  with induction treatment\u201d  Updated \u201cAt least 16 weeks will elapse between  courses\u201d to \u201cIf the patient previously received a  course of therapy, at least 16 weeks will elapse  between courses\u201d  Removed \u201cThe medication is prescribed by or in  consultation with a rheumatologist, nephrologist, or  immunologist.\u201d  Dosing:  Updated \u201c18 years of age or older:  Up to 1,000  mg administered by intravenous infusion every 4 to  6 months based on clinical evaluation, for up to 6  doses\u201d to \u201c\u2265 18 years of age:  Up to 1,000 mg  administered by intravenous infusion for 6 doses\u201d  Updated \u201cLess than 18 Years of age:  Two 250  mg/m2 intravenous infusion separated by two  weeks, followed by a 250 mg/m2 intravenous  infusion every 6 months thereafter based on clinical  evaluation\u201d to \u201c< 18 years of age:  Up to 250  mg/m2 administered by intravenous infusion for two  doses  pdated \u201cPemphigus Vulgaris and Other  Refractory Autoimmune Blistering Diseases\u201d  to \u201cPemphigus Vulgaris\u201d  Initial Treatment:   Updated approval duration from 12 months to 1  month  Removed  \u201cNote: Examples of other autoimmune  blistering diseases include pemphigus foliaceus,  bullous pemphigoid, cicatricial pemphigoid, |  |\n\n<!-- camelot pages 21-32 table 3 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | O   G   R epidermolysis bullosa acquisita, and paraneoplastic  pemphigus\u201d  Updated from Patient who is being treated for a  relapse or for maintenance to Patient is being  treated for a relapse and a patient is being treated  for maintenance.   Patient is Being Treated for a Relapse of Pemphigus  Vulgaris:  Updated approval duration from 1 year to 1  month (which is adequate duration to administer  one course of therapy).   Added \u201cNote:  For example, there will be a  minimum of 16 weeks since the first dose of the  previous course and the first dose of the next  course of a rituximab product\u201d  Patient is Being Treated for Maintenance of  Pemphigus Vulgaris:  Added criteria that subsequent infusions will be  administered no sooner than 16 weeks following the  previous infusion of a rituximab product, and the  medication is prescribed by or in consultation with a  dermatologist.  Dosing:   Removed \u201cat month 12 and every 6 months  thereafter or based on clinical evaluation\u201d  heumatoid Arthritis  Initial Therapy:   Updated approval duration from 12 months to 1  month  Patient has already received one course of a  Rituximab Product for Rheumatoid Arthritis:  Updated approval duration from 12 months to 1  month  Added criteria for \u201cPatient has already  received two or more courses of a Rituximab  Product for Rheumatoid Arthritis\u201d  ther Uses with Supportive Evidence  raft-Versus-Host Disease  Initial Therapy:   Updated approval duration from 12 months to 1  month  Added \u201cPatient has chronic graft-versus-host  disease\u201d  Updated \u201cDocumentation of failure,  contraindication, or intolerance to ONE conventional  systemic treatment for graft-versus-host disease  [for example, systemic corticosteroids  (methylprednisolone, prednisone), cyclosporine,  tacrolimus, mycophenolate mofetil, Imbruvica  (ibrutinib capsules and tablets), imatinib, |  |\n\n<!-- camelot pages 21-32 table 4 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | H   U antithymocyte globulin, Nipent (pentostatin  infusion), or an infliximab product]\u201d to \u201cPatient has  tried at least one systemic medication for graft- versus-host disease. Note: Examples of systemic  medications include systemic corticosteroids  (methylprednisolone, prednisone), Jakafi  (ruxolitinib), Rezurock (belumosudil), Niktimvo  (axatilimab-csfr), cyclosporine, tacrolimus,  mycophenolate mofetil, Imbruvica (ibrutinib),  imatinib, hydroxychloroquine, methotrexate, Nipent  (pentostatin), interleukin-2 (e.g., Proleukin  [aldesleukin]), sirolimus, or an etanercept  product\u201d  Added criteria for \u201cPatient has already Received a  Course of a Rituximab Product for Graft-Versus- Host Disease\u201d  ematopoietic Cell Transplantation  Added criteria for this indication  Added dosing for this indication  pdated from \u201cImmune or Idiopathic  Thrombocytopenia (ITP)\u201d to \u201cImmune  Thrombocytopenia (ITP)\u201d  Initial Therapy:   Updated approval duration from 12 months to 1  month  Updated from \u201cDocumentation of failure,  contraindication, or intolerance to ONE other  therapy for ITP (for example, intravenous  immunoglobulin (IVIG), anti-D (RHO)  immunoglobulin, corticosteroids, or splenectomy)\u201d  to \u201cPatient has tried one other therapy. Note:   Examples of therapies for ITP include intravenous  immunoglobulin (IVIG), anti-D (RHO)  immunoglobulin, corticosteroids, Alvaiz  (eltrombopag), Doptelet (avatrombopag), Nplate  (romiplostim), Promacta (eltrombopag), Tavalisse  (fostamatinib) and splenectomy.\u201d  Patient has Already Received a Course of a  Rituximab Product for ITP:  Updated approval duration from 12 months to 1  month  Updated from \u201cDocumentation that the individual  responded to therapy (for example, a platelet count  increase from baseline following treatment with a  rituximab product)\u201d to \u201cPatient responded to  therapy as determined by the prescriber. Note:  Examples of a response include a platelet count  increase from baseline following treatment with a  rituximab product\u201d  Removed \u201cThe medication is prescribed by or in  consultation with a hematologist\u201d |  |\n\n<!-- camelot pages 21-32 table 5 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | N   A Immunotherapy-Related Toxicities Associated  with Checkpoint Inhibitors  Added \u201cNote:  Examples of checkpoint inhibitors  are Keytruda (pembrolizumab intravenous  infusion), Opdivo (nivolumab intravenous infusion),  Yervoy (ipilimumab intravenous infusion), Tecentriq  (atezolizumab intravenous infusion), Bavencio  (avelumab intravenous infusion), Imfinzi  (durvalumab intravenous infusion), and Libtayo  (cemiplimab-rwlc intravenous infusion).\u201d  Initial Therapy:   Updated approval duration from 12 months to 1  month  Added \u201cAccording to the prescriber, patient  developed an immunotherapy-related toxicity\u201d  Added \u201cPatient developed this immunotherapy- related toxicity while receiving a checkpoint  inhibitor\u201d  Added hematologist and nephrologist to specialty  requirement  Patient has Already Received a Course of a  Rituximab Product:  Updated approval duration from 12 months to 1  month  dded hematologist and nephrologist to specialty  requirement  Dosing:   Updated \u201cUp to 500 mg/m2 administered  intravenously for 2 doses separated by at least 14  days\u201d to \u201cApprove up to 500 mg/m2 or up to 1,000  mg administered intravenously for 2 doses  separated by at least 14 days\u201d     Multiple Sclerosis  Initial Therapy:   Updated from \u201cDocumentation of failure,  contraindication, or intolerance to at least ONE  other disease-modifying agent for multiple  sclerosis\u201d to \u201cAccording to the prescriber, the  patient has experienced inadequate efficacy or  significant intolerance to at least TWO other  disease-modifying agents for multiple sclerosis.  Note: See Appendix B for examples of disease- modifying agents used for multiple sclerosis.\u201d  Added criteria for \u201cPatient is Currently Receiving  Rituximab\u201d  euromyelitis Optica Spectrum Disorder  Updated approval duration from 12 months to 1  month |  |\n\n<!-- camelot pages 21-32 table 6 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | U Removed \u201cDiagnosis was confirmed by a positive  blood serum test for anti-aquaporin-4 antibody  [documentation required]\u201d  pdated from \u201cSystemic Lupus Erythematous  (SLE) [Lupus]\u201d to \u201cSystemic Lupus  Erythematosus (SLE) [Lupus]\u201d  Initial Therapy:  Updated approval duration from 12 months to 1  month  Updated from \u201cDocumentation of failure,  contraindication, or intolerance to ONE standard  immunomodulating or immunosuppressant agent  [for example, hydroxychloroquine, corticosteroids  (e.g., prednisone, methylprednisolone),  methotrexate, azathioprine, mycophenolate, or  cyclophosphamide]\u201d to \u201cPatient has tried at least  ONE standard immunomodulating or  immunosuppressant agent. Note: Examples of  standard immunomodulating or  immunosuppressant agents include  hydroxychloroquine, corticosteroids (e.g.,  prednisone, methylprednisolone), methotrexate,  azathioprine, mycophenolate, and  cyclophosphamide.\u201d  Individual has Already Received a Course of a  Rituximab Product for SLE:  Updated approval duration from 12 months to 1  month  Removed \u201cThe individual has had a documented  beneficial response to therapy. Examples of a  beneficial response include: reduction in flares;   reduction in corticosteroid dose; decrease of anti- dsDNA titer; improvement in specific organ  dysfunction (for example, musculoskeletal, blood,  hematologic, vascular, others)\u201d  Removed \u201cThe medication is prescribed by or in  consultation with a rheumatologist, nephrologist, or  neurologist.\u201d  Added dosing for this indication |  |\n| Selected Revision | A Pemphigus Vulgaris  Maintenance Therapy: Added \u201devery 6 months\u201d  to dosing regimen  utoimmune Hemolytic Anemia  Updated from \u201dRefractory Autoimmune Hemolytic  Anemia\u201d to \u201dAutoimmune Hemolytic Anemia\u201d  Updated authorization duration from 12 months  to 1 month | 2/1/2026 |\n\n<!-- camelot pages 21-32 table 7 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | M   I   I   M Removed \u201d Documented failure, contraindication,  or intolerance to conventional treatments (for  example, corticosteroids, immunosuppressants, or  immunoglobulin\u201d  Added \u201dThe medication is prescribed by or in  consultation with a hematologist\u201d  Added dosing for this use  mmune Thrombocytopenia (ITP)  Updated for a patient that has already received a  course of a rituximab product for ITP, the  requirements that the patient has responded to  therapy and that the patient has relapsed were  modified from \"as determined by the prescriber\" to  \"according to the prescriber\"  nterstitial Lung Disease Associated with  Systemic Autoimmune Rheumatic Disease  Added criteria and dosing for this use  embranous Nephropathy  Updated from \u201dMembranous  Nephropathy/Membranous Glomerular  Nephropathy\u201d to \u201dMembranous Nephropathy\u201d  Updated authorization duration from 12 months  to 1 month  Removed individual has ONE of the following:  Membranous nephropathy and eGFR < 60 ml/min  or declining renal function not otherwise explained,  Membranous nephropathy with nephrotic syndrome  (nephrotic proteinuria, peripheral edema,  hypoalbuminemia), Membranous nephropathy with  nephrotic proteinuria (> 3.5 gm/day after 6 months  conservative therapy with ACEi or ARB), or  Recurrent membranous nephropathy with  proteinuria > 1 gm/day in a kidney transplant  recipient  Added \u201dAccording to the prescriber, the patient is  at moderate risk or high risk for the progressive  loss of kidney function\u201d  Added criteria for Patient has already Received a  Course of a Rituximab Product for Membranous  Nephropathy  Added dosing for this use  inimal Change Disease  Added criteria and dosing for this use |  |\n\n<!-- camelot pages 21-32 table 8 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | M   P yasthenia Gravis  Updated authorization duration from 12 months  to 6 months  Added \u201dPatient has confirmed anti-muscle-specific  tyrosine kinase antibody-positive myasthenia  gravis\u201d  Added \u201dPatient meets ONE of the following (a or  b): a.Patient previously received or is currently  receiving pyridostigmine b. Patient has had  inadequate efficacy, contraindication, or significant  intolerance to pyridostigmine\u201d  Updated from \u201dDocumented failure,  contraindication, or intolerance to at least TWO  immunosuppressive agents (for example,  azathioprine, cyclosporine, or methotrexate)\u201d to  \u201dPatient has tried at least one immunosuppressant  therapy. Note: Examples of immunosuppressant  therapies include azathioprine, cyclosporine,  mycophenolate mofetil, methotrexate, tacrolimus,  and cyclophosphamide.  A trial of Imaavy  (nipocalimab-aahu intravenous infusion) or  Rystiggo (rozanolixizumab-noli subcutaneous  infusion) also counts.\u201d  Added \u201dPatient has evidence of unresolved  symptoms of myasthenia gravis. Note:  Evidence of  unresolved symptoms of myasthenia gravis includes  difficulty swallowing, difficulty breathing, or a  functional disability resulting in the discontinuation  of physical activity (e.g., double vision, talking,  impairment of mobility)\u201d  Added \u201dThe medication is prescribed by or in  consultation with a neurologist\u201d  Added criteria for Patient has Already Received a  Course of a Rituximab Product for Myasthenia  Gravis  Added dosing for this use  ediatric Nephrotic Syndrome  Updated authorization duration from 12 months  to 1 month  Updated from \u201dDocumentation of failure,  contraindication, or intolerance to corticosteroid or  immunosuppressive medication (for example,  cyclophosphamide, cyclosporine, mycophenolate  mofetil)\u201d to \u201dPatient has tried at least one |  |\n\n<!-- camelot pages 21-32 table 9 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | T   S glucocorticoid-sparing agent for nephrotic  syndrome. Note:  Examples of glucocorticoid- sparing agents for nephrotic syndrome include oral  calcineurin inhibitors (e.g., tacrolimus,  cyclosporine), cyclophosphamide, or mycophenolate  mofetil\u201d  Updated from \u201dDisease is relapsing and steroid- dependent\u201d to \u201dPatient has tried at least one  systemic corticosteroid. Note:  Examples of  systemic corticosteroids include prednisone or  prednisolone\u201d  Added \u201dThe medication is prescribed by or in  consultation with a nephrologist\u201d  Added criteria for Patient has Already Received a  Course of a Rituximab Product for Pediatric  Nephrotic Syndrome.  Added dosing for this use  olid Organ Transplantation  Updated from \u201dDesensitization for highly- allosensitized transplant candidates (to reduce HLA  antibodies)\u201d to \u201dThe medication will be used for  desensitization therapy prior to or immediately  after transplantation\u201d  Updated from \u201dAntibody-mediated rejection  (AMR)\u201d to \u201dThe medication will be used for  antibody-mediated rejection\u201d  Added \u201dThe medication will be prescribed by or in  consultation with a physician affiliated with a  transplant center\u201d  Added dosing for this use  hrombotic Thrombocytopenic Purpura  Updated authorization duration from 12 months  to 1 month  Removed \u201cDiagnosis of thrombotic  thrombocytopenic purpura\u201d  Updated from \u201cIndividual is receiving concurrent  therapy with glucocorticoids unless there is a  documented failure, contraindication, or intolerance  to glucocorticoids\u201d to \u201cThe medication will be used  in combination with systemic corticosteroids. Note:   Examples of systemic corticosteroids include  prednisone and methylprednisolone\u201d  Updated from \u201cRituximab will be used in  combination with plasma exchange therapy\u201d to |  |\n\n<!-- camelot pages 21-32 table 10 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  | F \u201cThe medication will be used in combination with  therapeutic plasma exchange\u201d  Added dosing for this use  actor Inhibitors in an Individual with  Hemophilia  This use was removed |  |\n\n<!-- camelot pages 21-32 table 11 (accuracy 100.0) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n| Mechanism of  Examples of  Action  Inflammatory  Indications* |  |  |\n| Biologics |  |  |\n| Adalimumab SC Products  (Humira\u00ae, biosimilars) | Inhibition of TNF | AS, CD, JIA, PsO, PsA, RA,  UC |\n| Cimzia\uf6da (certolizumab pegol SC  injection) | Inhibition of TNF | AS, CD, nr-axSpA, PsO,  PsA, RA |\n| Etanercept SC Products (Enbrel\uf6da,  biosimilars) | Inhibition of TNF | AS, JIA, PsO, PsA |\n| Infliximab IV Products  (Remicade\u00ae, biosimilars) | Inhibition of TNF | AS, CD, PsO, PsA, RA, UC |\n| Zymfentra\u00ae (infliximab-dyyb SC  injection) | Inhibition of TNF | CD, UC |\n| Simponi\u00ae, Simponi\u00ae Aria\u2122  (golimumab SC injection, golimumab  IV infusion) | Inhibition of TNF | SC formulation:  AS, PsA,  RA, UC |\n|  |  | IV formulation:  AS, PJIA,  PsA, RA |\n| Tocilizumab Products (Actemra\u00ae  IV, biosimilars; Actemra\u00ae SC,  biosimilars) | Inhibition of IL-6 | SC formulation:  PJIA, RA,  SJIA |\n|  |  | IV formulation:  PJIA, RA,  SJIA |\n| Kevzara\u00ae (sarilumab SC injection) | Inhibition of IL-6 | RA |\n| Orencia\u00ae (abatacept IV infusion,  abatacept SC injection) | T-cell costimulation  modulator | SC formulation:  JIA, PSA,  RA |\n|  |  | IV formulation:  JIA, PsA,  RA |\n| Rituximab IV Products (Rituxan\u00ae,  biosimilars) | CD20-directed  cytolytic antibody | RA |\n| Kineret\u00ae (anakinra SC injection) | Inhibition of IL-1 | JIA^, RA |\n| Omvoh\u00ae (mirikizumab IV infusion,  SC injection) | Inhibition of IL-23 | CD, UC |\n| Ustekinumab Products (Stelara\u00ae  IV, biosimilars; Stelara\u00ae SC,  biosimilars) | Inhibition of IL-12/23 | SC formulation:  CD, PsO,  PsA, UC |\n|  |  | IV formulation:  CD, UC |\n| Siliq\u2122 (brodalumab SC injection) | Inhibition of IL-17 | PsO |\n| Cosentyx\u2122 (secukinumab SC  injection, secukinumab IV infusion) | Inhibition of IL-17A | SC formulation:  AS, ERA,  nr-axSpA, PsO, PsA |\n\n<!-- camelot pages 21-32 table 12 (accuracy 99.3) -->\n| 0 | 1 | 2 |\n| --- | --- | --- |\n|  |  | IV formulation:  AS, nr- axSpA, PsA |\n| Taltz\u00ae (ixekizumab SC injection) | Inhibition of IL-17A | AS, nr-axSpA, PsO, PsA |\n| Bimzelx\u00ae (bimekizumab-bkzx SC  injection) | Inhibition of IL- 17A/17F | AS, nr-axSpA, PsO, PsA |\n| Ilumya\u00ae (tildrakizumab-asmn SC  injection) | Inhibition of IL-23 | PsO |\n| Skyrizi\u00ae (risankizumab-rzaa SC  injection, risankizumab-rzaa IV  infusion) | Inhibition of IL-23 | SC formulation:  CD, PsA,  PsO, UC |\n|  |  | IV formulation:  CD, UC |\n| Tremfya\u00ae (guselkumab SC injection,  guselkumab IV infusion) | Inhibition of IL-23 | SC formulation:  CD, PsA,  PsO, UC |\n|  |  | IV formulation:  CD, UC |\n| Entyvio\u00ae (vedolizumab IV infusion,  vedolizumab SC injection) | Integrin receptor  antagonist | CD, UC |\n| Oral Therapies/Targeted Synthetic Oral Small Molecule Drugs |  |  |\n| Otezla\u00ae (apremilast tablets) | Inhibition of PDE4 | PsO, PsA |\n| Otezla XR\u2122 (apremilast extended- release tablets) | Inhibition of PDE4 | PsO, PsA |\n| Cibinqo\u2122 (abrocitinib tablets) | Inhibition of JAK  pathways | AD |\n| Olumiant\u00ae (baricitinib tablets) | Inhibition of JAK  pathways | RA, AA |\n| Litfulo\u00ae (ritlecitinib capsules) | Inhibition of JAK  pathways | AA |\n| Leqselvi\u00ae (deuruxolitinib tablets) | Inhibition of JAK  pathways | AA |\n| Rinvoq\u00ae (upadacitinib extended- release tablets) | Inhibition of JAK  pathways | AD, AS, nr-axSpA, RA,  PsA, UC |\n| Rinvoq\u00ae LQ (upadacitinib oral  solution) | Inhibition of JAK  pathways | PsA, PJIA |\n| Sotyktu\u00ae (deucravacitinib tablets) | Inhibition of TYK2 | PsO |\n| Xeljanz\u00ae (tofacitinib tablets) | Inhibition of JAK  pathways | RA, PJIA, PsA, UC |\n| Xeljanz\u00ae XR (tofacitinib extended- release tablets) | Inhibition of JAK  pathways | RA, PsA, UC |\n| Zeposia\u00ae (ozanimod tablets) | Sphingosine 1  phosphate receptor  modulator | UC |\n| Velsipity\u00ae (etrasimod tablets) | Sphingosine 1  phosphate receptor  modulator | UC |\n\n<!-- camelot pages 21-32 table 13 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Medication | Mode of Administration |\n| Aubagio\u00ae (teriflunomide tablets, generic) | Oral |\n| Avonex\u00ae (interferon beta-1a intramuscular injection) | Injection (self-administered) |\n| Bafiertam\u00ae (monomethyl fumarate delayed-release  capsules) | Oral |\n| Betaseron\u00ae (interferon beta-1b subcutaneous injection) | Injection (self-administered) |\n| Briumvi\u2122 (ublituximab-xiiy intravenous infusion) | Injection |\n| Copaxone\u00ae (glatiramer acetate subcutaneous injection,  generic) | Injection (self-administered) |\n| Gilenya\u00ae (fingolimod capsules, generic) | Oral |\n| Glatopa\u00ae (glatiramer acetate subcutaneous injection) | Injection (self-administered) |\n| Kesimpta\u00ae (ofatumumab subcutaneous injection) | Injection (self-administered) |\n| Lemtrada\u00ae (alemtuzumab intravenous infusion) | Intravenous infusion |\n| Mavenclad\u00ae (cladribine tablets) | Oral |\n| Mayzent\u00ae (siponimod tablets) | Oral |\n| Ocrevus\u00ae (ocrelizumab intravenous infusion) | Intravenous infusion |\n| Ocrevus Zunovo\u2122 (ocrelizumab and hyaluronidase-ocsq  subcutaneous injection) | Subcutaneous injection (not  self-administered) |\n| Plegridy\u00ae (peginterferon beta-1a subcutaneous or  intramuscular injection) | Injection (self-administered) |\n| Ponvory\u2122 (ponesimod tablets) | Oral |\n| Rebif\u00ae (interferon beta-1a subcutaneous injection) | Injection (self-administered) |\n| Tascenso ODT\u2122 (fingolimod orally disintegrating tablets) | Oral |\n| Tecfidera\u00ae (dimethyl fumarate delayed-release  capsules, generic) | Oral |\n| Tyruko\u00ae (natalizumab-sztn intravenous infusion) | Intravenous infusion |\n| Tysabri\u00ae (natalizumab intravenous infusion) | Intravenous infusion |\n| Vumerity\u00ae (diroximel fumarate delayed-release  capsules) | Oral |\n| Zeposia\u00ae (ozanimod capsules) | Oral |"
+}

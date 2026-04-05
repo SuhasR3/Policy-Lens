@@ -1,0 +1,979 @@
+{
+  "payer": "Blue Cross NC",
+  "policy_id": null,
+  "policy_title": "Corporate Medical Policy: Preferred Injectable Oncology Program",
+  "effective_date": "January 2026",
+  "revision_date": "January 2026",
+  "document_type": "single_drug_policy",
+  "drugs": [
+    {
+      "generic_name": "bevacizumab-maly",
+      "brand_names": [
+        "Alymsys"
+      ],
+      "hcpcs_codes": [
+        "Q5126"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "bevacizumab",
+      "brand_names": [
+        "Avastin"
+      ],
+      "hcpcs_codes": [
+        "J9035"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "bevacizumab-tnjn",
+      "brand_names": [
+        "Avzivi"
+      ],
+      "hcpcs_codes": [
+        "C9399",
+        "J3490",
+        "J3590",
+        "J9999"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "trastuzumab",
+      "brand_names": [
+        "Herceptin"
+      ],
+      "hcpcs_codes": [
+        "J9355"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "trastuzumab and hyaluronidase-oysk",
+      "brand_names": [
+        "Herceptin Hylecta"
+      ],
+      "hcpcs_codes": [
+        "J9356"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "trastuzumab-strf",
+      "brand_names": [
+        "Hercessi"
+      ],
+      "hcpcs_codes": [
+        "Q5146"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    },
+    {
+      "generic_name": "trastuzumab-pkrb",
+      "brand_names": [
+        "Herzuma"
+      ],
+      "hcpcs_codes": [
+        "Q5113"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    },
+    {
+      "generic_name": "bevacizumab-nwgd",
+      "brand_names": [
+        "Jobevne"
+      ],
+      "hcpcs_codes": [
+        "Q5160"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "trastuzumab-anns",
+      "brand_names": [
+        "Kanjinti"
+      ],
+      "hcpcs_codes": [
+        "Q5117"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    },
+    {
+      "generic_name": "rituximab",
+      "brand_names": [
+        "Rituxan"
+      ],
+      "hcpcs_codes": [
+        "J9312"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "rituximab and hyaluronidase",
+      "brand_names": [
+        "Rituxan Hycela"
+      ],
+      "hcpcs_codes": [
+        "J9311"
+      ],
+      "is_biosimilar": false,
+      "reference_product": null
+    },
+    {
+      "generic_name": "bevacizumab-adcd",
+      "brand_names": [
+        "Vegzelma"
+      ],
+      "hcpcs_codes": [
+        "Q5129"
+      ],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "bevacizumab-awwb",
+      "brand_names": [
+        "Mvasi"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "bevacizumab-bvzr",
+      "brand_names": [
+        "Zirabev"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "bevacizumab (Avastin)"
+    },
+    {
+      "generic_name": "rituximab-arrx",
+      "brand_names": [
+        "Riabni"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "rituximab (Rituxan)"
+    },
+    {
+      "generic_name": "rituximab-pvvr",
+      "brand_names": [
+        "Ruxience"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "rituximab (Rituxan)"
+    },
+    {
+      "generic_name": "rituximab-abbs",
+      "brand_names": [
+        "Truxima"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "rituximab (Rituxan)"
+    },
+    {
+      "generic_name": "trastuzumab-dkst",
+      "brand_names": [
+        "Ogivri"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    },
+    {
+      "generic_name": "trastuzumab-dttb",
+      "brand_names": [
+        "Ontruzant"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    },
+    {
+      "generic_name": "trastuzumab-qyyp",
+      "brand_names": [
+        "Trazimera"
+      ],
+      "hcpcs_codes": [],
+      "is_biosimilar": true,
+      "reference_product": "trastuzumab (Herceptin)"
+    }
+  ],
+  "covered_indications": [
+    {
+      "indication_name": "Metastatic colorectal cancer \u2014 first- or second-line with IV fluorouracil-based chemotherapy",
+      "clinical_criteria": [
+        "For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or second-line treatment",
+        "Limitations of use: Not for adjuvant treatment of colon cancer"
+      ],
+      "required_combination_regimens": [
+        "intravenous fluorouracil-based chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Metastatic colorectal cancer \u2014 second-line after progression on first-line bevacizumab-containing regimen",
+      "clinical_criteria": [
+        "For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-based chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing regimen",
+        "Limitations of use: Not for adjuvant treatment of colon cancer"
+      ],
+      "required_combination_regimens": [
+        "fluoropyrimidine-irinotecan-based chemotherapy",
+        "fluoropyrimidine-oxaliplatin-based chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer \u2014 first-line",
+      "clinical_criteria": [
+        "For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in combination with carboplatin and paclitaxel for first-line treatment"
+      ],
+      "required_combination_regimens": [
+        "carboplatin and paclitaxel"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Recurrent glioblastoma in adults",
+      "clinical_criteria": [
+        "For the treatment of recurrent glioblastoma in adults"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Metastatic renal cell carcinoma",
+      "clinical_criteria": [
+        "For the treatment of metastatic renal cell carcinoma in combination with interferon alfa"
+      ],
+      "required_combination_regimens": [
+        "interferon alfa"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Persistent, recurrent, or metastatic cervical cancer",
+      "clinical_criteria": [
+        "For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and topotecan"
+      ],
+      "required_combination_regimens": [
+        "paclitaxel and cisplatin",
+        "paclitaxel and topotecan"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avastin (bevacizumab)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer \u2014 platinum-resistant recurrent disease (Alymsys, Avzivi)",
+      "clinical_criteria": [
+        "For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in combination with paclitaxel, pegylated liposomal doxorubicin, or topotecan for platinum-resistant recurrent disease who received no more than 2 prior chemotherapy regimens"
+      ],
+      "required_combination_regimens": [
+        "paclitaxel",
+        "pegylated liposomal doxorubicin",
+        "topotecan"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Alymsys (bevacizumab-maly)",
+        "Avzivi (bevacizumab-tnjn)"
+      ]
+    },
+    {
+      "indication_name": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer \u2014 stage III or IV following initial surgical resection",
+      "clinical_criteria": [
+        "In combination with carboplatin and paclitaxel, followed by a bevacizumab product as a single agent, for stage III or IV disease following initial surgical resection"
+      ],
+      "required_combination_regimens": [
+        "carboplatin and paclitaxel"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Avastin (bevacizumab)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer \u2014 platinum-resistant recurrent disease (Avastin, Jobevne, Vegzelma)",
+      "clinical_criteria": [
+        "In combination with paclitaxel, pegylated liposomal doxorubicin, or topotecan for platinum-resistant recurrent disease who received no more than 2 prior chemotherapy regimens"
+      ],
+      "required_combination_regimens": [
+        "paclitaxel",
+        "pegylated liposomal doxorubicin",
+        "topotecan"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Avastin (bevacizumab)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer \u2014 platinum-sensitive recurrent disease",
+      "clinical_criteria": [
+        "In combination with carboplatin and paclitaxel or carboplatin and gemcitabine, followed by a bevacizumab product as a single agent, for platinum-sensitive recurrent disease"
+      ],
+      "required_combination_regimens": [
+        "carboplatin and paclitaxel",
+        "carboplatin and gemcitabine"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Avastin (bevacizumab)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "indication_name": "Unresectable or metastatic hepatocellular carcinoma (HCC)",
+      "clinical_criteria": [
+        "For the treatment of hepatocellular carcinoma (HCC), in combination with atezolizumab for the treatment of patients with unresectable or metastatic HCC who have not received prior systemic therapy"
+      ],
+      "required_combination_regimens": [
+        "atezolizumab"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Avastin (bevacizumab)"
+      ]
+    },
+    {
+      "indication_name": "HER2-overexpressing breast cancer",
+      "clinical_criteria": [
+        "For the treatment of HER2-overexpressing breast cancer",
+        "Patient selection for therapy is based on an FDA-approved companion diagnostic for trastuzumab/Herceptin. Assessment of HER2 protein overexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast cancers by laboratories with demonstrated proficiency"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Herceptin (trastuzumab)",
+        "Herceptin Hylecta (trastuzumab and hyaluronidase-oysk)",
+        "Hercessi (trastuzumab-strf)",
+        "Herzuma (trastuzumab-pkrb)",
+        "Kanjinti (trastuzumab-anns)"
+      ]
+    },
+    {
+      "indication_name": "HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma",
+      "clinical_criteria": [
+        "For the treatment of HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma",
+        "Patient selection for therapy is based on an FDA-approved companion diagnostic for a trastuzumab product. Assessment of HER2 protein overexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast or gastric cancers by laboratories with demonstrated proficiency"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Herceptin (trastuzumab)",
+        "Hercessi (trastuzumab-strf)",
+        "Herzuma (trastuzumab-pkrb)",
+        "Kanjinti (trastuzumab-anns)"
+      ]
+    },
+    {
+      "indication_name": "Non-Hodgkin's lymphoma (NHL) \u2014 relapsed or refractory, low grade or follicular, CD20-positive B-cell NHL",
+      "clinical_criteria": [
+        "Relapsed or refractory, low grade or follicular, CD20-positive B-cell NHL as a single agent"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "Non-Hodgkin's lymphoma (NHL) \u2014 previously untreated follicular, CD20-positive, B-cell NHL",
+      "clinical_criteria": [
+        "Previously untreated follicular, CD20-positive, B-cell NHL in combination with first line chemotherapy and, in patients achieving a complete or partial response to a rituximab product in combination with chemotherapy, as single-agent maintenance therapy"
+      ],
+      "required_combination_regimens": [
+        "first-line chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "Non-Hodgkin's lymphoma (NHL) \u2014 non-progressing, low-grade, CD20-positive, B-cell NHL after first-line CVP",
+      "clinical_criteria": [
+        "Non-progressing (including stable disease), low-grade, CD20-positive, B-cell NHL as a single agent after first-line cyclophosphamide, vincristine, and prednisone (CVP) chemotherapy"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "Non-Hodgkin's lymphoma (NHL) \u2014 previously untreated diffuse large B-cell, CD20-positive NHL",
+      "clinical_criteria": [
+        "Previously untreated diffuse large B-cell, CD20-positive NHL in combination with cyclophosphamide, doxorubicin, vincristine, and prednisone (CHOP) or other anthracycline-based chemotherapy regimens"
+      ],
+      "required_combination_regimens": [
+        "cyclophosphamide, doxorubicin, vincristine, and prednisone (CHOP) or other anthracycline-based chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "Mature B-cell NHL and mature B-cell acute leukemia (B-AL) \u2014 pediatric patients aged 6 months and older",
+      "clinical_criteria": [
+        "For the treatment of pediatric patients aged 6 months and older with mature B-cell NHL and mature B-cell acute leukemia (B-AL): Previously untreated, advanced stage, CD20-positive, diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL), Burkitt-like lymphoma (BLL) or mature B-cell acute leukemia (B-AL) in combination with chemotherapy"
+      ],
+      "required_combination_regimens": [
+        "chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "CD20-positive chronic lymphocytic leukemia (CLL)",
+      "clinical_criteria": [
+        "For the treatment of previously untreated and previously treated CD20-positive chronic lymphocytic leukemia (CLL) in adults, in combination with fludarabine and cyclophosphamide (FC)"
+      ],
+      "required_combination_regimens": [
+        "fludarabine and cyclophosphamide (FC)"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan (rituximab)"
+      ]
+    },
+    {
+      "indication_name": "Follicular lymphoma (FL) \u2014 relapsed or refractory",
+      "clinical_criteria": [
+        "Relapsed or refractory, follicular lymphoma as a single agent",
+        "Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    },
+    {
+      "indication_name": "Follicular lymphoma (FL) \u2014 previously untreated",
+      "clinical_criteria": [
+        "Previously untreated follicular lymphoma in combination with first-line chemotherapy and, in patients achieving a complete or partial response to rituximab in combination with chemotherapy, as single-agent maintenance therapy",
+        "Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion"
+      ],
+      "required_combination_regimens": [
+        "first-line chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    },
+    {
+      "indication_name": "Follicular lymphoma (FL) \u2014 non-progressing after first-line CVP",
+      "clinical_criteria": [
+        "Non-progressing (including stable disease), follicular lymphoma as a single agent after first-line cyclophosphamide, vincristine, and prednisone (CVP) chemotherapy",
+        "Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion"
+      ],
+      "required_combination_regimens": [],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    },
+    {
+      "indication_name": "Diffuse large B-cell lymphoma \u2014 previously untreated (Rituxan Hycela)",
+      "clinical_criteria": [
+        "For the treatment of previously untreated diffuse large B-cell lymphoma in combination with cyclophosphamide, doxorubicin, vincristine, prednisone (CHOP) or other anthracycline-based chemotherapy regimens",
+        "Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion",
+        "Not indicated for treatment of non-malignant conditions"
+      ],
+      "required_combination_regimens": [
+        "cyclophosphamide, doxorubicin, vincristine, prednisone (CHOP) or other anthracycline-based chemotherapy"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    },
+    {
+      "indication_name": "Chronic lymphocytic leukemia (CLL) \u2014 previously untreated and previously treated (Rituxan Hycela)",
+      "clinical_criteria": [
+        "For the treatment of previously untreated and previously treated chronic lymphocytic leukemia (CLL) in combination with fludarabine and cyclophosphamide (FC)",
+        "Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion",
+        "Not indicated for treatment of non-malignant conditions"
+      ],
+      "required_combination_regimens": [
+        "fludarabine and cyclophosphamide (FC)"
+      ],
+      "icd10_codes": [],
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    }
+  ],
+  "prior_auth_required": true,
+  "step_therapy": [
+    {
+      "required_prior_drugs": [
+        "bevacizumab-awwb (Mvasi)",
+        "bevacizumab-bvzr (Zirabev)"
+      ],
+      "condition_description": "If the request is for bevacizumab (Avastin) or a non-preferred bevacizumab biosimilar product, the patient must have a documented serious adverse event that required medical intervention to both preferred bevacizumab biosimilar products that is not anticipated with the requested product, AND the prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form.",
+      "applies_to_products": [
+        "Avastin (bevacizumab)",
+        "Alymsys (bevacizumab-maly)",
+        "Avzivi (bevacizumab-tnjn)",
+        "Jobevne (bevacizumab-nwgd)",
+        "Vegzelma (bevacizumab-adcd)"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "rituximab-arrx (Riabni)",
+        "rituximab-pvvr (Ruxience)",
+        "rituximab-abbs (Truxima)"
+      ],
+      "condition_description": "If the request is for rituximab (Rituxan), rituximab and hyaluronidase (Rituxan Hycela), or a non-preferred rituximab biosimilar product, the patient must have a documented serious adverse event that required medical intervention to ALL preferred rituximab biosimilar products that is not anticipated with the requested product, AND the prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form.",
+      "applies_to_products": [
+        "Rituxan (rituximab)",
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "trastuzumab-dkst (Ogivri)",
+        "trastuzumab-dttb (Ontruzant)",
+        "trastuzumab-qyyp (Trazimera)"
+      ],
+      "condition_description": "If the request is for trastuzumab (Herceptin), trastuzumab and hyaluronidase-oysk (Herceptin Hylecta), or a non-preferred trastuzumab biosimilar product, the patient must have a documented serious adverse event that required medical intervention to ALL preferred trastuzumab biosimilar products that is not anticipated with the requested product, AND the prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form.",
+      "applies_to_products": [
+        "Herceptin (trastuzumab)",
+        "Herceptin Hylecta (trastuzumab and hyaluronidase-oysk)",
+        "Hercessi (trastuzumab-strf)",
+        "Herzuma (trastuzumab-pkrb)",
+        "Kanjinti (trastuzumab-anns)"
+      ]
+    },
+    {
+      "required_prior_drugs": [
+        "rituximab product (IV infusion, at least one full dose)"
+      ],
+      "condition_description": "Treatment with Rituxan Hycela should be initiated only after patients have received at least one full dose of a rituximab product by intravenous infusion.",
+      "applies_to_products": [
+        "Rituxan Hycela (rituximab and hyaluronidase)"
+      ]
+    }
+  ],
+  "excluded_indications": [
+    "Bevacizumab products: Not for adjuvant treatment of colon cancer",
+    "Rituxan Hycela (rituximab and hyaluronidase): Not indicated for treatment of non-malignant conditions",
+    "Herceptin (trastuzumab): Do not substitute for or with ado-trastuzumab emtansine or fam-trastuzumab deruxtecan",
+    "Herceptin Hylecta (trastuzumab and hyaluronidase-oysk): Do not administer IV and do not substitute for or with ado-trastuzumab emtansine",
+    "Hercessi (trastuzumab-strf): Do not substitute for or with ado-trastuzumab emtansine or fam-trastuzumab deruxtecan",
+    "Herzuma (trastuzumab-pkrb): Do not substitute for or with ado-trastuzumab emtansine or fam-trastuzumab deruxtecan",
+    "Kanjinti (trastuzumab-anns): Do not substitute for or with ado-trastuzumab emtansine or fam-trastuzumab deruxtecan"
+  ],
+  "approval_duration_initial": "365 days (1 year)",
+  "approval_duration_renewal": "365 days (1 year)",
+  "dosing_limits": [
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Metastatic colorectal cancer with bolus-IFL",
+      "max_dose": "5 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Metastatic colorectal cancer with FOLFOX4",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Metastatic colorectal cancer with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-based chemotherapy after progression on first-line bevacizumab product",
+      "max_dose": "5 mg/kg every 2 weeks or 7.5 mg/kg every 3 weeks",
+      "frequency": "every 2 weeks or every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 First-line non-squamous NSCLC with carboplatin and paclitaxel",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Recurrent glioblastoma",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Metastatic renal cell carcinoma with interferon alfa",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Persistent, recurrent, or metastatic cervical cancer with paclitaxel and cisplatin or paclitaxel and topotecan",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Platinum-resistant recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer with paclitaxel, pegylated liposomal doxorubicin, or topotecan (weekly)",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Alymsys (bevacizumab-maly) \u2014 Platinum-resistant recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer with topotecan (every 3 weeks)",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Metastatic colorectal cancer with bolus-IFL",
+      "max_dose": "5 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Metastatic colorectal cancer with FOLFOX4",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Metastatic colorectal cancer with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-based chemotherapy after progression on first-line bevacizumab product",
+      "max_dose": "5 mg/kg every 2 weeks or 7.5 mg/kg every 3 weeks",
+      "frequency": "every 2 weeks or every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 First-line non-squamous NSCLC with carboplatin and paclitaxel",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Recurrent glioblastoma",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Metastatic renal cell carcinoma with interferon alfa",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Persistent, recurrent, or metastatic cervical cancer with paclitaxel and cisplatin or paclitaxel and topotecan",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer following initial surgical resection: with carboplatin and paclitaxel for up to 6 cycles, followed by single agent for total of up to 22 cycles",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Platinum-resistant recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer with paclitaxel, pegylated liposomal doxorubicin, or topotecan (weekly)",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Platinum-resistant recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer with topotecan (every 3 weeks)",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Platinum-sensitive recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer with carboplatin and paclitaxel for 6-8 cycles, followed by single agent",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 Platinum-sensitive recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer with carboplatin and gemcitabine for 6-10 cycles, followed by single agent",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Avastin (bevacizumab) \u2014 HCC with atezolizumab (following 1,200 mg of atezolizumab)",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herceptin (trastuzumab) \u2014 Adjuvant breast cancer: initial 4 mg/kg IV, then 2 mg/kg weekly for 12 weeks (with paclitaxel or docetaxel) or 18 weeks (with docetaxel/carboplatin), then 6 mg/kg every 3 weeks to complete 52 weeks",
+      "max_dose": "6 mg/kg",
+      "frequency": "every 3 weeks (maintenance), weekly (initial phase)",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herceptin (trastuzumab) \u2014 Adjuvant breast cancer: alternative regimen \u2014 initial 8 mg/kg IV, then 6 mg/kg every 3 weeks for 52 weeks",
+      "max_dose": "8 mg/kg (initial), 6 mg/kg (subsequent)",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herceptin (trastuzumab) \u2014 Metastatic HER2-overexpressing breast cancer: initial 4 mg/kg IV, then 2 mg/kg weekly",
+      "max_dose": "4 mg/kg (initial), 2 mg/kg (subsequent)",
+      "frequency": "weekly",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herceptin (trastuzumab) \u2014 Metastatic HER2-overexpressing gastric cancer: initial 8 mg/kg IV, then 6 mg/kg every 3 weeks",
+      "max_dose": "8 mg/kg (initial), 6 mg/kg (subsequent)",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herceptin Hylecta (trastuzumab and hyaluronidase-oysk) \u2014 HER2-overexpressing breast cancer",
+      "max_dose": "600 mg/10,000 units SC over approximately 2-5 minutes",
+      "frequency": "once every three weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Rituxan (rituximab) \u2014 NHL",
+      "max_dose": "375 mg/m2 IV",
+      "frequency": "per regimen",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Rituxan (rituximab) \u2014 CLL: 375 mg/m2 IV in cycle 1, 500 mg/m2 in cycles 2-6, in combination with FC",
+      "max_dose": "500 mg/m2",
+      "frequency": "every 28 days",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Rituxan Hycela (rituximab and hyaluronidase) \u2014 FL/DLBCL: 1,400 mg/23,400 Units SC",
+      "max_dose": "1,400 mg rituximab / 23,400 Units hyaluronidase human",
+      "frequency": "per regimen",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Rituxan Hycela (rituximab and hyaluronidase) \u2014 CLL: 1,600 mg/26,800 Units SC",
+      "max_dose": "1,600 mg rituximab / 26,800 Units hyaluronidase human",
+      "frequency": "per regimen",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Metastatic colorectal cancer with bolus-IFL",
+      "max_dose": "5 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Metastatic colorectal cancer with FOLFOX4",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 First-line non-squamous NSCLC with carboplatin and paclitaxel",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Recurrent glioblastoma",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Metastatic renal cell carcinoma with interferon alfa",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Persistent, recurrent, or metastatic cervical cancer",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Jobevne (bevacizumab-nwgd) \u2014 Stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer following initial surgical resection: with carboplatin and paclitaxel for up to 6 cycles, followed by single agent for total of up to 22 cycles",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Metastatic colorectal cancer with bolus-IFL",
+      "max_dose": "5 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Metastatic colorectal cancer with FOLFOX4",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 First-line non-squamous NSCLC with carboplatin and paclitaxel",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Recurrent glioblastoma",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Metastatic renal cell carcinoma with interferon alfa",
+      "max_dose": "10 mg/kg",
+      "frequency": "every 2 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Persistent, recurrent, or metastatic cervical cancer",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Vegzelma (bevacizumab-adcd) \u2014 Stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer following initial surgical resection: with carboplatin and paclitaxel for up to 6 cycles, followed by single agent for total of up to 22 cycles",
+      "max_dose": "15 mg/kg",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Kanjinti (trastuzumab-anns) \u2014 Adjuvant breast cancer: initial 4 mg/kg IV, then 2 mg/kg weekly for 12 weeks, then 6 mg/kg every 3 weeks to complete 52 weeks; or initial 8 mg/kg IV, then 6 mg/kg every 3 weeks for 52 weeks",
+      "max_dose": "8 mg/kg (initial), 6 mg/kg (subsequent)",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Hercessi (trastuzumab-strf) \u2014 same dosing as Herceptin",
+      "max_dose": "8 mg/kg (initial), 6 mg/kg (subsequent)",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    },
+    {
+      "description": "Herzuma (trastuzumab-pkrb) \u2014 same dosing as Herceptin",
+      "max_dose": "8 mg/kg (initial), 6 mg/kg (subsequent)",
+      "frequency": "every 3 weeks",
+      "max_units_per_period": "9999"
+    }
+  ],
+  "site_of_care_restrictions": null,
+  "general_requirements": [
+    "The restricted product(s) may be considered medically necessary when the following criteria are met.",
+    "Initial Criteria \u2014 ONE of the following: (1a) The patient is currently being treated with the requested agent and has been stable on therapy for at least 180 days; OR (1b) The patient has been treated with the requested agent within the past 180 days AND is at risk if therapy is changed; OR (2) The patient has an FDA labeled indication for the requested agent and route of administration.",
+    "Initial Criteria 2a \u2014 ONE of the following: (i) The requested indication does NOT require genetic/specific diagnostic testing (e.g., ALK, EGFR, HER2, KRAS) in FDA labeling; OR (ii) The requested indication requires genetic/specific diagnostic testing in FDA labeling AND both of the following: (1) Genetic/specific diagnostic testing has been performed; AND (2) The results of the genetic/specific diagnostic testing indicate therapy with the requested agent is appropriate in FDA labeling.",
+    "Initial Criteria 2b \u2014 ONE of the following: (i) The requested agent will be used as a first-line agent AND is FDA labeled as a first-line agent for the requested indication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor Proportion Score [TPS] values); OR (ii) The patient has used the appropriate number and type(s) of prerequisite agent(s) listed in the FDA labeling for the requested indication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor Proportion Score [TPS] values); OR (iii) The patient has an intolerance, FDA labeled contraindication, or hypersensitivity to ALL of the required prerequisite agent(s) listed in the FDA labeling for the requested indication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor Proportion Score [TPS] values).",
+    "Initial Criteria 2c \u2014 ONE of the following: (i) The requested agent is being used as monotherapy AND is approved for use as monotherapy in the FDA labeling for the requested indication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor Proportion Score [TPS] values); OR (ii) The requested agent will be used in combination as combination therapy with all agent(s) and/or treatments (e.g., radiation) listed for concomitant use in the FDA labeling for the requested indication.",
+    "Initial Criteria 2d \u2014 ONE of the following: (i) The FDA label does NOT include a performance status requirement; OR (ii) The patient meets the performance status requirement in the FDA labeling.",
+    "Initial Criteria 3 \u2014 The patient has an indication that is supported by ALL requirements in NCCN 1 or 2A recommended use for the requested agent (i.e., the indication must be supported by ALL requirements in the NCCN 'Recommended Use' box [e.g., performance status, disease severity, previous failures, monotherapy vs combination therapy]) [medical record documentation required].",
+    "Initial Criteria 4 \u2014 If the request is for bevacizumab (Avastin) or a non-preferred bevacizumab biosimilar product (e.g., bevacizumab-maly [Alymsys], bevacizumab-tnjn [Avzivi], bevacizumab-nwgd [Jobevne], bevacizumab-adcd [Vegzelma]), then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to both preferred bevacizumab biosimilar products (i.e., bevacizumab-awwb [Mvasi], bevacizumab-bvzr [Zirabev]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "Initial Criteria 5 \u2014 If the request is for rituximab (Rituxan), rituximab and hyaluronidase (Rituxan Hycela), or a non-preferred rituximab biosimilar product, then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to ALL preferred rituximab biosimilar products (i.e., rituximab-arrx [Riabni], rituximab-pvvr [Ruxience], rituximab-abbs [Truxima]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "Initial Criteria 6 \u2014 If the request is for trastuzumab (Herceptin), trastuzumab and hyaluronidase-oysk (Herceptin Hylecta), or a non-preferred trastuzumab biosimilar product (e.g., trastuzumab-strf [Hercessi], trastuzumab-pkrb [Herzuma], trastuzumab-anns [Kanjinti]), then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to ALL preferred trastuzumab biosimilar products (i.e., trastuzumab-dkst [Ogivri], trastuzumab-dttb [Ontruzant], trastuzumab-qyyp [Trazimera]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "Initial Criteria 7 \u2014 The patient has not experienced disease progression or unacceptable toxicity on the same treatment as the requested agent or during treatment with another agent from the same drug class in a prior line of therapy (e.g., PD-L1/PD-1 inhibitors) unless there is acceptable supporting literature for use beyond progression in a different combination regimen.",
+    "Initial Criteria 8 \u2014 ONE of the following: (a) The patient's age is within FDA labeling for the requested indication or NCCN 1 or 2A compendia supported recommendation for the requested agent; OR (b) The prescriber has provided information in support of using the requested agent for the patient's age.",
+    "Initial Criteria 9 \u2014 The patient does NOT have any FDA labeled contraindications to the requested agent.",
+    "Initial Criteria 10 \u2014 The requested quantity (dose) and treatment duration (and maximum units) is within FDA labeled dosing for the requested indication or NCCN 1 or 2A compendia supported dosing for the requested indication.",
+    "Continuation Criteria 1 \u2014 The patient was approved through Blue Cross NC initial criteria for approval; OR",
+    "Continuation Criteria 2 \u2014 The patient would have met initial criteria for approval at the time they started therapy.",
+    "Continuation Criteria 3 \u2014 The patient has continued clinical benefit while receiving the requested agent as demonstrated by tumor response or lack of disease progression, and an acceptable toxicity profile.",
+    "Continuation Criteria 4 \u2014 The requested quantity (dose) and treatment duration (and maximum units) is within FDA labeled dosing for the requested indication or NCCN 1 or 2A compendia supported dosing for the requested indication.",
+    "Continuation Criteria 5 \u2014 If the request is for bevacizumab (Avastin) or a non-preferred bevacizumab biosimilar product (e.g., bevacizumab-maly [Alymsys], bevacizumab-tnjn [Avzivi], bevacizumab-nwgd [Jobevne], bevacizumab-adcd [Vegzelma]), then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to both preferred bevacizumab biosimilar products (i.e., bevacizumab-awwb [Mvasi], bevacizumab-bvzr [Zirabev]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "Continuation Criteria 6 \u2014 If the request is for rituximab (Rituxan), rituximab and hyaluronidase (Rituxan Hycela), or a non-preferred rituximab biosimilar product, then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to ALL preferred rituximab biosimilar products (i.e., rituximab-arrx [Riabni], rituximab-pvvr [Ruxience], rituximab-abbs [Truxima]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "Continuation Criteria 7 \u2014 If the request is for trastuzumab (Herceptin), trastuzumab and hyaluronidase-oysk (Herceptin Hylecta), or a non-preferred trastuzumab biosimilar product (e.g., trastuzumab-strf [Hercessi], trastuzumab-pkrb [Herzuma], trastuzumab-anns [Kanjinti]), then both of the following criteria are met: (a) The patient has a documented serious adverse event that required medical intervention to ALL preferred trastuzumab biosimilar products (i.e., trastuzumab-dkst [Ogivri], trastuzumab-dttb [Ontruzant], trastuzumab-qyyp [Trazimera]) that is not anticipated with the requested product; AND (b) The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation required].",
+    "NOTE: Use of injectable and healthcare administered oncology agents may be considered medically necessary for clinical indications not listed above when the drug is prescribed for the treatment of cancer either: (1) In accordance with FDA label when clinical benefit has been established, and it is not determined to be investigational as defined in the Blue Cross NC Corporate Medical Policy (CMP), 'Investigational (Experimental) Services'; OR (2) In accordance with specific strong endorsement or support by nationally recognized compendia (e.g., NCCN), when such recommendation is based on the highest level of evidence (Level 1, 2A), and/or uniform consensus of clinical appropriateness has been reached."
+  ],
+  "preferred_products": [
+    "Mvasi (bevacizumab-awwb)",
+    "Zirabev (bevacizumab-bvzr)",
+    "Riabni (rituximab-arrx)",
+    "Ruxience (rituximab-pvvr)",
+    "Truxima (rituximab-abbs)",
+    "Ogivri (trastuzumab-dkst)",
+    "Ontruzant (trastuzumab-dttb)",
+    "Trazimera (trastuzumab-qyyp)"
+  ],
+  "policy_changes": [
+    "January 2026: Coding change: For Jobevne, added HCPCS code Q5160 (1 unit per 10 mg) to dosing reference table effective 1/1/2026; deleted C9399, J3490, J3590, and J9999 termed 12/31/2025.",
+    "January 2026: Criteria change: Changed requirement for trial and failure of preferred rituximab biosimilar products to include Riabni in addition to existing preferred Ruxience and Truxima; adjusted non-preferred rituximab products to include Rituxan and Rituxan Hycela. Removed Riabni (Q5123) from restricted products within this policy (unrestricted for oncologic indications). Changed requirement for trial and failure of preferred trastuzumab biosimilar products to include Ogivri and Ontruzant in addition to existing preferred Trazimera; adjusted non-preferred trastuzumab biosimilar products to include Hercessi, Herzuma, and Kanjinti. Added Kanjinti (Q5117) to restricted products; removed Ogivri (Q5114) and Ontruzant (Q5112) from restricted products (unrestricted). Other minor formatting adjustments made throughout policy for clarity. Policy notification given 10/1/2025 for effective date 1/1/2026.",
+    "July 2025: Criteria update: Added new to market biosimilar product Jobevne (bevacizumab-nwgd) to policy as non-preferred with same criteria as Avastin.",
+    "January 2025: Coding change: For Hercessi, added HCPCS code Q5146 to dosing reference table effective 1/1/2025; deleted C9399, J3490, J3590, and J9999 termed 12/31/2024.",
+    "September 2024: Criteria update: Added new to market product Hercessi (trastuzumab-strf) to policy as non-preferred with same criteria as Herceptin.",
+    "April 2024: Criteria change: Changed requirement for trial and failure of preferred trastuzumab biosimilar products to include Kanjinti and Trazimera; adjusted non-preferred trastuzumab biosimilar products to include Herzuma, Ogivri, and Ontruzant. Added Ogivri (Q5114) to restricted products; removed Trazimera (Q5116) from restricted products (unrestricted). Policy notification given 1/8/2024 for effective date 4/1/2024.",
+    "January 2024: Criteria update: Added new to market biosimilar product Avzivi (bevacizumab-tnjn) to policy as non-preferred with same criteria as Avastin.",
+    "April 2023: Coding update: Added HCPCS code Q5129 for Vegzelma to dosing reference table effective 4/1/2023; deleted C9399, J3490, J3590, and J9999 for Vegzelma termed 3/31/2023.",
+    "January 2023: Coding update: Added HCPCS code Q5126 for Alymsys to dosing reference table effective 1/1/2023, deleted C142, J3490, J3590, and J9999 for Alymsys termed 12/31/2022.",
+    "November 2022: Criteria update: Added new to market product Vegzelma (bevacizumab-adcd) to policy as non-preferred with same criteria as Avastin.",
+    "October 2022: Coding update: Added HCPCS code C9142 for Alymsys to dosing reference table effective 10/1/2022, deleted C9399 for Alymsys termed 9/30/2022.",
+    "October 2022: Criteria update: Added Herceptin Hylecta to policy as a non-preferred product with same criteria as Herceptin. Added Rituxan Hycela to policy as a non-preferred product with same criteria as Rituxan. Policy notification given 8/4/2022 for effective date 10/1/2022.",
+    "June 2022: Criteria update: Added new to market Alymsys (bevacizumab-maly) to policy as non-preferred with same criteria as Avastin. Adjusted policy formatting for clarity with no change to policy intent.",
+    "June 2022: Original medical policy criteria issued. Criteria from these restricted products remains the same from previous medical policy (Injectable and Healthcare Administered Oncology Drugs)."
+  ],
+  "raw_text": "--- Page 1 ---\nCorporate Medical Policy: Preferred Injectable Oncology Program\nRestricted Product(s):\n\u2022 Alymsys\u00ae (bevacizumab-maly) intravenous infusion for administration by a healthcare professional\n\u2022 Avastin\u00ae (bevacizumab) intravenous infusion for administration by a healthcare professional\n\u2022 Avzivi\u00ae (bevacizumab-tnjn) intravenous infusion for administration by a healthcare professional\n\u2022 Herceptin\u00ae (trastuzumab) intravenous infusion for administration by a healthcare professional\n\u2022 Herceptin Hylecta\u00ae (trastuzumab and hyaluronidase-oysk) subcutaneous injection for administration by a healthcare professional\n\u2022 Hercessi\u00ae (trastuzumab-strf) intravenous infusion for administration by a healthcare professional\n\u2022 Herzuma\u00ae (trastuzumab-pkrb) intravenous infusion for administration by a healthcare professional\n\u2022 Jobevne\u00ae (bevacizumab-nwgd) intravenous infusion for administration by a healthcare professional\n\u2022 Kanjinti\u00ae (trastuzumab-anns) intravenous infusion for administration by a healthcare professional\n\u2022 Rituxan\u00ae (rituximab) intravenous infusion for administration by a healthcare professional\n\u2022 Rituxan Hycela\u00ae (rituximab and hyaluronidase) subcutaneous injection for administration by a healthcare professional\n\u2022 Vegzelma\u00ae (bevacizumab-adcd) intravenous infusion for administration by a healthcare professional\nPreferred Bevacizumab Containing Agent(s) (Unrestricted) Non-Preferred Bevacizumab Containing Agent(s)\nMvasi\u00ae (bevacizumab-awwb) Avastin\u00ae (bevacizumab)\nZirabev\u00ae (bevacizumab-bvzr) Alymsys\u00ae (bevacizumab-maly)\nAvzivi\u00ae (bevacizumab-tnjn)\nJobevne\u00ae (bevacizumab-nwgd)\nVegzelma\u00ae (bevacizumab-adcd)\nPreferred Rituximab Containing Agent(s) (Unrestricted) Non-Preferred Rituximab Containing Agent(s)\n*Riabni\u00ae (rituximab-arrx) Rituxan\u00ae (rituximab)\n*Ruxience\u00ae (rituximab-pvvr) Rituxan Hycela\u00ae (rituximab and hyaluronidase)\n*Truxima\u00ae (rituximab-abbs)\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 1\nJanuary 2026\n\n--- Page 2 ---\nPreferred Trastuzumab Containing Agent(s) (Unrestricted) Non-Preferred Trastuzumab Containing Agent(s)\nOgivri\u00ae (trastuzumab-dkst) Herceptin\u00ae (trastuzumab)\nOntruzant\u00ae (trastuzumab-dttb) Hercessi\u00ae (trastuzumab-strf)\nTrazimera\u00ae (trastuzumab-qyyp) Herzuma\u00ae (trastuzumab-pkrb)\nKanjinti\u00ae (trastuzumab-anns)\nHerceptin Hylecta\u00ae (trastuzumab and hyaluronidase-oysk)\n*These products may require authorization for non-oncology related indications; please refer to our Prior Review and Limitations Page\nhttps://www.bluecrossnc.com/members/health-plans/drug-search\nFDA Approved Use:\n\u2022 Alymsys\u00ae (bevacizumab-maly)\no For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or\nsecond-line treatment\no For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-\nbased chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing\nregimen\n\u25aa Limitations of use: Not for adjuvant treatment of colon cancer\no For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in\ncombination with carboplatin and paclitaxel for first-line treatment\no For the treatment of recurrent glioblastoma in adults\no For the treatment of metastatic renal cell carcinoma in combination with interferon alfa\no For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and\ntopotecan\no For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in combination with paclitaxel, pegylated liposomal\ndoxorubicin, or topotecan for platinum-resistant recurrent disease who received no more than 2 prior chemotherapy regimens\n\u2022 Avastin\u00ae (bevacizumab)\no For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or\nsecond-line treatment\no For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-\nbased chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing\nregimen\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 2\nJanuary 2026\n\n--- Page 3 ---\n\u25aa Limitations of use: Not for adjuvant treatment of colon cancer\no For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in\ncombination with carboplatin and paclitaxel for first-line treatment\no For the treatment of recurrent glioblastoma in adults\no For the treatment of metastatic renal cell carcinoma in combination with interferon alfa\no For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and\ntopotecan\no For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in the following situations:\n\u25aa In combination with carboplatin and paclitaxel, followed by a bevacizumab product as a single agent, for stage III or IV\ndisease following initial surgical resection\n\u25aa In combination with paclitaxel, pegylated liposomal doxorubicin, or topotecan for platinum-resistant recurrent disease who\nreceived no more than 2 prior chemotherapy regimens\n\u25aa In combination with carboplatin and paclitaxel or carboplatin and gemcitabine, followed by a bevacizumab product as a single\nagent, for platinum-sensitive recurrent disease\no For the treatment of hepatocellular carcinoma (HCC), in combination with atezolizumab for the treatment of patients with\nunresectable or metastatic HCC who have not received prior systemic therapy\n\u2022 Avzivi\u00ae (bevacizumab-tnjn)\no For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or\nsecond-line treatment\no For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-\nbased chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing\nregimen\n\u25aa Limitations of use: Not for adjuvant treatment of colon cancer\no For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in\ncombination with carboplatin and paclitaxel for first-line treatment\no For the treatment of recurrent glioblastoma in adults\no For the treatment of metastatic renal cell carcinoma in combination with interferon alfa\no For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and\ntopotecan\no For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in combination with paclitaxel, pegylated liposomal\ndoxorubicin, or topotecan for platinum-resistant recurrent disease who received no more than 2 prior chemotherapy regimens\n\u2022 Herceptin\u00ae (trastuzumab)\no For the treatment of HER2-overexpressing breast cancer\no For the treatment of HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 3\nJanuary 2026\n\n--- Page 4 ---\no Patient selection for therapy is based on an FDA-approved companion diagnostic for Herceptin. Assessment of HER2 protein\noverexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast or gastric cancers\nby laboratories with demonstrated proficiency\n\u2022 Herceptin Hylecta\u00ae (trastuzumab and hyaluronidase-oysk)\no For the treatment of HER2-overexpressing breast cancer\no Patient selection for therapy is based on an FDA-approved companion diagnostic for trastuzumab. Assessment of HER2 protein\noverexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast cancers by\nlaboratories with demonstrated proficiency\n\u2022 Hercessi\u00ae (trastuzumab-strf)\no For the treatment of HER2-overexpressing breast cancer\no For the treatment of HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma\no Patient selection for therapy is based on an FDA-approved companion diagnostic for a trastuzumab product. Assessment of HER2\nprotein overexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast or gastric\ncancers by laboratories with demonstrated proficiency\n\u2022 Herzuma\u00ae (trastuzumab-pkrb)\no For the treatment of HER2-overexpressing breast cancer\no For the treatment of HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma\no Patient selection for therapy is based on an FDA-approved companion diagnostic for a trastuzumab product. Assessment of HER2\nprotein overexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast or gastric\ncancers by laboratories with demonstrated proficiency\n\u2022 Jobevne\u00ae (bevacizumab-nwgd)\no For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or\nsecond-line treatment\no For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-\nbased chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing\nregimen\n\u25aa Limitations of use: Not for adjuvant treatment of colon cancer\no For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in\ncombination with carboplatin and paclitaxel for first-line treatment\no For the treatment of recurrent glioblastoma in adults\no For the treatment of metastatic renal cell carcinoma in combination with interferon alfa\no For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and\ntopotecan\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 4\nJanuary 2026\n\n--- Page 5 ---\no For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in the following situations:\n\u25aa In combination with carboplatin and paclitaxel, followed by a bevacizumab product as a single agent, for stage III or IV\ndisease following initial surgical resection\n\u25aa In combination with paclitaxel, pegylated liposomal doxorubicin, or topotecan for platinum-resistant recurrent disease who\nreceived no more than 2 prior chemotherapy regimens\n\u25aa In combination with carboplatin and paclitaxel or carboplatin and gemcitabine, followed by a bevacizumab product as a single\nagent, for platinum-sensitive recurrent disease\n\u2022 Kanjinti\u00ae (trastuzumab-anns)\no For the treatment of HER2-overexpressing breast cancer\no For the treatment of HER2-overexpressing metastatic gastric or gastroesophageal junction adenocarcinoma\no Patient selection for therapy is based on an FDA-approved companion diagnostic for a trastuzumab product. Assessment of HER2\nprotein overexpression and/or HER2 gene amplification should be performed using FDA-approved tests specific for breast or gastric\ncancers by laboratories with demonstrated proficiency\n\u2022 Rituxan\u00ae (rituximab)\no For the treatment of adults with non-Hodgkin\u2019s lymphoma in the following situations:\n\u25aa Relapsed or refractory, low grade or follicular, CD20-positive B-cell NHL as a single agent\n\u25aa Previously untreated follicular, CD20-positive, B-cell NHL in combination with first line chemotherapy and, in patients\nachieving a complete or partial response to a rituximab product in combination with chemotherapy, as single-agent\nmaintenance therapy\n\u25aa Non-progressing (including stable disease), low-grade, CD20-positive, B-cell NHL as a single agent after first-line\ncyclophosphamide, vincristine, and prednisone (CVP) chemotherapy\n\u25aa Previously untreated diffuse large B-cell, CD20-positive NHL in combination with cyclophosphamide, doxorubicin, vincristine,\nand prednisone (CHOP) or other anthracycline-based chemotherapy regimens\no For the treatment of pediatric patients aged 6 months and older with mature B-cell NHL and mature B-cell acute leukemia (B-AL):\n\u25aa Previously untreated, advanced stage, CD20-positive, diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL), Burkitt-\nlike lymphoma (BLL) or mature B-cell acute leukemia (B-AL) in combination with chemotherapy\no For the treatment of previously untreated and previously treated CD20-positive chronic lymphocytic leukemia (CLL) in adults, in\ncombination with fludarabine and cyclophosphamide (FC)\n\u2022 Rituxan Hycela\u00ae (rituximab and hyaluronidase)\no For the treatment of adults with follicular lymphoma (FL) in the following situations:\n\u25aa Relapsed or refractory, follicular lymphoma as a single agent\n\u25aa Previously untreated follicular lymphoma in combination with first-line chemotherapy and, in patients achieving a complete or\npartial response to rituximab in combination with chemotherapy, as single-agent maintenance therapy\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 5\nJanuary 2026\n\n--- Page 6 ---\n\u25aa Non-progressing (including stable disease), follicular lymphoma as a single agent after first-line cyclophosphamide,\nvincristine, and prednisone (CVP) chemotherapy\no For the treatment of previously untreated diffuse large B-cell lymphoma in combination with cyclophosphamide, doxorubicin,\nvincristine, prednisone (CHOP) or other anthracycline-based chemotherapy regimens\no For the treatment of previously untreated and previously treated chronic lymphocytic leukemia (CLL) in combination with fludarabine\nand cyclophosphamide (FC)\no Limitations of use:\n\u25aa Treatment should be initiated only after patients have received at least one full dose of a rituximab product by intravenous\ninfusion\n\u25aa Not indicated for treatment of non-malignant conditions\n\u2022 Vegzelma\u00ae (bevacizumab-adcd)\no For the treatment of metastatic colorectal cancer, in combination with intravenous fluorouracil-based chemotherapy for first- or\nsecond-line treatment\no For the treatment of metastatic colorectal cancer, in combination with fluoropyrimidine-irinotecan- or fluoropyrimidine-oxaliplatin-\nbased chemotherapy for second-line treatment in patients who have progressed on a first-line bevacizumab product-containing\nregimen\n\u25aa Limitations of use: Not for adjuvant treatment of colon cancer\no For the treatment of unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer, in\ncombination with carboplatin and paclitaxel for first-line treatment\no For the treatment of recurrent glioblastoma in adults\no For the treatment of metastatic renal cell carcinoma in combination with interferon alfa\no For the treatment of persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin, or paclitaxel and\ntopotecan\no For the treatment of epithelial ovarian, fallopian tube, or primary peritoneal cancer in the following situations:\n\u25aa In combination with carboplatin and paclitaxel, followed by a bevacizumab product as a single agent, for stage III or IV\ndisease following initial surgical resection\n\u25aa In combination with paclitaxel, pegylated liposomal doxorubicin, or topotecan for platinum-resistant recurrent disease who\nreceived no more than 2 prior chemotherapy regimens\n\u25aa In combination with carboplatin and paclitaxel or carboplatin and gemcitabine, followed by a bevacizumab product as a single\nagent, for platinum-sensitive recurrent disease\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 6\nJanuary 2026\n\n--- Page 7 ---\nCriteria for Medical Necessity:\nThe restricted product(s) may be considered medically necessary when the following criteria are met:\nInitial Criteria for Approval:\n1. ONE of the following:\na. The patient is currently being treated with the requested agent and has been stable on therapy for at least 180 days; OR\nb. The patient has been treated with the requested agent within the past 180 days AND is at risk if therapy is changed; OR\n2. The patient has an FDA labeled indication for the requested agent and route of administration; AND\na. ONE of the following:\ni. The requested indication does NOT require genetic/specific diagnostic testing (e.g., ALK, EGFR, HER2, KRAS) in FDA\nlabeling; OR\nii. The requested indication requires genetic/specific diagnostic testing in FDA labeling AND both of the following:\n1. Genetic/specific diagnostic testing has been performed; AND\n2. The results of the genetic/specific diagnostic testing indicate therapy with the requested agent is appropriate in FDA\nlabeling; AND\nb. ONE of the following:\ni. The requested agent will be used as a first-line agent AND is FDA labeled as a first-line agent for the requested indication,\nincluding any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor Proportion Score\n[TPS] values); OR\nii. The patient has used the appropriate number and type(s) of prerequisite agent(s) listed in the FDA labeling for the requested\nindication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1 Tumor\nProportion Score [TPS] values); OR\niii. The patient has an intolerance, FDA labeled contraindication, or hypersensitivity to ALL of the required prerequisite agent(s)\nlisted in the FDA labeling for the requested indication, indication including any genomic aberrations (e.g., EGFR, ALK) and/or\ntumor expression factors (e.g., PD-L1 Tumor Proportion Score [TPS] values); AND\nc. ONE of the following:\ni. The requested agent is being used as monotherapy AND is approved for use as monotherapy in the FDA labeling for the\nrequested indication, including any genomic aberrations (e.g., EGFR, ALK) and/or tumor expression factors (e.g., PD-L1\nTumor Proportion Score [TPS] values); OR\nii. The requested agent will be used in combination as combination therapy with all agent(s) and/or treatments (e.g., radiation)\nlisted for concomitant use in the FDA labeling for the requested indication; AND\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 7\nJanuary 2026\n\n--- Page 8 ---\nd. ONE of the following:\ni. The FDA label does NOT include a performance status requirement; OR\nii. The patient meets the performance status requirement in the FDA labeling; OR\n3. The patient has an indication that is supported by ALL requirements in NCCN 1 or 2A recommended use for the requested agent (i.e., the\nindication must be supported by ALL requirements in the NCCN \u201cRecommended Use\u201d box [e.g., performance status, disease severity,\nprevious failures, monotherapy vs combination therapy]) [medical record documentation required]; AND\n4. If the request is for bevacizumab (Avastin) or a non-preferred bevacizumab biosimilar product (e.g., bevacizumab-maly [Alymsys],\nbevacizumab-tnjn [Avzivi], bevacizumab-nwgd [Jobevne], bevacizumab-adcd [Vegzelma]), then both of the following criteria are met:\na. The patient has a documented serious adverse event that required medical intervention to both preferred bevacizumab biosimilar\nproducts (i.e., bevacizumab-awwb [Mvasi], bevacizumab-bvzr [Zirabev]) that is not anticipated with the requested product; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired]; AND\n5. If the request is for rituximab (Rituxan), rituximab and hyaluronidase (Rituxan Hycela), or a non-preferred rituximab biosimilar\nproduct, then both of the following criteria are met:\na. The patient has a documented serious adverse event that required medical intervention to ALL preferred rituximab biosimilar\nproducts (i.e., rituximab-arrx [Riabni], rituximab-pvvr [Ruxience], rituximab-abbs [Truxima]) that is not anticipated with the requested\nproduct; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired]; AND\n6. If the request is for trastuzumab (Herceptin), trastuzumab and hyaluronidase-oysk (Herceptin Hylecta), or a non-preferred\ntrastuzumab biosimilar product (e.g., trastuzumab-strf [Hercessi], trastuzumab-pkrb [Herzuma], trastuzumab-anns [Kanjinti]), then both of\nthe following criteria are met:\na. The patient has a documented serious adverse event that required medical intervention to ALL preferred trastuzumab biosimilar\nproducts (i.e., trastuzumab-dkst [Ogivri], trastuzumab-dttb [Ontruzant], trastuzumab-qyyp [Trazimera]) that is not anticipated with the\nrequested product; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired]; AND\n7. The patient has not experienced disease progression or unacceptable toxicity on the same treatment as the requested agent or during\ntreatment with another agent from the same drug class in a prior line of therapy (e.g., PD-L1/PD-1 inhibitors) unless there is acceptable\nsupporting literature for use beyond progression in a different combination regimen; AND\n8. ONE of the following:\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 8\nJanuary 2026\n\n--- Page 9 ---\na. The patient\u2019s age is within FDA labeling for the requested indication or NCCN 1 or 2A compendia supported recommendation for the\nrequested agent; OR\nb. The prescriber has provided information in support of using the requested agent for the patient\u2019s age; AND\n9. The patient does NOT have any FDA labeled contraindications to the requested agent; AND\n10. The requested quantity (dose) and treatment duration (and maximum units) is within FDA labeled dosing for the requested indication or\nNCCN 1 or 2A compendia supported dosing for the requested indication.\nDuration of Approval: 365 days (1 year)\nContinuation Criteria for Approval:\n1. The patient was approved through Blue Cross NC initial criteria for approval; OR\n2. The patient would have met initial criteria for approval at the time they started therapy; AND\n3. The patient has continued clinical benefit while receiving the requested agent as demonstrated by tumor response or lack of disease\nprogression, and an acceptable toxicity profile; AND\n4. The requested quantity (dose) and treatment duration (and maximum units) is within FDA labeled dosing for the requested indication or\nNCCN 1 or 2A compendia supported dosing for the requested indication; AND\n5. If the request is for bevacizumab (Avastin) or a non-preferred bevacizumab biosimilar product (e.g., bevacizumab-maly [Alymsys],\nbevacizumab-tnjn [Avzivi], bevacizumab-nwgd [Jobevne], bevacizumab-adcd [Vegzelma]), then both of the following criteria are met:\na. The patient has a documented serious adverse event that required medical intervention to both preferred bevacizumab biosimilar\nproducts (i.e., bevacizumab-awwb [Mvasi], bevacizumab-bvzr [Zirabev]) that is not anticipated with the requested product ; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired]; AND\n6. If the request is for rituximab (Rituxan), rituximab and hyaluronidase (Rituxan Hycela), or a non-preferred rituximab biosimilar\nproduct, then both of the following criteria are met:\na. The patient has a documented serious adverse event that required medical intervention to ALL preferred rituximab biosimilar\nproducts (i.e., rituximab-arrx [Riabni], rituximab-pvvr [Ruxience], rituximab-abbs [Truxima]) that is not anticipated with the requested\nproduct; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired]; AND\n7. If the request is for trastuzumab (Herceptin), trastuzumab and hyaluronidase-oysk (Herceptin Hylecta), or a non-preferred\ntrastuzumab biosimilar product (e.g., trastuzumab-strf [Hercessi], trastuzumab-pkrb [Herzuma], trastuzumab-anns [Kanjinti]), then both of\nthe following criteria are met:\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 9\nJanuary 2026\n\n--- Page 10 ---\na. The patient has a documented serious adverse event that required medical intervention to ALL preferred trastuzumab biosimilar\nproducts (i.e., trastuzumab-dkst [Ogivri], trastuzumab-dttb [Ontruzant], trastuzumab-qyyp [Trazimera]) that is not anticipated with the\nrequested product; AND\nb. The prescriber has completed and submitted an FDA MedWatch Adverse Event Reporting Form [medical record documentation\nrequired].\nDuration of Approval: 365 days (1 year)\nNOTE:\nUse of injectable and healthcare administered oncology agents may be considered medically necessary for clinical indications not listed above\nwhen the drug is prescribed for the treatment of cancer either:\n1. In accordance with FDA label when clinical benefit has been established, and it is not determined to be investigational as defined in the Blue\nCross NC Corporate Medical Policy (CMP), \u201cInvestigational (Experimental) Services.\u201d [please refer to CMP \u201cInvestigational (Experimental)\nServices\u201d for a summary of evidence standards from nationally recognized compendia]; OR\n2. In accordance with specific strong endorsement or support by nationally recognized compendia (e.g., National Comprehensive Cancer\nNetwork, NCCN), when such recommendation is based on the highest level of evidence (Level 1, 2A), and/or uniform consensus of clinical\nappropriateness has been reached.\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nAlymsys\u00ae \u2022 Metastatic colorectal cancer \u2022 Metastatic colorectal cancer: Q5126 9999\n(bevacizumab-maly) o in combination with IV fluorouracil- o 5 mg/kg every 2 weeks with bolus-IFL\nbased chemotherapy for first- or o 10 mg/kg every 2 weeks with\nintravenous (IV) second-line treatment FOLFOX4\ninfusion o in combination with o 5 mg/ kg every 2 weeks or 7.5 mg/kg\nfluoropyrimidine-irinotecan- or every 3 weeks with fluoropyrimidine-\nfluoropyrimidine-oxaliplatin-based irinotecan- or fluoropyrimidine-\nchemotherapy for second-line oxaliplatin-based chemotherapy after\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 10\nJanuary 2026\n\n--- Page 11 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\ntreatment after progression on a progression on a first-line\nfirst-line bevacizumab product- bevacizumab product containing\ncontaining regimen regimen\n\u2022 Unresectable, locally advanced, \u2022 First-line non-squamous non-small cell lung\nrecurrent or metastatic non-squamous cancer: 15 mg/kg every 3 weeks with\nnon-small cell lung cancer, in carboplatin and paclitaxel\ncombination with carboplatin and\npaclitaxel, as first-line\n\u2022 Recurrent glioblastoma in adults \u2022 Recurrent glioblastoma: 10 mg/kg every 2\nweeks\n\u2022 Metastatic renal cell carcinoma in \u2022 Metastatic renal cell carcinoma: 10 mg/kg\ncombination with interferon alfa every 2 weeks with interferon alfa\n\u2022 Persistent, recurrent, or metastatic \u2022 Persistent, recurrent, or metastatic cervical\ncervical cancer in combination with cancer: 15 mg/kg every 3 weeks with\npaclitaxel and cisplatin, or paclitaxel and paclitaxel and cisplatin, or paclitaxel and\ntopotecan topotecan\n\u2022 Epithelial ovarian, fallopian tube, or \u2022 Platinum-resistant recurrent epithelial\nprimary peritoneal cancer for platinum- ovarian, fallopian tube or primary peritoneal\nresistant recurrent disease in patients cancer:\nwho received no more than 2 prior o 10 mg/kg every 2 weeks with\nchemotherapy regimens paclitaxel, pegylated liposomal\ndoxorubicin, or topotecan given every\nweek\no 15 mg/kg every 3 weeks with\ntopotecan given every 3 weeks\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 11\nJanuary 2026\n\n--- Page 12 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nAvastin\u00ae \u2022 Metastatic colorectal cancer \u2022 Metastatic colorectal cancer: J9035 9999\n(bevacizumab) o in combination with IV fluorouracil- o 5 mg/kg every 2 weeks with bolus-IFL\nbased chemotherapy for first- or o 10 mg/kg every 2 weeks with\nintravenous (IV) second-line treatment FOLFOX4\ninfusion o in combination with o 5 mg/ kg every 2 weeks or 7.5 mg/kg\nfluoropyrimidine-irinotecan- or every 3 weeks with fluoropyrimidine-\nfluoropyrimidine-oxaliplatin-based irinotecan- or fluoropyrimidine-\nchemotherapy for second-line oxaliplatin-based chemotherapy after\ntreatment after progression on a progression on a first-line\nfirst-line bevacizumab product- bevacizumab product containing\ncontaining regimen regimen\n\u2022 Unresectable, locally advanced, \u2022 First-line non-squamous non-small cell lung\nrecurrent or metastatic non-squamous cancer: 15 mg/kg every 3 weeks with\nnon-small cell lung cancer, in carboplatin and paclitaxel\ncombination with carboplatin and\npaclitaxel, as first-line\n\u2022 Recurrent glioblastoma in adults \u2022 Recurrent glioblastoma: 10 mg/kg every 2\nweeks\n\u2022 Metastatic renal cell carcinoma in \u2022 Metastatic renal cell carcinoma: 10 mg/kg\ncombination with interferon alfa every 2 weeks with interferon alfa\n\u2022 Persistent, recurrent, or metastatic \u2022 Persistent, recurrent, or metastatic cervical\ncervical cancer in combination with cancer: 15 mg/kg every 3 weeks with\npaclitaxel and cisplatin, or paclitaxel and paclitaxel and cisplatin, or paclitaxel and\ntopotecan topotecan\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 12\nJanuary 2026\n\n--- Page 13 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\n\u2022 Epithelial ovarian, fallopian tube, or \u2022 Stage III or IV epithelial ovarian, fallopian\nprimary peritoneal cancer: tube, or primary peritoneal cancer following\no Stage III or IV disease following initial surgical resection: 15 mg/kg every 3\ninitial surgical resection weeks with carboplatin and paclitaxel for up\nto 6 cycles, followed by 15 mg/kg every 3\nweeks as a single agent, for a total of up to\n22 cycles\no Platinum-resistant recurrent \u2022 Platinum-resistant recurrent epithelial\ndisease in patients who received ovarian, fallopian tube or primary peritoneal\nno more than 2 prior cancer:\nchemotherapy regimens o 10 mg/kg every 2 weeks with\npaclitaxel, pegylated liposomal\ndoxorubicin, or topotecan given every\nweek\no 15 mg/kg every 3 weeks with\ntopotecan given every 3 weeks\no Platinum-sensitive recurrent \u2022 Platinum-sensitive recurrent epithelial\ndisease ovarian, fallopian tube, or primary peritoneal\ncancer:\no 15 mg/kg every 3 weeks with\ncarboplatin and paclitaxel for 6-8\ncycles, followed by 15 mg/kg every 3\nweeks as a single agent\no 15 mg/kg every 3 weeks with\ncarboplatin and gemcitabine for 6-10\ncycles, followed by 15 mg/kg every 3\n\u2022 Unresectable or metastatic weeks as a single agent\nhepatocellular carcinoma (HCC), in\ncombination with atezolizumab, in \u2022 HCC: 15 mg/kg (following 1,200 mg of\npatients who have not received prior atezolizumab) every 3 weeks\nsystemic therapy\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 13\nJanuary 2026\n\n--- Page 14 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nAvzivi\u00ae \u2022 Metastatic colorectal cancer \u2022 Metastatic colorectal cancer: C9399** 9999\n(bevacizumab-tnjn) o in combination with IV fluorouracil- o 5 mg/kg every 2 weeks with bolus-IFL J3490**\nbased chemotherapy for first- or o 10 mg/kg every 2 weeks with J3590**\nintravenous (IV) second-line treatment FOLFOX4 J9999**\ninfusion o in combination with o 5 mg/ kg every 2 weeks or 7.5 mg/kg\nfluoropyrimidine-irinotecan- or every 3 weeks with fluoropyrimidine-\nfluoropyrimidine-oxaliplatin-based irinotecan- or fluoropyrimidine-\nchemotherapy for second-line oxaliplatin-based chemotherapy after\ntreatment after progression on a progression on a first-line\nfirst-line bevacizumab product- bevacizumab product containing\ncontaining regimen regimen\n\u2022 Unresectable, locally advanced, \u2022 First-line non-squamous non-small cell lung\nrecurrent or metastatic non-squamous cancer: 15 mg/kg every 3 weeks with\nnon-small cell lung cancer, in carboplatin and paclitaxel\ncombination with carboplatin and\npaclitaxel, as first-line\n\u2022 Recurrent glioblastoma in adults \u2022 Recurrent glioblastoma: 10 mg/kg every 2\nweeks\n\u2022 Metastatic renal cell carcinoma in \u2022 Metastatic renal cell carcinoma: 10 mg/kg\ncombination with interferon alfa every 2 weeks with interferon alfa\n\u2022 Persistent, recurrent, or metastatic \u2022 Persistent, recurrent, or metastatic cervical\ncervical cancer in combination with cancer: 15 mg/kg every 3 weeks with\npaclitaxel and cisplatin, or paclitaxel and paclitaxel and cisplatin, or paclitaxel and\ntopotecan topotecan\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 14\nJanuary 2026\n\n--- Page 15 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\n\u2022 Epithelial ovarian, fallopian tube, or \u2022 Platinum-resistant recurrent epithelial\nprimary peritoneal cancer for platinum- ovarian, fallopian tube or primary peritoneal\nresistant recurrent disease in patients cancer:\nwho received no more than 2 prior o 10 mg/kg every 2 weeks with\nchemotherapy regimens paclitaxel, pegylated liposomal\ndoxorubicin, or topotecan given every\nweek\no 15 mg/kg every 3 weeks with\ntopotecan given every 3 weeks\nHerceptin\u00ae \u2022 HER2-overexpressing breast cancer \u2022 Adjuvant treatment of HER2-overexpressing J9355 9999\n(trastuzumab) breast cancer\n\u2022 HER2-overexpressing metastatic gastric o Initial dose of 4 mg/kg IV, then 2\nintravenous (IV) or gastroesophageal junction mg/kg weekly for 12 weeks (with\ninfusion adenocarcinoma paclitaxel or docetaxel) or 18 weeks\n(with docetaxel/carboplatin). One\nweek after the last weekly dose, give 6\nmg/kg every three weeks to complete\na total of 52 weeks of therapy, or\no Initial dose of 8 mg/kg IV, then 6\nmg/kg every three weeks for 52 weeks\n\u2022 Metastatic HER2-overexpressing breast\ncancer\no Initial dose of 4 mg/kg IV, followed by\nsubsequent weekly doses of 2 mg/kg\n\u2022 Metastatic HER2-overexpressing gastric\ncancer\no Initial dose of 8 mg/kg IV, followed by\n6 mg/kg every 3 weeks\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 15\nJanuary 2026\n\n--- Page 16 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\n\u2022 Do not substitute for or with ado-trastuzumab\nemtansine or fam-trastuzumab deruxtecan\nHerceptin Hylecta\u00ae \u2022 HER2-overexpressing breast cancer \u2022 600 mg/10,000 units (600 mg trastuzumab J9356 9999\n(trastuzumab and and 10,000 units hyaluronidase) SC over\nhyaluronidase-oysk) approximately 2-5 minutes once every three\nweeks\n\u2022 Do not administer IV and do not substitute\nsubcutaneous (SC) for or with ado-trastuzumab emtansine\ninjection\nHercessi\u00ae \u2022 HER2-overexpressing breast cancer \u2022 Adjuvant treatment of HER2-overexpressing Q5146 9999\n(trastuzumab-strf) breast cancer\n\u2022 HER2-overexpressing metastatic gastric o Initial dose of 4 mg/kg IV, then 2\nintravenous (IV) or gastroesophageal junction mg/kg weekly for 12 weeks (with\ninfusion adenocarcinoma paclitaxel or docetaxel) or 18 weeks\n(with docetaxel and carboplatin). One\nweek after the last weekly dose, give 6\nmg/kg every three weeks to complete\na total of 52 weeks of therapy, or\no Initial dose of 8 mg/kg IV, then 6\nmg/kg every three weeks for 52 weeks\n\u2022 Metastatic HER2-overexpressing breast\ncancer\no Initial dose of 4 mg/kg IV, followed by\nsubsequent weekly doses of 2 mg/kg\n\u2022 Metastatic HER2-overexpressing gastric\ncancer\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 16\nJanuary 2026\n\n--- Page 17 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\no Initial dose of 8 mg/kg IV, followed by\n6 mg/kg every 3 weeks\n\u2022 Do not substitute for or with ado-trastuzumab\nemtansine or fam-trastuzumab deruxtecan\nHerzuma\u00ae \u2022 HER2-overexpressing breast cancer \u2022 Adjuvant treatment of HER2-overexpressing Q5113 9999\n(trastuzumab-pkrb) breast cancer\n\u2022 HER2-overexpressing metastatic gastric o Initial dose of 4 mg/kg IV, then 2\nintravenous (IV) or gastroesophageal junction mg/kg weekly for 12 weeks (with\ninfusion adenocarcinoma paclitaxel or docetaxel) or 18 weeks\n(with docetaxel/carboplatin). One\nweek after the last weekly dose, give 6\nmg/kg every three weeks to complete\na total of 52 weeks of therapy, or\no Initial dose of 8 mg/kg IV, then 6\nmg/kg every three weeks for 52 weeks\n\u2022 Metastatic HER2-overexpressing breast\ncancer\no Initial dose of 4 mg/kg IV, followed by\nsubsequent weekly doses of 2 mg/kg\n\u2022 Metastatic HER2-overexpressing gastric\ncancer\no Initial dose of 8 mg/kg IV, followed by\n6 mg/kg every 3 weeks\n\u2022 Do not substitute for or with ado-trastuzumab\nemtansine or fam-trastuzumab deruxtecan\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 17\nJanuary 2026\n\n--- Page 18 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nJobevne\u00ae \u2022 Metastatic colorectal cancer \u2022 Metastatic colorectal cancer: Q5160 9999\n(bevacizumab-nwgd) o in combination with IV fluorouracil- o 5 mg/kg every 2 weeks with bolus-IFL\nbased chemotherapy for first- or o 10 mg/kg every 2 weeks with\nintravenous (IV) second-line treatment FOLFOX4\ninfusion o in combination with o 5 mg/ kg every 2 weeks or 7.5 mg/kg\nfluoropyrimidine-irinotecan- or every 3 weeks with fluoropyrimidine-\nfluoropyrimidine-oxaliplatin-based irinotecan- or fluoropyrimidine-\nchemotherapy for second-line oxaliplatin-based chemotherapy after\ntreatment after progression on a progression on a first-line\nfirst-line bevacizumab product- bevacizumab product containing\ncontaining regimen regimen\n\u2022 Unresectable, locally advanced, \u2022 First-line non-squamous non-small cell lung\nrecurrent or metastatic non-squamous cancer: 15 mg/kg every 3 weeks with\nnon-small cell lung cancer, in carboplatin and paclitaxel\ncombination with carboplatin and\npaclitaxel, as first-line\n\u2022 Recurrent glioblastoma in adults \u2022 Recurrent glioblastoma: 10 mg/kg every 2\nweeks\n\u2022 Metastatic renal cell carcinoma in \u2022 Metastatic renal cell carcinoma: 10 mg/kg\ncombination with interferon alfa every 2 weeks with interferon alfa\n\u2022 Persistent, recurrent, or metastatic \u2022 Persistent, recurrent, or metastatic cervical\ncervical cancer in combination with cancer: 15 mg/kg every 3 weeks with\npaclitaxel and cisplatin, or paclitaxel and paclitaxel and cisplatin, or paclitaxel and\ntopotecan topotecan\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 18\nJanuary 2026\n\n--- Page 19 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\n\u2022 Epithelial ovarian, fallopian tube, or \u2022 Stage III or IV epithelial ovarian, fallopian\nprimary peritoneal cancer: tube, or primary peritoneal cancer following\no Stage III or IV disease following initial surgical resection: 15 mg/kg every 3\ninitial surgical resection weeks with carboplatin and paclitaxel for up\nto 6 cycles, followed by 15 mg/kg every 3\nweeks as a single agent, for a total of up to\n22 cycles\no Platinum-resistant recurrent \u2022 Platinum-resistant recurrent epithelial\ndisease in patients who received ovarian, fallopian tube or primary peritoneal\nno more than 2 prior cancer:\nchemotherapy regimens o 10 mg/kg every 2 weeks with\npaclitaxel, pegylated liposomal\ndoxorubicin, or topotecan given every\nweek\no 15 mg/kg every 3 weeks with\ntopotecan given every 3 weeks\no Platinum-sensitive recurrent \u2022 Platinum-sensitive recurrent epithelial\ndisease ovarian, fallopian tube, or primary peritoneal\ncancer:\no 15 mg/kg every 3 weeks with\ncarboplatin and paclitaxel for 6-8\ncycles, followed by 15 mg/kg every 3\nweeks as a single agent\no 15 mg/kg every 3 weeks with\ncarboplatin and gemcitabine for 6-10\ncycles, followed by 15 mg/kg every 3\nweeks as a single agent\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 19\nJanuary 2026\n\n--- Page 20 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nKanjinti\u00ae \u2022 HER2-overexpressing breast cancer \u2022 Adjuvant treatment of HER2-overexpressing Q5117 9999\n(trastuzumab-anns) breast cancer\n\u2022 HER2-overexpressing metastatic gastric o Initial dose of 4 mg/kg IV, then 2\nintravenous (IV) or gastroesophageal junction mg/kg weekly for 12 weeks (with\ninfusion adenocarcinoma paclitaxel or docetaxel) or 18 weeks\n(with docetaxel/carboplatin). One\nweek after the last weekly dose, give 6\nmg/kg every three weeks to complete\na total of 52 weeks of therapy, or\no Initial dose of 8 mg/kg IV, then 6\nmg/kg every three weeks for 52 weeks\n\u2022 Metastatic HER2-overexpressing breast\ncancer\no Initial dose of 4 mg/kg IV, followed by\nsubsequent weekly doses of 2 mg/kg\n\u2022 Metastatic HER2-overexpressing gastric\ncancer\no Initial dose of 8 mg/kg IV, followed by\n6 mg/kg every 3 weeks\n\u2022 Do not substitute for or with ado-trastuzumab\nemtansine or fam-trastuzumab deruxtecan\nRituxan\u00ae (rituximab) \u2022 Relapsed or refractory, low grade or \u2022 NHL: 375 mg/m2 IV J9312 9999\nfollicular, CD20-positive Bcell NHL as a\nintravenous (IV) single agent \u2022 CLL: 375 mg/m2 IV in the first cycle and 500\ninfusion mg/m2 in cycles 2-6, in combination with FC,\n\u2022 Previously untreated follicular, CD20- administered every 28 days\npositive, B-cell NHL in combination with\nfirst line chemotherapy and, in patients\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 20\nJanuary 2026\n\n--- Page 21 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nachieving a complete or partial response\nto a rituximab product in combination\nwith chemotherapy, as single-agent\nmaintenance therapy\n\u2022 Non-progressing (including stable\ndisease), low-grade, CD20-positive, B-\ncell NHL as a single agent after first-line\ncyclophosphamide, vincristine, and\nprednisone (CVP) chemotherapy\n\u2022 Previously untreated diffuse large B-cell,\nCD20-positive NHL in combination with\n(cyclophosphamide, doxorubicin,\nvincristine, and prednisone) (CHOP) or\nother anthracycline-based chemotherapy\nregimens\n\u2022 Previously untreated and previously\ntreated CD20-positive chronic\nlymphocytic leukemia (CLL) in adults, in\ncombination with fludarabine and\ncyclophosphamide (FC)\n\u2022 Mature B-cell NHL and mature B-cell\nacute leukemia (B-AL): Previously\nuntreated, advanced stage, CD20-\npositive, diffuse large B-cell lymphoma\n(DLBCL), Burkitt lymphoma (BL), Burkitt-\nlike lymphoma (BLL) or mature B-cell\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 21\nJanuary 2026\n\n--- Page 22 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nacute leukemia (B-AL) in combination\nwith chemotherapy\nRituxan Hycela\u00ae \u2022 Relapsed or refractory, FL as a single \u2022 All patients must receive at least one full J9311 9999\n(rituximab and agent dose of a rituximab product by IV infusion\nhyaluronidase) \u2022 Previously untreated FL in combination before receiving Rituxan Hycela by SC\nwith first-line chemotherapy and, in injection.\nsubcutaneous (SC) patients achieving a complete or partial\ninjection response to rituximab in combination with \u2022 FL/DLBCL: Administer 1,400 mg/23,400\nchemotherapy, as single-agent Units (1,400 mg rituximab and 23,400 Units\nmaintenance therapy hyaluronidase human) SC\n\u2022 Non-progressing (including stable\ndisease), FL as a single agent after first- \u2022 CLL: Administer 1,600 mg/26,800 Units\nline cyclophosphamide, vincristine, and (1,600 mg rituximab and 26,800 Units\nprednisone (CVP) chemotherapy hyaluronidase human) SC\n\u2022 Previously untreated diffuse large B-cell\nlymphoma in combination with\ncyclophosphamide, doxorubicin,\nvincristine, prednisone (CHOP) or other\nanthracycline-based chemotherapy\nregimens\n\u2022 Previously untreated and previously\ntreated CLL in combination with\nfludarabine and cyclophosphamide (FC)\nVegzelma\u00ae \u2022 Metastatic colorectal cancer \u2022 Metastatic colorectal cancer: Q5129 9999\n(bevacizumab-adcd) o in combination with IV fluorouracil- o 5 mg/kg every 2 weeks with bolus-IFL\nbased chemotherapy for first- or o 10 mg/kg every 2 weeks with\nsecond-line treatment FOLFOX4\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 22\nJanuary 2026\n\n--- Page 23 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nintravenous (IV) o in combination with o 5 mg/ kg every 2 weeks or 7.5 mg/kg\ninfusion fluoropyrimidine-irinotecan- or every 3 weeks with fluoropyrimidine-\nfluoropyrimidine-oxaliplatin-based irinotecan- or fluoropyrimidine-\nchemotherapy for second-line oxaliplatin-based chemotherapy after\ntreatment after progression on a progression on a first-line\nfirst-line bevacizumab product- bevacizumab product containing\ncontaining regimen regimen\n\u2022 Unresectable, locally advanced, \u2022 First-line non-squamous non-small cell lung\nrecurrent or metastatic non-squamous cancer: 15 mg/kg every 3 weeks with\nnon-small cell lung cancer, in carboplatin and paclitaxel\ncombination with carboplatin and\npaclitaxel, as first-line\n\u2022 Recurrent glioblastoma in adults \u2022 Recurrent glioblastoma: 10 mg/kg every 2\nweeks\n\u2022 Metastatic renal cell carcinoma in \u2022 Metastatic renal cell carcinoma: 10 mg/kg\ncombination with interferon alfa every 2 weeks with interferon alfa\n\u2022 Persistent, recurrent, or metastatic \u2022 Persistent, recurrent, or metastatic cervical\ncervical cancer in combination with cancer: 15 mg/kg every 3 weeks with\npaclitaxel and cisplatin, or paclitaxel and paclitaxel and cisplatin, or paclitaxel and\ntopotecan topotecan\n\u2022 Epithelial ovarian, fallopian tube, or \u2022 Stage III or IV epithelial ovarian, fallopian\nprimary peritoneal cancer: tube, or primary peritoneal cancer following\no Stage III or IV disease following initial surgical resection: 15 mg/kg every 3\ninitial surgical resection weeks with carboplatin and paclitaxel for up\nto 6 cycles, followed by 15 mg/kg every 3\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 23\nJanuary 2026\n\n--- Page 24 ---\nFDA Label Reference\nMedication Indication Dosing HCPCS Maximum Units\nweeks as a single agent, for a total of up to\no Platinum-resistant recurrent 22 cycles\ndisease in patients who received \u2022 Platinum-resistant recurrent epithelial\nno more than 2 prior ovarian, fallopian tube or primary peritoneal\nchemotherapy regimens cancer:\no 10 mg/kg every 2 weeks with\npaclitaxel, pegylated liposomal\ndoxorubicin, or topotecan given every\nweek\no 15 mg/kg every 3 weeks with\no Platinum-sensitive recurrent topotecan given every 3 weeks\ndisease \u2022 Platinum-sensitive recurrent epithelial\novarian, fallopian tube, or primary peritoneal\ncancer:\no 15 mg/kg every 3 weeks with\ncarboplatin and paclitaxel for 6-8\ncycles, followed by 15 mg/kg every 3\nweeks as a single agent\no 15 mg/kg every 3 weeks with\ncarboplatin and gemcitabine for 6-10\ncycles, followed by 15 mg/kg every 3\nweeks as a single agent\n**Non-specific assigned HCPCS codes, must submit requested product NDC\nReferences: all information referenced is from FDA package insert unless otherwise noted below.\nPolicy Implementation/Update Information: Criteria and treatment protocols are reviewed annually by the Blue Cross NC P&T Committee,\nregardless of change. This policy is reviewed in Q3 annually.\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 24\nJanuary 2026\n\n--- Page 25 ---\nJanuary 2026: Coding change: For Jobevne, added HCPCS code Q5160 (1 unit per 10 mg) to dosing reference table effective 1/1/2026;\ndeleted C9399, J3490, J3590, and J9999 termed 12/31/2025.\nJanuary 2026: Criteria change: Changed requirement for trial and failure of preferred rituximab biosimilar products to include Riabni in\naddition to existing preferred Ruxience and Truxima; adjusted non-preferred rituximab products to include Rituxan and Rituxan Hycela.\nRemoved Riabni (Q5123) from restricted products within this policy (unrestricted for oncologic indications). Changed requirement for trial\nand failure of preferred trastuzumab biosimilar products to include Ogivri and Ontruzant in addition to existing preferred Trazimera; adjusted\nnon-preferred trastuzumab biosimilar products to include Hercessi, Herzuma, and Kanjinti. Added Kanjinti (Q5117) to restricted products;\nremoved Ogivri (Q5114) and Ontruzant (Q5112) from restricted products (unrestricted). Other minor formatting adjustments made\nthroughout policy for clarity. Policy notification given 10/1/2025 for effective date 1/1/2026.\nJuly 2025: Criteria update: Added new to market biosimilar product Jobevne (bevacizumab-nwgd) to policy as non-preferred with same\ncriteria as Avastin.\nJanuary 2025: Coding change: For Hercessi, added HCPCS code Q5146 to dosing reference table effective 1/1/2025; deleted C9399,\nJ3490, J3590, and J9999 termed 12/31/2024.\nSeptember 2024: Criteria update: Added new to market product Hercessi (trastuzumab-strf) to policy as non-preferred with same criteria as\nHerceptin.\nApril 2024: Criteria change: Changed requirement for trial and failure of preferred trastuzumab biosimilar products to include Kanjinti and\nTrazimera; adjusted non-preferred trastuzumab biosimilar products to include Herzuma, Ogivri, and Ontruzant. Added Ogivri (Q5114) to\nrestricted products; removed Trazimera (Q5116) from restricted products (unrestricted). Policy notification given 1/8/2024 for effective\ndate 4/1/2024.\nJanuary 2024: Criteria update: Added new to market biosimilar product Avzivi (bevacizumab-tnjn) to policy as non-preferred with same\ncriteria as Avastin.\nApril 2023: Coding update: Added HCPCS code Q5129 for Vegzelma to dosing reference table effective 4/1/2023; deleted C9399, J3490,\nJ3590, and J9999 for Vegzelma termed 3/31/2023.\nJanuary 2023: Coding update: Added HCPCS code Q5126 for Alymsys to dosing reference table effective 1/1/2023, deleted C9142, J3490,\nJ3590, and J9999 for Alymsys termed 12/31/2022.\nNovember 2022: Criteria update: Added new to market product Vegzelma (bevacizumab-adcd) to policy as non-preferred with same criteria\nas Avastin.\nOctober 2022: Coding update: Added HCPCS code C9142 for Alymsys to dosing reference table effective 10/1/2022, deleted C9399 for\nAlymsys termed 9/30/2022.\nOctober 2022: Criteria update: Added Herceptin Hylecta to policy as a non-preferred product with same criteria as Herceptin. Added Rituxan\nHycela to policy as a non-preferred product with same criteria as Rituxan. Policy notification given 8/4/2022 for effective date 10/1/2022.\nJune 2022: Criteria update: Added new to market Alymsys (bevacizumab-maly) to policy as non-preferred with same criteria as Avastin.\nAdjusted policy formatting for clarity with no change to policy intent.\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 25\nJanuary 2026\n\n--- Page 26 ---\nJune 2022: Original medical policy criteria issued. Criteria from these restricted products remains the same from previous medical policy\n(Injectable and Healthcare Administered Oncology Drugs).\nBLUE CROSS\u00ae, BLUE SHIELD\u00ae and the Cross and Shield Symbols are registered marks of the Blue Cross and Blue Shield Association, an association of independent Blue Cross\nand Blue Shield Plans. Blue Cross NC is an independent licensee of the Blue Cross and Blue Shield Association. All other marks are the property of their respective owners.\nPage 26\nJanuary 2026\n\n--- Extracted tables (lattice) ---\n\n<!-- camelot pages 1-20 table 1 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Preferred Bevacizumab Containing Agent(s) (Unrestricted) | Non-Preferred Bevacizumab Containing Agent(s) |\n| Mvasi\u00ae (bevacizumab-awwb)  Zirabev\u00ae (bevacizumab-bvzr) | Avastin\u00ae (bevacizumab)  Alymsys\u00ae (bevacizumab-maly)  Avzivi\u00ae (bevacizumab-tnjn)  Jobevne\u00ae (bevacizumab-nwgd)  Vegzelma\u00ae (bevacizumab-adcd) |\n\n<!-- camelot pages 1-20 table 2 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Preferred Rituximab Containing Agent(s) (Unrestricted) | Non-Preferred Rituximab Containing Agent(s) |\n| *Riabni\u00ae (rituximab-arrx)  *Ruxience\u00ae (rituximab-pvvr)  *Truxima\u00ae (rituximab-abbs) | Rituxan\u00ae (rituximab)  Rituxan Hycela\u00ae (rituximab and hyaluronidase) |\n\n<!-- camelot pages 1-20 table 3 (accuracy 100.0) -->\n| 0 | 1 |\n| --- | --- |\n| Preferred Trastuzumab Containing Agent(s) (Unrestricted) | Non-Preferred Trastuzumab Containing Agent(s) |\n| Ogivri\u00ae (trastuzumab-dkst)   Ontruzant\u00ae (trastuzumab-dttb)  Trazimera\u00ae (trastuzumab-qyyp) | Herceptin\u00ae (trastuzumab)  Hercessi\u00ae (trastuzumab-strf)  Herzuma\u00ae (trastuzumab-pkrb)  Kanjinti\u00ae (trastuzumab-anns)  Herceptin Hylecta\u00ae (trastuzumab and hyaluronidase-oysk) |\n\n<!-- camelot pages 1-20 table 4 (accuracy 99.6) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| Alymsys\u00ae  (bevacizumab-maly)  intravenous (IV)  infusion | \u2022  Metastatic colorectal cancer  o   in combination with IV fluorouracil- based chemotherapy for first- or  second-line treatment  o   in combination with  fluoropyrimidine-irinotecan- or  fluoropyrimidine-oxaliplatin-based  chemotherapy for second-line | \u2022  Metastatic colorectal cancer:  o 5 mg/kg every 2 weeks with bolus-IFL  o 10 mg/kg every 2 weeks with  FOLFOX4  o   5 mg/ kg every 2 weeks or 7.5 mg/kg  every 3 weeks with fluoropyrimidine- irinotecan- or fluoropyrimidine- oxaliplatin-based chemotherapy after | Q5126 | 9999 |\n\n<!-- camelot pages 1-20 table 5 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | treatment after progression on a   first-line bevacizumab product- containing regimen  \u2022  Unresectable, locally advanced,  recurrent or metastatic non-squamous  non-small cell lung cancer, in  combination with carboplatin and  paclitaxel, as first-line  \u2022 Recurrent glioblastoma in adults    \u2022 Metastatic renal cell carcinoma in  combination with interferon alfa  \u2022 Persistent, recurrent, or metastatic    cervical cancer in combination with  paclitaxel and cisplatin, or paclitaxel and  topotecan  \u2022 Epithelial ovarian, fallopian tube, or    primary peritoneal cancer for platinum- resistant recurrent disease in patients  who received no more than 2 prior  chemotherapy regimens | progression on a first-line  bevacizumab product containing  regimen  \u2022  First-line non-squamous non-small cell lung  cancer: 15 mg/kg every 3 weeks with  carboplatin and paclitaxel  \u2022 Recurrent glioblastoma: 10 mg/kg every 2    weeks  \u2022 Metastatic renal cell carcinoma: 10 mg/kg  every 2 weeks with interferon alfa  \u2022 Persistent, recurrent, or metastatic cervical    cancer: 15 mg/kg every 3 weeks with  paclitaxel and cisplatin, or paclitaxel and  topotecan  \u2022 Platinum-resistant recurrent epithelial    ovarian, fallopian tube or primary peritoneal  cancer:  o  10 mg/kg every 2 weeks with  paclitaxel, pegylated liposomal  doxorubicin, or topotecan given every  week  o   15 mg/kg every 3 weeks with  topotecan given every 3 weeks |  |  |\n\n<!-- camelot pages 1-20 table 6 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| Avastin\u00ae  (bevacizumab)  intravenous (IV)  infusion | \u2022  Metastatic colorectal cancer  o   in combination with IV fluorouracil- based chemotherapy for first- or  second-line treatment  o in combination with    fluoropyrimidine-irinotecan- or  fluoropyrimidine-oxaliplatin-based  chemotherapy for second-line  treatment after progression on a  first-line bevacizumab product- containing regimen  \u2022   Unresectable, locally advanced,  recurrent or metastatic non-squamous  non-small cell lung cancer, in  combination with carboplatin and  paclitaxel, as first-line  \u2022 Recurrent glioblastoma in adults    \u2022 Metastatic renal cell carcinoma in  combination with interferon alfa  \u2022 Persistent, recurrent, or metastatic    cervical cancer in combination with  paclitaxel and cisplatin, or paclitaxel and  topotecan | \u2022 Metastatic colorectal cancer:  o 5 mg/kg every 2 weeks with bolus-IFL  o 10 mg/kg every 2 weeks with  FOLFOX4  o 5 mg/ kg every 2 weeks or 7.5 mg/kg    every 3 weeks with fluoropyrimidine- irinotecan- or fluoropyrimidine- oxaliplatin-based chemotherapy after  progression on a first-line  bevacizumab product containing  regimen  \u2022   First-line non-squamous non-small cell lung  cancer: 15 mg/kg every 3 weeks with  carboplatin and paclitaxel  \u2022 Recurrent glioblastoma: 10 mg/kg every 2    weeks  \u2022 Metastatic renal cell carcinoma: 10 mg/kg  every 2 weeks with interferon alfa  \u2022 Persistent, recurrent, or metastatic cervical    cancer: 15 mg/kg every 3 weeks with  paclitaxel and cisplatin, or paclitaxel and  topotecan | J9035 | 9999 |\n\n<!-- camelot pages 1-20 table 7 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | \u2022  Epithelial ovarian, fallopian tube, or  primary peritoneal cancer:  o   Stage III or IV disease following  initial surgical resection  o Platinum-resistant recurrent    disease in patients who received  no more than 2 prior  chemotherapy regimens  o   Platinum-sensitive recurrent  disease  \u2022   Unresectable or metastatic  hepatocellular carcinoma (HCC), in  combination with atezolizumab, in  patients who have not received prior  systemic therapy | \u2022  Stage III or IV epithelial ovarian, fallopian  tube, or primary peritoneal cancer following  initial surgical resection: 15 mg/kg every 3  weeks with carboplatin and paclitaxel for up  to 6 cycles, followed by 15 mg/kg every 3  weeks as a single agent, for a total of up to  22 cycles  \u2022   Platinum-resistant recurrent epithelial  ovarian, fallopian tube or primary peritoneal  cancer:  o   10 mg/kg every 2 weeks with  paclitaxel, pegylated liposomal  doxorubicin, or topotecan given every  week  o   15 mg/kg every 3 weeks with  topotecan given every 3 weeks  \u2022   Platinum-sensitive recurrent epithelial  ovarian, fallopian tube, or primary peritoneal  cancer:  o   15 mg/kg every 3 weeks with  carboplatin and paclitaxel for 6-8  cycles, followed by 15 mg/kg every 3  weeks as a single agent  o   15 mg/kg every 3 weeks with  carboplatin and gemcitabine for 6-10  cycles, followed by 15 mg/kg every 3  weeks as a single agent  \u2022   HCC: 15 mg/kg (following 1,200 mg of  atezolizumab) every 3 weeks |  |  |\n\n<!-- camelot pages 1-20 table 8 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| Avzivi\u00ae  (bevacizumab-tnjn)  intravenous (IV)  infusion | \u2022  Metastatic colorectal cancer  o   in combination with IV fluorouracil- based chemotherapy for first- or  second-line treatment  o in combination with    fluoropyrimidine-irinotecan- or  fluoropyrimidine-oxaliplatin-based  chemotherapy for second-line  treatment after progression on a  first-line bevacizumab product- containing regimen  \u2022   Unresectable, locally advanced,  recurrent or metastatic non-squamous  non-small cell lung cancer, in  combination with carboplatin and  paclitaxel, as first-line  \u2022 Recurrent glioblastoma in adults    \u2022 Metastatic renal cell carcinoma in  combination with interferon alfa  \u2022 Persistent, recurrent, or metastatic    cervical cancer in combination with  paclitaxel and cisplatin, or paclitaxel and  topotecan | \u2022 Metastatic colorectal cancer:  o 5 mg/kg every 2 weeks with bolus-IFL  o 10 mg/kg every 2 weeks with  FOLFOX4  o 5 mg/ kg every 2 weeks or 7.5 mg/kg    every 3 weeks with fluoropyrimidine- irinotecan- or fluoropyrimidine- oxaliplatin-based chemotherapy after  progression on a first-line  bevacizumab product containing  regimen  \u2022   First-line non-squamous non-small cell lung  cancer: 15 mg/kg every 3 weeks with  carboplatin and paclitaxel  \u2022 Recurrent glioblastoma: 10 mg/kg every 2    weeks  \u2022 Metastatic renal cell carcinoma: 10 mg/kg  every 2 weeks with interferon alfa  \u2022 Persistent, recurrent, or metastatic cervical    cancer: 15 mg/kg every 3 weeks with  paclitaxel and cisplatin, or paclitaxel and  topotecan | C9399**  J3490**  J3590**  J9999** | 9999 |\n\n<!-- camelot pages 1-20 table 9 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | \u2022  Epithelial ovarian, fallopian tube, or  primary peritoneal cancer for platinum- resistant recurrent disease in patients  who received no more than 2 prior  chemotherapy regimens | \u2022   Platinum-resistant recurrent epithelial  ovarian, fallopian tube or primary peritoneal  cancer:  o   10 mg/kg every 2 weeks with  paclitaxel, pegylated liposomal  doxorubicin, or topotecan given every  week  o   15 mg/kg every 3 weeks with  topotecan given every 3 weeks |  |  |\n| Herceptin\u00ae  (trastuzumab)  intravenous (IV)  infusion | \u2022 HER2-overexpressing breast cancer    \u2022   HER2-overexpressing metastatic gastric  or gastroesophageal junction  adenocarcinoma | \u2022 Adjuvant treatment of HER2-overexpressing    breast cancer  o   Initial dose of 4 mg/kg IV, then 2  mg/kg weekly for 12 weeks (with  paclitaxel or docetaxel) or 18 weeks  (with docetaxel/carboplatin). One  week after the last weekly dose, give 6  mg/kg every three weeks to complete  a total of 52 weeks of therapy, or  o   Initial dose of 8 mg/kg IV, then 6  mg/kg every three weeks for 52 weeks  \u2022 Metastatic HER2-overexpressing breast  cancer  o   Initial dose of 4 mg/kg IV, followed by  subsequent weekly doses of 2 mg/kg  \u2022 Metastatic HER2-overexpressing gastric  cancer  o   Initial dose of 8 mg/kg IV, followed by  6 mg/kg every 3 weeks | J9355 | 9999 |\n\n<!-- camelot pages 1-20 table 10 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  |  | \u2022  Do not substitute for or with ado-trastuzumab  emtansine or fam-trastuzumab deruxtecan |  |  |\n| Herceptin Hylecta\u00ae  (trastuzumab and  hyaluronidase-oysk)  subcutaneous (SC)  injection | \u2022  HER2-overexpressing breast cancer | \u2022   600 mg/10,000 units (600 mg trastuzumab  and 10,000 units hyaluronidase) SC over  approximately 2-5 minutes once every three  weeks  \u2022 Do not administer IV and do not substitute    for or with ado-trastuzumab emtansine | J9356 | 9999 |\n| Hercessi\u00ae  (trastuzumab-strf)  intravenous (IV)  infusion | \u2022 HER2-overexpressing breast cancer     \u2022 HER2-overexpressing metastatic gastric    or gastroesophageal junction  adenocarcinoma | \u2022 Adjuvant treatment of HER2-overexpressing    breast cancer  o   Initial dose of 4 mg/kg IV, then 2  mg/kg weekly for 12 weeks (with  paclitaxel or docetaxel) or 18 weeks  (with docetaxel and carboplatin). One  week after the last weekly dose, give 6  mg/kg every three weeks to complete  a total of 52 weeks of therapy, or  o   Initial dose of 8 mg/kg IV, then 6  mg/kg every three weeks for 52 weeks  \u2022 Metastatic HER2-overexpressing breast  cancer  o   Initial dose of 4 mg/kg IV, followed by  subsequent weekly doses of 2 mg/kg  \u2022 Metastatic HER2-overexpressing gastric  cancer | Q5146 | 9999 |\n\n<!-- camelot pages 1-20 table 11 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  |  | o  Initial dose of 8 mg/kg IV, followed by  6 mg/kg every 3 weeks  \u2022   Do not substitute for or with ado-trastuzumab  emtansine or fam-trastuzumab deruxtecan |  |  |\n| Herzuma\u00ae  (trastuzumab-pkrb)  intravenous (IV)  infusion | \u2022   HER2-overexpressing breast cancer  \u2022   HER2-overexpressing metastatic gastric  or gastroesophageal junction  adenocarcinoma | \u2022   Adjuvant treatment of HER2-overexpressing  breast cancer  o   Initial dose of 4 mg/kg IV, then 2  mg/kg weekly for 12 weeks (with  paclitaxel or docetaxel) or 18 weeks  (with docetaxel/carboplatin). One  week after the last weekly dose, give 6  mg/kg every three weeks to complete  a total of 52 weeks of therapy, or  o   Initial dose of 8 mg/kg IV, then 6  mg/kg every three weeks for 52 weeks  \u2022 Metastatic HER2-overexpressing breast  cancer  o   Initial dose of 4 mg/kg IV, followed by  subsequent weekly doses of 2 mg/kg  \u2022 Metastatic HER2-overexpressing gastric  cancer  o   Initial dose of 8 mg/kg IV, followed by  6 mg/kg every 3 weeks  \u2022   Do not substitute for or with ado-trastuzumab  emtansine or fam-trastuzumab deruxtecan | Q5113 | 9999 |\n\n<!-- camelot pages 1-20 table 12 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| Jobevne\u00ae  (bevacizumab-nwgd)  intravenous (IV)  infusion | \u2022  Metastatic colorectal cancer  o   in combination with IV fluorouracil- based chemotherapy for first- or  second-line treatment  o in combination with    fluoropyrimidine-irinotecan- or  fluoropyrimidine-oxaliplatin-based  chemotherapy for second-line  treatment after progression on a  first-line bevacizumab product- containing regimen  \u2022   Unresectable, locally advanced,  recurrent or metastatic non-squamous  non-small cell lung cancer, in  combination with carboplatin and  paclitaxel, as first-line  \u2022 Recurrent glioblastoma in adults    \u2022 Metastatic renal cell carcinoma in  combination with interferon alfa  \u2022 Persistent, recurrent, or metastatic    cervical cancer in combination with  paclitaxel and cisplatin, or paclitaxel and  topotecan | \u2022 Metastatic colorectal cancer:  o 5 mg/kg every 2 weeks with bolus-IFL  o 10 mg/kg every 2 weeks with  FOLFOX4  o 5 mg/ kg every 2 weeks or 7.5 mg/kg    every 3 weeks with fluoropyrimidine- irinotecan- or fluoropyrimidine- oxaliplatin-based chemotherapy after  progression on a first-line  bevacizumab product containing  regimen  \u2022   First-line non-squamous non-small cell lung  cancer: 15 mg/kg every 3 weeks with  carboplatin and paclitaxel  \u2022 Recurrent glioblastoma: 10 mg/kg every 2    weeks  \u2022 Metastatic renal cell carcinoma: 10 mg/kg  every 2 weeks with interferon alfa  \u2022 Persistent, recurrent, or metastatic cervical    cancer: 15 mg/kg every 3 weeks with  paclitaxel and cisplatin, or paclitaxel and  topotecan | Q5160 | 9999 |\n\n<!-- camelot pages 1-20 table 13 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | \u2022  Epithelial ovarian, fallopian tube, or  primary peritoneal cancer:  o   Stage III or IV disease following  initial surgical resection  o Platinum-resistant recurrent    disease in patients who received  no more than 2 prior  chemotherapy regimens  o   Platinum-sensitive recurrent  disease | \u2022  Stage III or IV epithelial ovarian, fallopian  tube, or primary peritoneal cancer following  initial surgical resection: 15 mg/kg every 3  weeks with carboplatin and paclitaxel for up  to 6 cycles, followed by 15 mg/kg every 3  weeks as a single agent, for a total of up to  22 cycles  \u2022   Platinum-resistant recurrent epithelial  ovarian, fallopian tube or primary peritoneal  cancer:  o   10 mg/kg every 2 weeks with  paclitaxel, pegylated liposomal  doxorubicin, or topotecan given every  week  o   15 mg/kg every 3 weeks with  topotecan given every 3 weeks  \u2022   Platinum-sensitive recurrent epithelial  ovarian, fallopian tube, or primary peritoneal  cancer:  o   15 mg/kg every 3 weeks with  carboplatin and paclitaxel for 6-8  cycles, followed by 15 mg/kg every 3  weeks as a single agent  o   15 mg/kg every 3 weeks with  carboplatin and gemcitabine for 6-10  cycles, followed by 15 mg/kg every 3  weeks as a single agent |  |  |\n\n<!-- camelot pages 1-20 table 14 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| Kanjinti\u00ae  (trastuzumab-anns)  intravenous (IV)  infusion | \u2022  HER2-overexpressing breast cancer  \u2022   HER2-overexpressing metastatic gastric  or gastroesophageal junction  adenocarcinoma | \u2022  Adjuvant treatment of HER2-overexpressing  breast cancer  o   Initial dose of 4 mg/kg IV, then 2  mg/kg weekly for 12 weeks (with  paclitaxel or docetaxel) or 18 weeks  (with docetaxel/carboplatin). One  week after the last weekly dose, give 6  mg/kg every three weeks to complete  a total of 52 weeks of therapy, or  o   Initial dose of 8 mg/kg IV, then 6  mg/kg every three weeks for 52 weeks  \u2022 Metastatic HER2-overexpressing breast  cancer  o Initial dose of 4 mg/kg IV, followed by    subsequent weekly doses of 2 mg/kg  \u2022 Metastatic HER2-overexpressing gastric  cancer  o   Initial dose of 8 mg/kg IV, followed by  6 mg/kg every 3 weeks  \u2022   Do not substitute for or with ado-trastuzumab  emtansine or fam-trastuzumab deruxtecan | Q5117 | 9999 |\n| Rituxan\u00ae (rituximab)  intravenous (IV)  infusion | \u2022   Relapsed or refractory, low grade or  follicular, CD20-positive Bcell NHL as a  single agent  \u2022   Previously untreated follicular, CD20- positive, B-cell NHL in combination with  first line chemotherapy and, in patients | \u2022   NHL: 375 mg/m2 IV  \u2022 CLL: 375 mg/m2 IV in the first cycle and 500    mg/m2 in cycles 2-6, in combination with FC,  administered every 28 days | J9312 | 9999 |\n\n<!-- camelot pages 21-26 table 1 (accuracy 99.6) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | achieving a complete or partial response  to a rituximab product in combination  with chemotherapy, as single-agent  maintenance therapy  \u2022  Non-progressing (including stable  disease), low-grade, CD20-positive, B- cell NHL as a single agent after first-line  cyclophosphamide, vincristine, and  prednisone (CVP) chemotherapy  \u2022   Previously untreated diffuse large B-cell,  CD20-positive NHL in combination with  (cyclophosphamide, doxorubicin,  vincristine, and prednisone) (CHOP) or  other anthracycline-based chemotherapy  regimens  \u2022   Previously untreated and previously  treated CD20-positive chronic  lymphocytic leukemia (CLL) in adults, in  combination with fludarabine and  cyclophosphamide (FC)  \u2022 Mature B-cell NHL and mature B-cell  acute leukemia (B-AL): Previously  untreated, advanced stage, CD20- positive, diffuse large B-cell lymphoma  (DLBCL), Burkitt lymphoma (BL), Burkitt- like lymphoma (BLL) or mature B-cell |  |  |  |\n\n<!-- camelot pages 21-26 table 2 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | acute leukemia (B-AL) in combination  with chemotherapy |  |  |  |\n| Rituxan Hycela\u00ae  (rituximab and  hyaluronidase)  subcutaneous (SC)  injection | \u2022  Relapsed or refractory, FL as a single  agent  \u2022 Previously untreated FL in combination    with first-line chemotherapy and, in  patients achieving a complete or partial  response to rituximab in combination with  chemotherapy, as single-agent  maintenance therapy  \u2022   Non-progressing (including stable  disease), FL as a single agent after first- line cyclophosphamide, vincristine, and  prednisone (CVP) chemotherapy  \u2022 Previously untreated diffuse large B-cell    lymphoma in combination with  cyclophosphamide, doxorubicin,  vincristine, prednisone (CHOP) or other  anthracycline-based chemotherapy  regimens  \u2022   Previously untreated and previously  treated CLL in combination with  fludarabine and cyclophosphamide (FC) | \u2022   All patients must receive at least one full  dose of a rituximab product by IV infusion  before receiving Rituxan Hycela by SC  injection.  \u2022 FL/DLBCL: Administer 1,400 mg/23,400    Units (1,400 mg rituximab and 23,400 Units  hyaluronidase human) SC  \u2022   CLL: Administer 1,600 mg/26,800 Units  (1,600 mg rituximab and 26,800 Units  hyaluronidase human) SC | J9311 | 9999 |\n| Vegzelma\u00ae  (bevacizumab-adcd) | \u2022 Metastatic colorectal cancer  o in combination with IV fluorouracil-   based chemotherapy for first- or  second-line treatment | \u2022 Metastatic colorectal cancer:  o 5 mg/kg every 2 weeks with bolus-IFL  o 10 mg/kg every 2 weeks with  FOLFOX4 | Q5129 | 9999 |\n\n<!-- camelot pages 21-26 table 3 (accuracy 99.8) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n| intravenous (IV)  infusion | o  in combination with  fluoropyrimidine-irinotecan- or  fluoropyrimidine-oxaliplatin-based  chemotherapy for second-line  treatment after progression on a  first-line bevacizumab product- containing regimen  \u2022 Unresectable, locally advanced,    recurrent or metastatic non-squamous  non-small cell lung cancer, in  combination with carboplatin and  paclitaxel, as first-line  \u2022 Recurrent glioblastoma in adults    \u2022 Metastatic renal cell carcinoma in  combination with interferon alfa  \u2022   Persistent, recurrent, or metastatic  cervical cancer in combination with  paclitaxel and cisplatin, or paclitaxel and  topotecan  \u2022   Epithelial ovarian, fallopian tube, or  primary peritoneal cancer:  o   Stage III or IV disease following  initial surgical resection | o   5 mg/ kg every 2 weeks or 7.5 mg/kg  every 3 weeks with fluoropyrimidine- irinotecan- or fluoropyrimidine- oxaliplatin-based chemotherapy after  progression on a first-line  bevacizumab product containing  regimen  \u2022   First-line non-squamous non-small cell lung  cancer: 15 mg/kg every 3 weeks with  carboplatin and paclitaxel  \u2022   Recurrent glioblastoma: 10 mg/kg every 2  weeks  \u2022 Metastatic renal cell carcinoma: 10 mg/kg  every 2 weeks with interferon alfa  \u2022   Persistent, recurrent, or metastatic cervical  cancer: 15 mg/kg every 3 weeks with  paclitaxel and cisplatin, or paclitaxel and  topotecan  \u2022   Stage III or IV epithelial ovarian, fallopian  tube, or primary peritoneal cancer following  initial surgical resection: 15 mg/kg every 3  weeks with carboplatin and paclitaxel for up  to 6 cycles, followed by 15 mg/kg every 3 |  |  |\n\n<!-- camelot pages 21-26 table 4 (accuracy 99.7) -->\n| 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| FDA Label Reference |  |  |  |  |\n| Medication | Indication | Dosing | HCPCS | Maximum Units |\n|  | o  Platinum-resistant recurrent  disease in patients who received  no more than 2 prior  chemotherapy regimens  o   Platinum-sensitive recurrent  disease | weeks as a single agent, for a total of up to  22 cycles  \u2022  Platinum-resistant recurrent epithelial  ovarian, fallopian tube or primary peritoneal  cancer:  o   10 mg/kg every 2 weeks with  paclitaxel, pegylated liposomal  doxorubicin, or topotecan given every  week  o   15 mg/kg every 3 weeks with  topotecan given every 3 weeks  \u2022 Platinum-sensitive recurrent epithelial    ovarian, fallopian tube, or primary peritoneal  cancer:  o 15 mg/kg every 3 weeks with    carboplatin and paclitaxel for 6-8  cycles, followed by 15 mg/kg every 3  weeks as a single agent  o 15 mg/kg every 3 weeks with    carboplatin and gemcitabine for 6-10  cycles, followed by 15 mg/kg every 3  weeks as a single agent |  |  |"
+}

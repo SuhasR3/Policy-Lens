@@ -1,0 +1,1649 @@
+{
+  "payer": null,
+  "document_type": "drug_list",
+  "source_filename": "Priority Health 2026 MDL - Priority Health Commercial (Employer Group) and MyPriority.pdf",
+  "entries": [
+    {
+      "payer": null,
+      "hcpcs_code": "J9003",
+      "drug_name": "Leuprolide injectable (camcevi etm), 1 mg",
+      "description": null,
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q5149",
+      "drug_name": "Injection, aflibercept-abzv (enzeevu), biosimilar, 1 mg",
+      "description": null,
+      "coverage_level": "Not Covered",
+      "notes": "CA (Covered Alternatives: J0178 - Eylea (aflibercept), J0177 - Eylea HD (aflibercept hd), Q5147 - Pavblu (aflibercept-ayyh). Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.)",
+      "covered_alternatives": [
+        "J0178 - Eylea (aflibercept)",
+        "J0177 - Eylea HD (aflibercept hd)",
+        "Q5147 - Pavblu (aflibercept-ayyh)"
+      ]
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q5150",
+      "drug_name": "Injection, aflibercept-mrbb (ahzantive), biosimilar, 1 mg",
+      "description": null,
+      "coverage_level": "Not Covered",
+      "notes": "CA (Covered Alternatives: J0178 - Eylea (aflibercept), J0177 - Eylea HD (aflibercept hd), Q5147 - Pavblu (aflibercept-ayyh). Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.)",
+      "covered_alternatives": [
+        "J0178 - Eylea (aflibercept)",
+        "J0177 - Eylea HD (aflibercept hd)",
+        "Q5147 - Pavblu (aflibercept-ayyh)"
+      ]
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q5153",
+      "drug_name": "Injection, aflibercept-yszy (opuviz), biosimilar, 1 mg",
+      "description": null,
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q5155",
+      "drug_name": "Injection, aflibercept-jbvf (yesafili), biosimilar, 1 mg",
+      "description": null,
+      "coverage_level": "Not Covered",
+      "notes": "CA (Covered Alternatives: J0178 - Eylea (aflibercept), J0177 - Eylea HD (aflibercept hd), Q5147 - Pavblu (aflibercept-ayyh). Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.)",
+      "covered_alternatives": [
+        "J0178 - Eylea (aflibercept)",
+        "J0177 - Eylea HD (aflibercept hd)",
+        "Q5147 - Pavblu (aflibercept-ayyh)"
+      ]
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "Q0224",
+      "drug_name": "PEMGARDA (EUA)",
+      "description": "Injection, pemivibart, for the pre-exposure prophylaxis only, for certain adults and adolescents (12 years of age and older weighing at least 40 kg) with no known SARS-CoV-2 exposure, and who either have moderate-to-severe immune compromise due to a medical condition or receipt of immunosuppressive medications or treatments, and are unlikely to mount an adequate immune response to COVID-19 vaccination, 4500 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J1836",
+      "drug_name": "METRO I.V.",
+      "description": "Injection, metronidazole, 10 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": "metronidazole in nacl (iso-os)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0248",
+      "drug_name": "VEKLURY",
+      "description": "Injection, remdesivir, 1 mg",
+      "coverage_level": "Non-Preferred",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0750",
+      "drug_name": "emtricitabine-tenofovir disoproxil fumarate 200-300 mg tab",
+      "description": "Emtricitabine 200mg and tenofovir disoproxil fumarate 300mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0750",
+      "drug_name": "emtricitabine-tenofovir disoproxil fumarate 200-300 mg tab inner",
+      "description": "Emtricitabine 200mg and tenofovir disoproxil fumarate 300mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0750",
+      "drug_name": "emtricitabine-tenofovir disoproxil fumarate 200-300 mg tab outer",
+      "description": "Emtricitabine 200mg and tenofovir disoproxil fumarate 300mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0750",
+      "drug_name": "TRUVADA 200 MG-300 MG TABLET",
+      "description": "Emtricitabine 200mg and tenofovir disoproxil fumarate 300mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0750",
+      "drug_name": "TRUVADA 200 MG-300 MG TABLET F/C",
+      "description": "Emtricitabine 200mg and tenofovir disoproxil fumarate 300mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0751",
+      "drug_name": "DESCOVY 200-25 MG TABLET",
+      "description": "Emtricitabine 200mg and tenofovir alafenamide 25mg, oral, fda approved prescription, only for use as hiv pre-exposure prophylaxis (not for use as treatment of hiv)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J1570",
+      "drug_name": "ganciclovir sodium",
+      "description": "Injection, ganciclovir sodium, 500 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0911",
+      "drug_name": "DEFENCATH",
+      "description": "Instillation, taurolidine 1.35 mg and heparin sodium 100 units (central venous catheter lock for adult patients receiving chronic hemodialysis)",
+      "coverage_level": "Not Separately Payable",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J2020",
+      "drug_name": "linezolid in dextrose 5%",
+      "description": "Injection, linezolid, 200 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "CA (Covered Alternative(s): J2020 - linezolid (geq), J2021 - linezolid (hospira)).",
+      "covered_alternatives": [
+        "J2020 - linezolid (geq)",
+        "J2021 - linezolid (hospira)"
+      ]
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J2020",
+      "drug_name": "ZYVOX INTRAVENOUS",
+      "description": "Injection, linezolid, 200 mg",
+      "coverage_level": "Not Covered",
+      "notes": "Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J2021",
+      "drug_name": "linezolid-0.9% sodium chloride (iso)",
+      "description": "Injection, linezolid (hospira), not therapeutically equivalent to j2020, 200 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J3090",
+      "drug_name": "SIVEXTRO INTRAVENOUS",
+      "description": "Injection, tedizolid phosphate, 1 mg (For billing prior to 1/1/16 use C9446 or J3490)",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J2291",
+      "drug_name": "nafcillin in dextrose iso-osm (baxter), 20 mg",
+      "description": "Injection, nafcillin sodium",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0691",
+      "drug_name": "XENLETA INTRAVENOUS",
+      "description": "Injection, lefamulin, 1 mg (All NDCs inactive effective 1/3/2024)",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0285",
+      "drug_name": "amphotericin b",
+      "description": "Injection, amphotericin B, 50mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J2280",
+      "drug_name": "moxifloxacin-sod.chloride(iso)",
+      "description": "Injection, moxifloxacin, 100 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J3490",
+      "drug_name": "BAXDELA INTRAVENOUS",
+      "description": "Unclassified drugs",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J0699",
+      "drug_name": "FETROJA",
+      "description": "Injection, cefiderocol, 10 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J1271",
+      "drug_name": "DOXY-100",
+      "description": "Injection, doxycycline hyclate, 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J1271",
+      "drug_name": "doxycycline hyclate intravenous",
+      "description": "Injection, doxycycline hyclate, 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "A9513",
+      "drug_name": "LUTATHERA",
+      "description": "Lutetium lu 177, dotatate, therapeutic, 1 millicurie",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "A9543",
+      "drug_name": "ZEVALIN (Y-90)",
+      "description": "Yttrium Y-90 ibritumomab tiuxetan, therapeutic, per treatment dose, up to 40 millicuries (Code Price is per dose)",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "A9607",
+      "drug_name": "PLUVICTO",
+      "description": "Lutetium lu 177 vipivotide tetraxetan, therapeutic, 1 millicurie",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "C9257",
+      "drug_name": "AVASTIN 100 MG/4 ML VIAL P/F,SUV",
+      "description": "Injection, bevacizumab, 0.25 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; No PA required for ICD-10 codes B39.4, B39.5, B39.9, E08.311, E08.3211 - E08.3213, E08.3311 - E08.3313, E08.3411 - E08.3413, E08.3511 - E08.3513, E08.3591 - E08.3593, E09.311, E09.3211 - E09.3213, E09.3311 - E09.3313, E09.3411 - E09.3413, E09.3511 - E09.3513, E09.3591 - E09.3593, E10.311, E10.3211 - E10.3213, E10.3311 - E10.3313, E10.3411 - E10.3413, E10.3511 - E10.3513, E10.3591 - E10.3593, E11.3100 - E11.3199, E11.3211 - E11.3213, E11.3311 - E11.3313, E11.3411 - E11.3413, E11.3511 - E11.3513, E11.3591 - E11.3593, E13.311, E13.3211 - E13.3213, E13.3311 - E13.3313, E13.3411 - E13.3413, E13.3511, E13.3513, E13.3591 - E13.3593, H21.1x1 - H21.1x3, H32, H34.8110 - H34.8132, H34.8310 - H34.8332, H35.051 - H35.059, H35.3210 - H35.3233, H35.351 - H35.353, H35.81, H40.89, H44.2a1 - H44.2E3.",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9072",
+      "drug_name": "FRINDOVYX",
+      "description": "Injection, cyclophosphamide (frindovyx), 5 mg",
+      "coverage_level": "Not Covered",
+      "notes": "Covered Alternatives: J9071 - cyclophosphamide (auromedics), J9076 - cyclophosphamide (baxter), J9073 - cyclophosphamide (Dr. Reddy's), J9075 - cyclophosphamide. Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.",
+      "covered_alternatives": [
+        "J9071 - cyclophosphamide (auromedics)",
+        "J9076 - cyclophosphamide (baxter)",
+        "J9073 - cyclophosphamide (Dr. Reddy's)",
+        "J9075 - cyclophosphamide"
+      ]
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 1 gm/5 ml vl inner, muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 1 gm/5 ml vl muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 1 gm/5 ml vl outer, muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 2 gm/10 ml vl muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 500 mg/2.5 ml inner, muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 500 mg/2.5 ml muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9073",
+      "drug_name": "cyclophosphamide 500 mg/2.5 ml outer, muv, p/f",
+      "description": "Injection, cyclophosphamide (dr. reddy's), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 1 gm/10 ml vl inner, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 1 gm/10 ml vl outer, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 2 gm/20 ml vl inner, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 2 gm/20 ml vl outer, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 500 mg/5 ml vl inner, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9074",
+      "drug_name": "cyclophosphamide 500 mg/5 ml vl outer, muv, p/f",
+      "description": "Injection, cyclophosphamide (sandoz), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9075",
+      "drug_name": "cyclophosphamide",
+      "description": "Injection, cyclophosphamide, not otherwise specified, 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9076",
+      "drug_name": "cyclophosphamide 1 gm/5 ml vl muv, p/f",
+      "description": "Injection, cyclophosphamide (baxter), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9076",
+      "drug_name": "cyclophosphamide 500 mg/2.5 ml muv, p/f",
+      "description": "Injection, cyclophosphamide (baxter), 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9118",
+      "drug_name": "ASPARLAS",
+      "description": "Injection, calaspargase pegol-mknl, 10 units",
+      "coverage_level": "Preferred",
+      "notes": "No PA required for ICD-10 codes C91.00 - C91.02, C83.50 - C83.59.",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9119",
+      "drug_name": "LIBTAYO",
+      "description": "Injection, cemiplimab-rwlc, 1 mg",
+      "coverage_level": "Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9120",
+      "drug_name": "COSMEGEN",
+      "description": "Injection, dactinomycin, 0.5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9120",
+      "drug_name": "dactinomycin",
+      "description": "Injection, dactinomycin, 0.5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9130",
+      "drug_name": "dacarbazine",
+      "description": "Dacarbazine, 100 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9144",
+      "drug_name": "DARZALEX FASPRO",
+      "description": "Injection, daratumumab, 10 mg and hyaluronidase-fihj",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; No PA required for ICD-10 codes C90.00-C90.32 and E85.81.",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9145",
+      "drug_name": "DARZALEX",
+      "description": "Injection, daratumumab, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; No PA required for ICD-10 codes C90.00-C90.32 and E85.81. (For billing prior to 1/1/17 use J9999 or C9476 for OPPS billing)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9153",
+      "drug_name": "VYXEOS",
+      "description": "Injection, liposomal, 1 mg daunorubicin and 2.27 mg cytarabine",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9155",
+      "drug_name": "FIRMAGON",
+      "description": "Injection, degarelix, 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": "PA; No PA required for ICD-10 codes C61, C79.82 and D07.5. (For billing prior to 1/1/10 use J9999 or C9399)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9155",
+      "drug_name": "FIRMAGON KIT W/ DILUENT SYRINGE",
+      "description": "Injection, degarelix, 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": "PA; No PA required for ICD-10 codes C61, C79.82 and D07.5. (For billing prior to 1/1/10 use J9999 or C9399)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9161",
+      "drug_name": "LYMPHIR",
+      "description": "Injection, denileukin diftitox-cxdl, 1 mcg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9171",
+      "drug_name": "docetaxel",
+      "description": "Injection, docetaxel, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9172",
+      "drug_name": "DOCIVYX",
+      "description": "Injection, docetaxel (docivyx), 1 mg",
+      "coverage_level": "Not Covered",
+      "notes": "Covered Alternative(s): J9171 - docetaxel. Search our Medical Drug List to understand the clinical requirements for the alternatives. Some drugs may require the provider to request authorization prior to the drug being administered.",
+      "covered_alternatives": [
+        "J9171 - docetaxel"
+      ]
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9173",
+      "drug_name": "IMFINZI",
+      "description": "Injection, durvalumab, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9174",
+      "drug_name": "BEIZRAY",
+      "description": "Injection, docetaxel (beizray), 1 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9174",
+      "drug_name": "BEIZRAY-ALBUMIN",
+      "description": "Injection, docetaxel (beizray), 1 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9176",
+      "drug_name": "EMPLICITI",
+      "description": "Injection, elotuzumab, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "Site of Service. (For billing prior to 1/1/17 use J9999 or C9477 for OPPS billing)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9177",
+      "drug_name": "PADCEV",
+      "description": "Injection, enfortumab vedotin-ejfv, 0.25 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9178",
+      "drug_name": "ELLENCE",
+      "description": "Injection, epirubicin HCl, 2 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9178",
+      "drug_name": "epirubicin 200 mg/100 ml vial suv, p/f",
+      "description": "Injection, epirubicin HCl, 2 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9179",
+      "drug_name": "eribulin",
+      "description": "Injection, eribulin mesylate, 0.1 mg",
+      "coverage_level": "Preferred Non-Specialty",
+      "notes": "(For billing prior to 1/1/12 use J9999 or C9280)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9179",
+      "drug_name": "HALAVEN",
+      "description": "Injection, eribulin mesylate, 0.1 mg",
+      "coverage_level": "Preferred Non-Specialty",
+      "notes": "(For billing prior to 1/1/12 use J9999 or C9280)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9181",
+      "drug_name": "ETOPOPHOS",
+      "description": "Injection, etoposide, 10 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9181",
+      "drug_name": "etoposide intravenous",
+      "description": "Injection, etoposide, 10 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9183",
+      "drug_name": "INLEXZO",
+      "description": "Gemcitabine intravesical system, 225 mg",
+      "coverage_level": "Preferred Non-Specialty",
+      "notes": "PA; Quantity Limit (10 doses per 1 year - Maximum 18 months treatment)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9184",
+      "drug_name": "AVGEMSI",
+      "description": "Injection, gemcitabine hydrochloride (avyxa), 200 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9190",
+      "drug_name": "ADRUCIL",
+      "description": "Injection, fluorouracil, 500 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9190",
+      "drug_name": "fluorouracil intravenous",
+      "description": "Injection, fluorouracil, 500 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9196",
+      "drug_name": "gemcitabine",
+      "description": "Injection, gemcitabine hydrochloride (accord), not therapeutically equivalent to J9201, 200 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9200",
+      "drug_name": "floxuridine",
+      "description": "Injection, floxuridine, 500 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9201",
+      "drug_name": "gemcitabine",
+      "description": "Injection, gemcitabine hydrochloride, not otherwise specified, 200 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9202",
+      "drug_name": "ZOLADEX",
+      "description": "Goserelin acetate implant, per 3.6 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9203",
+      "drug_name": "MYLOTARG",
+      "description": "Injection, gemtuzumab ozogamicin, 0.1 mg",
+      "coverage_level": "Preferred Non-Specialty",
+      "notes": "PA. (For billing prior to 1/1/18 use J9999 or C9399 for OPPS billing)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9204",
+      "drug_name": "POTELIGEO",
+      "description": "Injection, mogamulizumab-kpkc, 1 mg",
+      "coverage_level": "Preferred Non-Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9205",
+      "drug_name": "ONIVYDE",
+      "description": "Injection, irinotecan liposome, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA. (For billing prior to 1/1/17 use J9999 or C9474 for OPPS billing)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9206",
+      "drug_name": "CAMPTOSAR",
+      "description": "Injection, irinotecan, 20 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9206",
+      "drug_name": "irinotecan",
+      "description": "Injection, irinotecan, 20 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9207",
+      "drug_name": "IXEMPRA",
+      "description": "Injection, ixabepilone, 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9208",
+      "drug_name": "IFEX",
+      "description": "Injection, ifosfamide, 1 gram",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9208",
+      "drug_name": "ifosfamide",
+      "description": "Injection, ifosfamide, 1 gram",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9211",
+      "drug_name": "IDAMYCIN PFS",
+      "description": "Injection, idarubicin hydrochloride, 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9211",
+      "drug_name": "idarubicin",
+      "description": "Injection, idarubicin hydrochloride, 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": "Priority Health",
+      "hcpcs_code": "J9215",
+      "drug_name": "ALFERON N",
+      "description": "Injection, interferon, alfa-n3, (human leukocyte derived), 250,000 IU",
+      "coverage_level": "Non-Specialty",
+      "notes": "(All NDCs inactive as of 5/8/2024)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "91321",
+      "drug_name": "SPIKEVAX 2025-26 (SARSCoV-2) (coronavirus disease [COVID-19]) vaccine, mRNALNP, 25 mcg/0.25 mL dosage, for intramuscular use",
+      "description": "Severe acute respiratory syndrome coronavirus 2 (SARSCoV-2) (coronavirus disease [COVID-19]) vaccine, mRNALNP, 25 mcg/0.25 mL dosage, for intramuscular use",
+      "coverage_level": "Preventive",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "91322",
+      "drug_name": "SPIKEVAX 2025-2026(12Y UP)(PF)",
+      "description": "Severe acute respiratory syndrome coronavirus 2 (SARSCoV-2) (coronavirus disease [COVID-19]) vaccine, mRNALNP, 50 mcg/0.5 mL dosage, for intramuscular use",
+      "coverage_level": "Preventive",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "91323",
+      "drug_name": "MNEXSPIKE 2025-2026 (PF)",
+      "description": "Severe acute respiratory syndrome coronavirus 2 (SARSCoV-2) (coronavirus disease [COVID-19]) vaccine, mRNA-LNP, 10 mcg/0.2 mL dosage, for intramuscular use",
+      "coverage_level": "Preventive",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0163",
+      "drug_name": "ADRENALIN IN 0.9 % SOD CHLOR",
+      "description": "Injection, epinephrine in sodium chloride (endo), 0.1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0164",
+      "drug_name": "epineph bitart in 0.9% sod chl intravenous",
+      "description": "Injection, epinephrine in sodium chloride (baxter), 0.1 mg solution",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3490",
+      "drug_name": "REZIPRES",
+      "description": "Unclassified drugs",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2371",
+      "drug_name": "phenylephrine hcl injection",
+      "description": "Injection, phenylephrine hydrochloride, 20 micrograms",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2371",
+      "drug_name": "VAZCULEP",
+      "description": "Injection, phenylephrine hydrochloride, 20 micrograms",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2372",
+      "drug_name": "BIORPHEN",
+      "description": "Injection, phenylephrine hydrochloride (biorphen), 20 micrograms",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2373",
+      "drug_name": "IMMPHENTIV",
+      "description": "Injection, phenylephrine hydrochloride (immphentiv), 20 micrograms",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0462",
+      "drug_name": "atropine injection",
+      "description": "Injection, atropine sulfate, not therapeutically equivalent to j0461, 0.01 mg solution",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0462",
+      "drug_name": "atropine intravenous solution",
+      "description": "Injection, atropine sulfate, not therapeutically equivalent to j0461, 0.01 mg solution",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0463",
+      "drug_name": "atropine injection solution",
+      "description": "Injection, atropine sulfate (fresenius and therapeutically equivalent), 0.01 mg solution",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7677",
+      "drug_name": "YUPELRI",
+      "description": "Revefenacin inhalation solution, fda-approved final product, non-compounded, administered through DME, 1 microgram",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0515",
+      "drug_name": "benztropine injection",
+      "description": "Injection, benztropine mesylate, per 1mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0585",
+      "drug_name": "BOTOX",
+      "description": "Injection, onabotulinumtoxinA, 1 unit",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0585",
+      "drug_name": "BOTOX COSMETIC",
+      "description": "Injection, onabotulinumtoxinA, 1 unit",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0586",
+      "drug_name": "DYSPORT",
+      "description": "Injection, abobotulinumtoxinA, 5 units (For billing prior to 1/1/10 use J3590 or C9399)",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0587",
+      "drug_name": "MYOBLOC",
+      "description": "Injection, rimabotulinumtoxinB, 100 units",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0588",
+      "drug_name": "XEOMIN",
+      "description": "Injection, incobotulinumtoxinA, 1 unit",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0589",
+      "drug_name": "DAXXIFY",
+      "description": "Injection, daxibotulinumtoxina-lanm, 1 unit",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3590",
+      "drug_name": "JEUVEAU",
+      "description": "Unclassified biologics",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "baclofen intrathecal kit",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "baclofen intrathecal solution",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "GABLOFEN 10,000 MCG/20 ML SYRG P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "GABLOFEN 20,000 MCG/20 ML SYRG P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "GABLOFEN 40,000 MCG/20 ML SYRG P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "GABLOFEN INTRATHECAL SOLUTION",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/20 ML AMPULE INNER, P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/20 ML KIT OUTER, P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/20 ML KIT SUV, P/F",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/5 ML AMPULE INNER, P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/5 ML AMPULE SUV, P/F INNER",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/5 ML KIT OUTER, P/F, SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 10 MG/5 ML KIT SUV, P/F OUTER",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 40 MG/20 ML AMPULE INNER SUV, P/F",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 40 MG/20 ML AMPULE INNER,SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 40 MG/20 ML KIT OUTER, SUV, P/F",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0475",
+      "drug_name": "LIORESAL IT 40 MG/20 ML KIT OUTER,SUV",
+      "description": "Injection, baclofen, 10 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0476",
+      "drug_name": "baclofen intrathecal syringe",
+      "description": "Injection, baclofen, 50 mcg, for intrathecal trial",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0476",
+      "drug_name": "GABLOFEN 50 MCG/ML SYRINGE P/F, SUV",
+      "description": "Injection, baclofen, 50 mcg, for intrathecal trial",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0476",
+      "drug_name": "LIORESAL IT 0.05 MG/ML AMPULE INNER, SUV, P/F",
+      "description": "Injection, baclofen, 50 mcg, for intrathecal trial",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0476",
+      "drug_name": "LIORESAL IT 0.05 MG/ML AMPULE OUTER, SUV, P/F",
+      "description": "Injection, baclofen, 50 mcg, for intrathecal trial",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0476",
+      "drug_name": "LIORESAL IT 0.05 MG/ML AMPULE SUV, P/F",
+      "description": "Injection, baclofen, 50 mcg, for intrathecal trial",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0330",
+      "drug_name": "succinylcholine 100 mg/5 ml syringe suv, p/f, inner",
+      "description": "Injection, succinylcholine chloride, up to 20mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0330",
+      "drug_name": "succinylcholine 100 mg/5 ml syringe suv, p/f, outer",
+      "description": "Injection, succinylcholine chloride, up to 20mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0330",
+      "drug_name": "succinylcholine chloride injection",
+      "description": "Injection, succinylcholine chloride, up to 20mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1920",
+      "drug_name": "labetalol hcl 20 mg/4 ml crpjt suv, inner",
+      "description": "Injection, labetalol hydrochloride, 5 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "A9601",
+      "drug_name": "TAUVID",
+      "description": "Flortaucipir f 18 injection, diagnostic, 1 millicurie",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "A9606",
+      "drug_name": "XOFIGO",
+      "description": "Radium Ra-223 dichloride, therapeutic, per microcurie (For billing prior to 1/1/15 use C9399 or A9699)",
+      "coverage_level": "Preferred",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "A9607",
+      "drug_name": "PLUVICTO",
+      "description": "Lutetium lu 177 vipivotide tetraxetan, therapeutic, 1 millicurie",
+      "coverage_level": "Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0163",
+      "drug_name": "ADRENALIN IN 0.9 % SOD CHLOR",
+      "description": "Injection, epinephrine in sodium chloride (endo), epineph bitart in 0.9% sod chl intravenous solution, 0.1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0164",
+      "drug_name": "epinephrine in sodium chloride (baxter)",
+      "description": "Injection, epinephrine in sodium chloride (baxter), solution, 0.1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3490",
+      "drug_name": "REZIPRES",
+      "description": "Unclassified drugs",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7677",
+      "drug_name": "YUPELRI",
+      "description": "Revefenacin inhalation solution, fda-approved final product, non-compounded, administered through DME, 1 microgram",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7601",
+      "drug_name": "OHTUVAYRE",
+      "description": "Ensifentrine, inhalation suspension, fda approved final product, non-compounded, administered through dme, unit dose form, 3 mg",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1200",
+      "drug_name": "diphenhydramine hcl injection",
+      "description": "Injection, diphenhydramine HCl, up to 50 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2550",
+      "drug_name": "PHENERGAN",
+      "description": "Injection, promethazine HCl, up to 50 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2550",
+      "drug_name": "promethazine injection",
+      "description": "Injection, promethazine HCl, up to 50 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "C9399",
+      "drug_name": "EXDENSUR",
+      "description": "Unclassified drugs or biologicals (This code should only be used for drugs and biologicals that are approved by the FDA on or after January 1, 2004) (Hospital Outpatient Use ONLY)",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0517",
+      "drug_name": "FASENRA",
+      "description": "Injection, benralizumab, 1 mg",
+      "coverage_level": "Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0517",
+      "drug_name": "FASENRA PEN",
+      "description": "Injection, benralizumab, 1 mg",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J0638",
+      "drug_name": "ILARIS (PF)",
+      "description": "Injection, canakinumab, 1 mg (For billing prior to 1/1/11 use J3590 or C9399)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2182",
+      "drug_name": "NUCALA SUBCUTANEOUS AUTO-INJECTOR",
+      "description": "Injection, mepolizumab, 1 mg (For billing prior to 1/1/17 use J3590 or C9473 for OPPS billing)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2182",
+      "drug_name": "NUCALA SUBCUTANEOUS RECON SOLN",
+      "description": "Injection, mepolizumab, 1 mg (For billing prior to 1/1/17 use J3590 or C9473 for OPPS billing)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2182",
+      "drug_name": "NUCALA SUBCUTANEOUS SYRINGE",
+      "description": "Injection, mepolizumab, 1 mg (For billing prior to 1/1/17 use J3590 or C9473 for OPPS billing)",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2356",
+      "drug_name": "TEZSPIRE SUBCUTANEOUS PEN INJECTOR",
+      "description": "Injection, tezepelumab-ekko, 1 mg",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2356",
+      "drug_name": "TEZSPIRE SYRINGE",
+      "description": "Injection, tezepelumab-ekko, 1 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J2786",
+      "drug_name": "CINQAIR",
+      "description": "Injection, reslizumab, 1 mg (For billing prior to 1/1/17 use J3590 or C9481 for OPPS billing)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3590",
+      "drug_name": "EXDENSUR",
+      "description": "Unclassified biologics",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7639",
+      "drug_name": "PULMOZYME",
+      "description": "Dornase alfa, inhalation solution, FDA-approved final product, non-compounded, administered through DME, unit dose form, per milligram",
+      "coverage_level": "Pharmacy Only",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q4074",
+      "drug_name": "VENTAVIS 10 MCG/1 ML SOLUTION SINGLE-USE,P/F",
+      "description": "Iloprost, inhalation solution, FDA-approved final product, non-compounded, administered through DME, unit dose form, up to 20 micrograms (All NDCs Inactive as of 10/15/2025)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "Q4074",
+      "drug_name": "VENTAVIS 10 MCG/1 ML SOLUTION SINGLE-USE,P/F,30'S",
+      "description": "Iloprost, inhalation solution, FDA-approved final product, non-compounded, administered through DME, unit dose form, up to 20 micrograms (All NDCs Inactive as of 10/15/2025)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3590",
+      "drug_name": "WINREVAIR",
+      "description": "Unclassified biologics",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1201",
+      "drug_name": "QUZYTTIR",
+      "description": "Injection, cetirizine hydrochloride, 0.5 mg",
+      "coverage_level": "Not Covered",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3105",
+      "drug_name": "terbutaline sulfate injection",
+      "description": "Injection, terbutaline sulfate, subcutaneous, up to 1 mg",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7611",
+      "drug_name": "albuterol sulfate inhalation solution for nebulization",
+      "description": "Albuterol, inhalation solution, FDA-approved final product, non-compounded, administered through DME, concentrated form, 1 mg (Code reinstated effective 4/1/2008)",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7613",
+      "drug_name": "albuterol sulfate inhalation solution for nebulization",
+      "description": "Albuterol, inhalation solution, FDA-approved final product, non-compounded, administered through DME, unit dose, 1 mg (Code reinstated effective 4/1/2008)",
+      "coverage_level": "Non-Specialty",
+      "notes": null,
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1325",
+      "drug_name": "epoprostenol",
+      "description": "Injection, epoprostenol, 0.5 mg (see J3490 or S0155 for billing epoprostenol diluent)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1325",
+      "drug_name": "FLOLAN",
+      "description": "Injection, epoprostenol, 0.5 mg (see J3490 or S0155 for billing epoprostenol diluent)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1325",
+      "drug_name": "VELETRI",
+      "description": "Injection, epoprostenol, 0.5 mg (see J3490 or S0155 for billing epoprostenol diluent)",
+      "coverage_level": "Non-Preferred",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J1749",
+      "drug_name": "AURLUMYN",
+      "description": "Injection, iloprost, 0.1 mcg",
+      "coverage_level": "Not Covered",
+      "notes": "CC (No PA Required - Inpatient Use Only)",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3285",
+      "drug_name": "REMODULIN 100 MG/20 ML VIAL",
+      "description": "Injection, treprostinil, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3285",
+      "drug_name": "REMODULIN 20 MG/20 ML VIAL",
+      "description": "Injection, treprostinil, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3285",
+      "drug_name": "REMODULIN 200 MG/20 ML VIAL",
+      "description": "Injection, treprostinil, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3285",
+      "drug_name": "REMODULIN 50 MG/20 ML VIAL",
+      "description": "Injection, treprostinil, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J3285",
+      "drug_name": "treprostinil sodium",
+      "description": "Injection, treprostinil, 1 mg",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    },
+    {
+      "payer": null,
+      "hcpcs_code": "J7686",
+      "drug_name": "TYVASO",
+      "description": "Treprostinil, inhalation solution, FDA-approved final product, non-compounded, administered through DME, unit dose form, 1.74 mg (For billing prior to 1/1/11 use J7699)",
+      "coverage_level": "Preferred Specialty",
+      "notes": "PA; Site of Service",
+      "covered_alternatives": []
+    }
+  ]
+}

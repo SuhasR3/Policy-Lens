@@ -66,17 +66,20 @@ def ingest_pdf(path: str | Path) -> dict[str, Any]:
         tables: list of markdown table strings
         combined: prose interleaved with table blocks
         page_texts: list of strings, one per page (for downstream chunking)
+        page_tables: per-page raw table rows for deterministic drug-list parsing
     """
     path = Path(path)
     pdf_path, temp_to_cleanup = _prepare_pdf_path(path)
     original_name = path.name
 
     page_texts: list[str] = []
+    page_tables: list[list[list[list[str | None]]]] = []
     markdown_tables: list[str] = []
     try:
         with pdfplumber.open(pdf_path) as pdf:
             for page in pdf.pages:
                 page_texts.append((page.extract_text() or "").strip())
+                page_tables.append(page.extract_tables() or [])
 
         num_pages = len(page_texts)
         for start, end in _page_batches(num_pages, CAMELOT_PAGE_BATCH):
@@ -122,6 +125,7 @@ def ingest_pdf(path: str | Path) -> dict[str, Any]:
         "tables": markdown_tables,
         "combined": combined,
         "page_texts": page_texts,
+        "page_tables": page_tables,
     }
 
 
