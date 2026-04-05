@@ -54,13 +54,11 @@ coverage/
 vite.config.*.timestamp-*
 
 # ── Database files ───────────────────────────────────────────────────────────
-*.db
 *.sqlite
 *.sqlite3
 
 # ── OS / Editor ─────────────────────────────────────────────────────────────
 .DS_Store
-Thumbs.db
 *.swp
 *.swo
 .idea/
