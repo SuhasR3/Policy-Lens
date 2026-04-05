@@ -1,0 +1,53 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# ── Node / Frontend ──────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# Vite build output
+policy-lens/frontend/dist/
+
+# Vite cache
+policy-lens/frontend/.vite/
+
+# ── Database files ───────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Misc ────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
