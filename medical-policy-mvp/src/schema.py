@@ -1,102 +1,133 @@
-"""Pydantic models for medical benefit drug policies and payer drug lists."""
+"""Pydantic models powering cross-payer coverage comparison.
+
+Three levels:
+  PolicyDocument   — one per ingested file (metadata + lists)
+  DrugEntry        — one per drug product mentioned in the policy
+  CoverageEntry    — one per (drug × indication); drives the comparison view
+"""
 
 from __future__ import annotations
 
 from typing import Literal, Optional
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel
+
+
+# ---------------------------------------------------------------------------
+# Step therapy — two distinct types
+# ---------------------------------------------------------------------------
+
+
+class ClinicalStepTherapy(BaseModel):
+    """Patient must try a DIFFERENT drug/class first (efficacy-driven)."""
+
+    required_prior_drugs: list[str] = []
+    condition: str = ""  # "failure, contraindication, or intolerance to one"
+
+
+class BiosimilarStepTherapy(BaseModel):
+    """Patient must try a CHEAPER VERSION of the same drug first (cost-driven)."""
+
+    preferred_products: list[str] = []   # ["Mvasi", "Zirabev"]
+    restricted_products: list[str] = []  # ["Avastin", "Alymsys"]
+    condition: str = ""  # "inadequate response, contraindication, or intolerance"
+
+
+# ---------------------------------------------------------------------------
+# Level 2: Drug identity
+# ---------------------------------------------------------------------------
 
 
 class DrugEntry(BaseModel):
-    model_config = ConfigDict(extra="ignore")
-
-    generic_name: Optional[str] = None
-    brand_names: list[str] = Field(default_factory=list)
-    hcpcs_codes: list[str] = Field(default_factory=list)
-    is_biosimilar: Optional[bool] = None
-    reference_product: Optional[str] = None
-
-
-class CoveredIndication(BaseModel):
-    model_config = ConfigDict(extra="ignore")
-
-    indication_name: Optional[str] = None
-    clinical_criteria: list[str] = Field(default_factory=list)
-    required_combination_regimens: list[str] = Field(default_factory=list)
-    icd10_codes: list[str] = Field(default_factory=list)
-    applies_to_products: list[str] = Field(default_factory=list)
+    generic_name: str                          # "bevacizumab"
+    brand_name: Optional[str] = None           # "Avastin"
+    hcpcs_codes: list[str] = []                # ["J9035"]
+    is_biosimilar: bool = False
+    reference_product: Optional[str] = None    # "Avastin" if biosimilar
+    access_status: Optional[
+        Literal["preferred", "non_preferred", "restricted", "not_covered", "excluded"]
+    ] = None
+    category_position: Optional[str] = None    # "preferred 1 of 2"
+    therapeutic_class: Optional[str] = None    # "VEGF inhibitor"
 
 
-class StepTherapy(BaseModel):
-    model_config = ConfigDict(extra="ignore")
-
-    required_prior_drugs: list[str] = Field(default_factory=list)
-    condition_description: Optional[str] = None
-    applies_to_products: list[str] = Field(default_factory=list)
+# ---------------------------------------------------------------------------
+# Level 3: Coverage entry — one row per (drug × indication)
+# ---------------------------------------------------------------------------
 
 
-class DosingLimit(BaseModel):
-    model_config = ConfigDict(extra="ignore")
+class CoverageEntry(BaseModel):
+    drug_generic_name: str
+    drug_brand_names: list[str] = []
+    hcpcs_codes: list[str] = []
+    indication: str                            # "Cervical Cancer"
+    applies_to_products: list[str] = []        # ["Botox only"] or ["all"]
+    is_covered: bool = True
+    coverage_level: Optional[str] = None       # "covered with PA"
+    pa_required: bool = False
+    pa_criteria: list[str] = []                # preserve AND/OR logic; prefix "ALL:" or "ONE:"
+    clinical_step_therapy: Optional[ClinicalStepTherapy] = None
+    biosimilar_step_therapy: Optional[BiosimilarStepTherapy] = None
+    dosing_limits: Optional[str] = None
+    site_of_care_restriction: Optional[str] = None
+    approval_duration_initial: Optional[str] = None
+    approval_duration_renewal: Optional[str] = None
+    required_regimens: list[str] = []          # ["paclitaxel + cisplatin", ...]
+    icd10_codes: list[str] = []
 
-    description: Optional[str] = None
-    max_dose: Optional[str] = None
-    frequency: Optional[str] = None
-    max_units_per_period: Optional[str] = None
+
+# ---------------------------------------------------------------------------
+# Excluded indications
+# ---------------------------------------------------------------------------
+
+
+class ExcludedIndication(BaseModel):
+    indication: str                        # "Chronic daily headache"
+    applies_to_products: list[str] = []   # ["all"] or ["Daxxify", "Dysport"]
+    reason: Optional[str] = None          # "unproven and not medically necessary"
+
+
+# ---------------------------------------------------------------------------
+# Level 1: Policy document (one per file)
+# ---------------------------------------------------------------------------
 
 
 class PolicyDocument(BaseModel):
-    """Rich single-drug (or multi-drug) medical policy. Most fields optional for partial extraction."""
-
-    model_config = ConfigDict(extra="ignore")
-
-    payer: Optional[str] = None
-    policy_id: Optional[str] = None
-    policy_title: Optional[str] = None
+    payer: str                             # "Florida Blue"
+    policy_id: Optional[str] = None       # "09-J0000-66"
+    policy_title: str
+    document_type: Literal["single_drug_policy", "drug_list", "preferred_product_program"]
     effective_date: Optional[str] = None
     revision_date: Optional[str] = None
-    document_type: Optional[Literal["single_drug_policy", "drug_list"]] = "single_drug_policy"
-    drugs: list[DrugEntry] = Field(default_factory=list)
-    covered_indications: list[CoveredIndication] = Field(default_factory=list)
-    prior_auth_required: Optional[bool] = None
-    step_therapy: list[StepTherapy] = Field(default_factory=list)
-    excluded_indications: list[str] = Field(default_factory=list)
-    approval_duration_initial: Optional[str] = None
-    approval_duration_renewal: Optional[str] = None
-    dosing_limits: list[DosingLimit] = Field(default_factory=list)
-    site_of_care_restrictions: Optional[str] = None
-    general_requirements: list[str] = Field(default_factory=list)
-    preferred_products: list[str] = Field(default_factory=list)
-    policy_changes: list[str] = Field(default_factory=list)
-    raw_text: Optional[str] = None
+    original_effective_date: Optional[str] = None
+    general_requirements: list[str] = []  # apply to ALL drugs/indications in the policy
+    policy_changes: list[str] = []        # what changed in the latest revision
+    drugs: list[DrugEntry] = []
+    coverage_entries: list[CoverageEntry] = []
+    excluded_indications: list[ExcludedIndication] = []
+    raw_text: Optional[str] = None        # filled after extraction for RAG
+
+
+# ---------------------------------------------------------------------------
+# Drug list models (Priority Health-style mega documents)
+# ---------------------------------------------------------------------------
 
 
 class DrugListEntry(BaseModel):
-    model_config = ConfigDict(extra="ignore")
-
-    payer: Optional[str] = None
-    hcpcs_code: Optional[str] = None
+    payer: str
+    hcpcs_code: str
     drug_name: Optional[str] = None
-    description: Optional[str] = None
-    coverage_level: Optional[str] = None
+    description: str
+    coverage_level: str                    # "PA", "Not Covered", "SOS", "CC", "CA"
+    pa_required: bool = False              # derived from coverage_level
+    site_of_service: bool = False          # true if SOS in notes
     notes: Optional[str] = None
-    covered_alternatives: list[str] = Field(default_factory=list)
-
-
-class DrugListChunkExtraction(BaseModel):
-    """One chunk of a large consolidated drug list (e.g. Priority Health MDL)."""
-
-    model_config = ConfigDict(extra="ignore")
-
-    section_title: Optional[str] = None
-    entries: list[DrugListEntry] = Field(default_factory=list)
+    covered_alternatives: list[str] = []
+    therapeutic_class: Optional[str] = None  # from TOC section header
 
 
 class DrugListDocument(BaseModel):
-    """Merged result after processing all chunks of a drug list PDF."""
-
-    model_config = ConfigDict(extra="ignore")
-
-    payer: Optional[str] = None
-    document_type: Literal["drug_list"] = "drug_list"
-    source_filename: Optional[str] = None
-    entries: list[DrugListEntry] = Field(default_factory=list)
+    payer: str
+    policy_title: str
+    effective_date: Optional[str] = None
+    entries: list[DrugListEntry] = []
